@@ -1,0 +1,50 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#000080" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AKTU-VAULT • Free B.Tech Notes, Quantums &amp; PYQs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- In-App PDF Canvas Engine -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        if (window.pdfjsLib) {
+          window.pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+        }
+      });
+    </script>
+      <meta name="description" content="Free, fast, ad-free AKTU B.Tech engineering study portal with verified syllabus notes, Quantums, PYQs, custom canvas PDF viewer, auto-resume reading, and encrypted in-app offline vault." />
+    <meta name="theme-color" content="#fef08a" />
+
+    <!-- OpenGraph / WhatsApp / Telegram / LinkedIn Preview Card -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AKTU-VAULT" />
+    <meta property="og:title" content="AKTU-VAULT • Free B.Tech Notes, Quantums &amp; PYQs" />
+    <meta property="og:description" content="450+ verified AKTU engineering notes, Quantums &amp; PYQs with instant canvas PDF viewer, auto-resume reading, and encrypted offline vault." />
+    <meta property="og:image" content="/og-banner.svg" />
+
+    <!-- Twitter / X Summary Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AKTU-VAULT • Free B.Tech Notes, Quantums &amp; PYQs" />
+    <meta name="twitter:description" content="Fast, distraction-free AKTU engineering repository with Neo-Brutal &amp; Windows 98 themes, Web Audio SFX, and in-app offline storage." />
+    <meta name="twitter:image" content="/og-banner.svg" />
+  </head>
+  <body class="bg-slate-950 text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(err => {
+            console.debug('ServiceWorker init:', err);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

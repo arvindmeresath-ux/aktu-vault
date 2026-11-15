@@ -1,0 +1,13 @@
+npm run build
+npx wrangler pages deploy dist --project-name=aktu-vault
+
+
+
+cd C:\Users\rajsi\aktu-notes-app
+python process_notes.py
+
+
+
+
+npm run build
+npx wrangler pages deploy dist --project-name=aktu-vault-1k2

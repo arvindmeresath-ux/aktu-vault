@@ -1,0 +1,23 @@
+﻿import NeoBrutalEngine from './NeoBrutal/NeoBrutalEngine';
+import Win98Engine from './Win98/Win98Engine';
+
+export const THEMES = [
+  { id: 'neo-brutal', name: 'Neo-Brutalism (Default)', tag: 'Bold & High Contrast' },
+  { id: 'win98-hc', name: 'Windows 98', tag: 'Classic Retro' },
+  { id: 'modern-dark', name: 'Modern Dark UI', tag: 'Minimal OLED' },
+  { id: 'dark-academia', name: 'Dark Academia', tag: 'Serif & Parchment' },
+  { id: 'cyberpunk', name: 'Cyberpunk 2077', tag: 'Neon & Scanlines' },
+  { id: 'blueprint', name: 'Architectural Blueprint', tag: 'Engineering Grid' },
+  { id: 'crt-glow', name: 'Vintage CRT Monitor', tag: 'Phosphor Green' },
+];
+
+export const THEME_REGISTRY = {
+  'neo-brutal': {
+    name: 'Neo-Brutalism',
+    component: NeoBrutalEngine
+  },
+  'win98-hc': {
+    name: 'Windows 98',
+    component: Win98Engine
+  }
+};

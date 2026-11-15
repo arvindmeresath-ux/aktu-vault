@@ -1,0 +1,328 @@
+﻿@import url('https://fonts.cdnfonts.com/css/ms-sans-serif');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800;900&family=Fira+Code:wght@500;700&family=Cinzel:wght@600;700;900&family=Space+Grotesk:wght@600;700;800&display=swap');
+
+.win98-root {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 8px;
+}
+
+/* =========================================================================
+   CLASSIC WINDOWS 98 RETRO THEME (win98)
+========================================================================= */
+body[data-theme="win98"] .win98-root,
+body:not([data-theme]) .win98-root {
+  font-family: 'MS Sans Serif', Tahoma, monospace !important;
+  background-color: #000000 !important;
+  color: #ffff00 !important;
+}
+body[data-theme="win98"] .main-win-frame,
+body:not([data-theme]) .main-win-frame {
+  background-color: #000000 !important;
+  border: 2px solid #00ff00 !important;
+  box-shadow: none !important;
+}
+body[data-theme="win98"] .from-\[\#000080\] {
+  background: #000080 !important;
+  border-bottom: 2px solid #ffffff !important;
+  color: #ffffff !important;
+}
+body[data-theme="win98"] .win98-menu-bar {
+  background-color: #000000 !important;
+  border-bottom: 1px solid #00ff00 !important;
+  color: #ffff00 !important;
+}
+body[data-theme="win98"] .menu-view-trigger {
+  background: transparent !important;
+  color: #ffff00 !important;
+  border: 1px solid #00ff00 !important;
+  padding: 2px 8px !important;
+}
+body[data-theme="win98"] .main-win-frame .bg-white {
+  background-color: #000000 !important;
+  border: 2px solid #ffffff !important;
+  color: #ffff00 !important;
+}
+body[data-theme="win98"] .main-win-frame button {
+  background-color: #000000 !important;
+  color: #00ffff !important;
+  border: 1px solid #00ffff !important;
+}
+body[data-theme="win98"] .px-2.py-1.bg-\[\#c0c0c0\] {
+  background-color: #000000 !important;
+  border-top: 1px solid #00ff00 !important;
+  color: #00ff00 !important;
+}
+body[data-theme="win98"] .theme-dropdown-box {
+  background-color: #000000 !important;
+  border: 2px solid #00ff00 !important;
+  color: #ffff00 !important;
+}
+body[data-theme="win98"] .dropdown-row:hover,
+body[data-theme="win98"] .dropdown-row.is-active {
+  background-color: #000080 !important;
+  color: #ffffff !important;
+}
+
+
+/* =========================================================================
+   LOCKED THEME 2: SLEEK MODERN STUDY VAULT (100% UNTOUCHED)
+========================================================================= */
+body[data-theme="modern-dark"] .win98-root {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif !important;
+  background: radial-gradient(circle at 50% 0%, #1e1b4b 0%, #030712 100%) !important;
+  color: #f1f5f9 !important;
+}
+body[data-theme="modern-dark"] .main-win-frame {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.95) 0%, rgba(2, 6, 23, 0.98) 100%) !important;
+  border: 1px solid rgba(56, 189, 248, 0.25) !important;
+  border-radius: 28px !important;
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.95), 0 0 40px rgba(56, 189, 248, 0.1) !important;
+  padding: 18px !important;
+}
+body[data-theme="modern-dark"] .main-win-frame > div:first-child {
+  background: transparent !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  padding: 8px 4px 18px 4px !important;
+}
+body[data-theme="modern-dark"] .main-win-frame > div:first-child > span:first-child {
+  font-size: 0 !important;
+}
+body[data-theme="modern-dark"] .main-win-frame > div:first-child > span:first-child::after {
+  content: "⚡ AKTU STUDY VAULT" !important;
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em !important;
+  background: linear-gradient(90deg, #38bdf8 0%, #818cf8 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+body[data-theme="modern-dark"] .main-win-frame > div:first-child > div:last-child {
+  display: none !important;
+}
+body[data-theme="modern-dark"] .win98-menu-bar {
+  background: transparent !important;
+  border: none !important;
+  padding: 10px 0 !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+}
+body[data-theme="modern-dark"] .win98-menu-bar > span {
+  display: none !important;
+}
+body[data-theme="modern-dark"] .menu-view-trigger {
+  background: rgba(30, 41, 59, 0.8) !important;
+  color: #38bdf8 !important;
+  border: 1px solid rgba(56, 189, 248, 0.3) !important;
+  border-radius: 9999px !important;
+  padding: 6px 16px !important;
+  font-weight: 700 !important;
+}
+body[data-theme="modern-dark"] .main-win-frame > div:nth-child(3) {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 0 12px 0 !important;
+}
+body[data-theme="modern-dark"] .main-win-frame > div:nth-child(3) > div.flex-1 {
+  display: none !important;
+}
+body[data-theme="modern-dark"] .main-win-frame > div:nth-child(3):has(button:disabled) {
+  display: none !important;
+}
+body[data-theme="modern-dark"] .p-2.bg-\[\#c0c0c0\] {
+  background: transparent !important;
+  padding: 0 !important;
+}
+body[data-theme="modern-dark"] .main-win-frame .bg-white {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
+body[data-theme="modern-dark"] .main-win-frame .bg-white > div:first-child {
+  display: none !important;
+}
+body[data-theme="modern-dark"] .main-win-frame .bg-white .grid > div,
+body[data-theme="modern-dark"] .main-win-frame .bg-white .space-y-1\.5 > div,
+body[data-theme="modern-dark"] .main-win-frame .bg-white .divide-y > div {
+  background: rgba(30, 41, 59, 0.55) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 18px !important;
+  padding: 16px 18px !important;
+  margin-bottom: 10px !important;
+  color: #ffffff !important;
+}
+body[data-theme="modern-dark"] .main-win-frame .bg-white img {
+  filter: hue-rotate(185deg) saturate(240%) brightness(1.25) drop-shadow(0 0 8px rgba(56, 189, 248, 0.6)) !important;
+}
+body[data-theme="modern-dark"] .px-2.py-1.bg-\[\#c0c0c0\] {
+  background: transparent !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: #64748b !important;
+}
+body[data-theme="modern-dark"] .px-2.py-1.bg-\[\#c0c0c0\] > * {
+  display: none !important;
+}
+body[data-theme="modern-dark"] .px-2.py-1.bg-\[\#c0c0c0\]::after {
+  content: "✦ Free Student Vault • Built for AKTU" !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+}
+
+
+/* =========================================================================
+   GLOBAL OVERHAUL FOR OTHER THEMES
+========================================================================= */
+body:not([data-theme="win98"]):not([data-theme="modern-dark"]) * {
+  text-decoration: none !important;
+}
+
+body:not([data-theme="win98"]):not([data-theme="modern-dark"]) .main-win-frame img,
+body:not([data-theme="win98"]):not([data-theme="modern-dark"]) .main-win-frame svg:not(.menu-view-trigger svg) {
+  display: none !important;
+}
+
+
+/* =========================================================================
+   1. NEO-BRUTALISM
+========================================================================= */
+body[data-theme="neo-brutal"] .win98-root {
+  font-family: 'Space Grotesk', system-ui, sans-serif !important;
+  background-color: #f1f5f9 !important;
+  background-image: radial-gradient(#cbd5e1 15%, transparent 16%) !important;
+  background-size: 16px 16px !important;
+  color: #0f172a !important;
+}
+body[data-theme="neo-brutal"] .main-win-frame {
+  background: #ffffff !important;
+  border: 3.5px solid #000000 !important;
+  border-radius: 28px !important;
+  box-shadow: 8px 8px 0px #000000 !important;
+  padding: 18px !important;
+  overflow: visible !important;
+}
+body[data-theme="neo-brutal"] .main-win-frame > div:first-child {
+  background: #fb7185 !important;
+  border: 3px solid #000000 !important;
+  border-radius: 16px !important;
+  padding: 12px 18px !important;
+  box-shadow: 3px 3px 0px #000000 !important;
+}
+body[data-theme="neo-brutal"] .main-win-frame > div:first-child * {
+  display: none !important;
+}
+body[data-theme="neo-brutal"] .main-win-frame > div:first-child::after {
+  content: "★ AKTU STUDY HUB • 100% FREE ARCHIVE ★" !important;
+  display: block !important;
+  font-size: 14px !important;
+  font-weight: 900 !important;
+  color: #000000 !important;
+  text-align: center !important;
+}
+
+
+/* =========================================================================
+   2. CYBERPUNK DATAPAD
+========================================================================= */
+body[data-theme="cyberpunk"] .win98-root {
+  font-family: 'Fira Code', monospace !important;
+  background: #020611 radial-gradient(circle at 50% 50%, #00f0ff14 1px, transparent 1px) !important;
+  background-size: 24px 24px !important;
+  color: #00f0ff !important;
+}
+body[data-theme="cyberpunk"] .main-win-frame {
+  background: #050b16 !important;
+  border: 2px solid #00f0ff !important;
+  box-shadow: 0 0 35px rgba(0, 240, 255, 0.3) !important;
+  border-radius: 20px !important;
+  padding: 18px !important;
+}
+
+
+/* =========================================================================
+   3. CAD BLUEPRINT
+========================================================================= */
+body[data-theme="blueprint"] .win98-root {
+  font-family: 'Fira Code', monospace !important;
+  background-color: #081d33 !important;
+  background-image: 
+    linear-gradient(rgba(144, 202, 249, 0.18) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(144, 202, 249, 0.18) 1px, transparent 1px) !important;
+  background-size: 32px 32px !important;
+  color: #e3f2fd !important;
+}
+body[data-theme="blueprint"] .main-win-frame {
+  background: #0a223a !important;
+  border: 2px solid #90caf9 !important;
+  border-radius: 16px !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7) !important;
+  padding: 16px !important;
+}
+
+
+/* =========================================================================
+   4. DARK ACADEMIA
+========================================================================= */
+body[data-theme="dark-academia"] .win98-root {
+  font-family: 'Cinzel', Georgia, serif !important;
+  background-color: #120b06 !important;
+  background-image: radial-gradient(rgba(197, 160, 89, 0.12) 1px, transparent 1px) !important;
+  background-size: 24px 24px !important;
+  color: #d4af37 !important;
+}
+body[data-theme="dark-academia"] .main-win-frame {
+  background: #23160e !important;
+  border: 2px solid #c5a059 !important;
+  border-radius: 20px !important;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.95) !important;
+  padding: 18px !important;
+}
+
+
+/* =========================================================================
+   WINDOWS 98 - PDF VIEWER MODAL RETRO STYLING
+========================================================================= */
+body[data-theme="win98"] .pdf-modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+body[data-theme="win98"] .pdf-win-frame {
+  background-color: #c0c0c0 !important;
+  border: 2px solid #ffffff !important;
+  border-right-color: #404040 !important;
+  border-bottom-color: #404040 !important;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.7) !important;
+  border-radius: 0px !important;
+}
+body[data-theme="win98"] .pdf-win-frame .bg-\[\#fb7185\],
+body[data-theme="win98"] .pdf-win-frame .bg-gradient-to-r {
+  background: #000080 !important;
+  border-bottom: none !important;
+  color: #ffffff !important;
+  border-radius: 0px !important;
+}
+body[data-theme="win98"] .pdf-win-frame .bg-\[\#fb7185\] * {
+  display: none !important;
+}
+body[data-theme="win98"] .pdf-win-frame .bg-\[\#fb7185\]::after {
+  content: "AKTU_PDF_VIEWER.exe" !important;
+  display: block !important;
+  font-family: 'MS Sans Serif', Tahoma, monospace !important;
+  font-size: 11px !important;
+  font-weight: bold !important;
+  color: #ffffff !important;
+  padding: 2px 4px !important;
+}
+body[data-theme="win98"] .pdf-win-frame .bg-\[\#c0c0c0\] {
+  background-color: #c0c0c0 !important;
+  border-color: #808080 !important;
+  color: #000000 !important;
+}
+body[data-theme="win98"] .pdf-win-frame button {
+  background-color: #c0c0c0 !important;
+  border: 1px solid #ffffff !important;
+  border-right-color: #404040 !important;
+  border-bottom-color: #404040 !important;
+  color: #000000 !important;
+  border-radius: 0px !important;
+}

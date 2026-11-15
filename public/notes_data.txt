@@ -1,0 +1,459 @@
+CSE | 3 | Mathematics-IV | PYQs | BAS303-MATHEMATICS-IV.pdf | https://cdn-wl-assets.classplus.co/production/436362/8c93a0e7-2bf9-4551-b241-1dec29851906.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | PYQs | BCS303-DSTL | https://cdn-wl-assets.classplus.co/production/436362/821a8aa1-a3a3-4eef-b7f5-90502673dfdc.pdf
+CSE | 3 | Data Structures | PYQs | BCS301-DATA STRUCTURE | https://cdn-wl-assets.classplus.co/production/436362/c10ad124-7d28-4470-8661-10bd8d9ea31d.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | PYQs | BCS302-COA | https://cdn-wl-assets.classplus.co/production/436362/ffb54f5d-0f66-47dc-8370-21826dfa2336.pdf
+CSE | 4 | Operating Systems | PYQs | BCS401-OPERATING-SYSTEM-PYQs.pdf | https://cdn-wl-assets.classplus.co/production/436362/36ab561f-45af-469d-82b8-7105b8a1ddfd.pdf
+CSE | 4 | Theory of Automata and Formal Languages (TAFL) | PYQs | BCS402-THEORY-OF-AUTOMATA-AND-FORMAL-LANGUAGES-PYQs.pdf | https://cdn-wl-assets.classplus.co/production/436362/d2bf5663-99a8-4832-8bff-139f2c12ba97.pdf
+CSE | 4 | OOP with Java | PYQs | BCS403-OBJECT-ORIENTED-PROGRAMMING-WITH-JAVA-PYQs.pdf | https://cdn-wl-assets.classplus.co/production/436362/aa8ec84e-824e-48cb-8f27-363772250bac.pdf
+CSE | 3 | Technical Communication | PYQs | BAS301 & 401-TECHNICAL-COMMUNICATION-PYQs.pdf | https://cdn-wl-assets.classplus.co/production/436362/5c45e5c1-bb2f-40cb-8dac-299bac83706d.pdf
+CSE | 3 | Cyber Security | PYQs | BCC301 & 401-CYBER-SECURITY-PYQs.pdf | https://cdn-wl-assets.classplus.co/production/436362/1f906297-7420-4a97-8589-cd4e11adee3f.pdf
+CSE | 3 | Python Programming | PYQs | BCC302 & 402-PYTHON-PROGRAMMING-PYQs.pdf | https://cdn-wl-assets.classplus.co/production/436362/99c6c555-1b33-4b35-83bd-1d6380ac86f7.pdf
+CSE | 3 | Universal Human Values (UHVPE) | PYQs | BVE301 & 401-UNIVERSAL-HUMAN-VALUES-PROFESSIONAL-ETHICS-PYQs.pdf | https://cdn-wl-assets.classplus.co/production/436362/884a73c6-9683-45c0-a29c-72889982e91f.pdf
+CSE | 3 | Digital Electronics | PYQs | BOE310-DIGITAL ELECTRONICS-5Yr PYQs.pdf | https://cdn-wl-assets.classplus.co/production/436362/b73ba3c7-bbd9-4fa2-8e65-c0483e86f57c.pdf
+CSE | 4 | Placement Preparation | Notes | Direction Sense Practice Sheet.pdf | https://cdn-wl-assets.classplus.co/production/436362/ecc19438-7bb8-4136-8ce6-7b323761892e.pdf
+CSE | 4 | Placement Preparation | Notes | Answer Key Direction Sense.pdf | https://cdn-wl-assets.classplus.co/production/436362/29c0615f-a4d6-4048-8bb2-297e0c264229.pdf
+CSE | 4 | Placement Preparation | Notes | Practice Sheet- Alphabet Series.pdf | https://cdn-wl-assets.classplus.co/production/436362/7541dbe8-aaf3-4942-bf5c-fc2f14518431.pdf
+CSE | 4 | Placement Preparation | Notes | Practice Sheet Alphanumeric Series.pdf | https://cdn-wl-assets.classplus.co/production/436362/0b43d7a7-600d-4f89-ab1e-47272fa54589.pdf
+CSE | 4 | Placement Preparation | Notes | Answer Key-Alphanumeric Series - Sheet2.pdf | https://cdn-wl-assets.classplus.co/production/436362/52dd76c2-395f-4391-994b-5a5ef0fb29fe.pdf
+CSE | 4 | Placement Preparation | Notes | Practice Sheet 2- Alphabet Series.pdf | https://cdn-wl-assets.classplus.co/production/436362/9438ca1d-19be-4893-a7b7-3f289eaf0712.pdf
+CSE | 4 | Placement Preparation | Notes | Answer Key Sheet 2- Alphabet Series.pdf | https://cdn-wl-assets.classplus.co/production/436362/fbd08bbd-1e57-4ca2-9f6c-aa8cd31b4da7.pdf
+CSE | 4 | Placement Preparation | Notes | Divisibility Rule Answer Key.pdf | https://cdn-wl-assets.classplus.co/production/436362/a4bacccd-15b7-487c-a22a-271d5cfabc48.pdf
+CSE | 4 | Placement Preparation | Notes | Divisibility Rule Practice Questions.pdf | https://cdn-wl-assets.classplus.co/production/436362/80fd74b1-96d3-45ce-9de5-4de4476da93f.pdf
+CSE | 4 | Placement Preparation | Notes | Pracice Questions Unit Digit.pdf | https://cdn-wl-assets.classplus.co/production/436362/da4804b6-fa47-4e30-9ef9-a17df44dc387.pdf
+CSE | 4 | Placement Preparation | Notes | Remainder Concept.pdf | https://cdn-wl-assets.classplus.co/production/436362/c30b487d-cf40-4d99-977a-b1d44b742e13.pdf
+CSE | 4 | Placement Preparation | Notes | Practice Questions Remainder Questions Sheet.pdf | https://cdn-wl-assets.classplus.co/production/436362/d899bab8-06a5-4ad5-bffd-2cc9985c3971.pdf
+CSE | 4 | Placement Preparation | Notes | Practice Questions Remainder Questions -Answer key.pdf | https://cdn-wl-assets.classplus.co/production/436362/c868a321-32ff-4e80-b25b-e8c7d678c955.pdf
+CSE | 4 | Placement Preparation | Notes | Practice Questions- Factors Concept.pdf | https://cdn-wl-assets.classplus.co/production/436362/31093882-cd3d-4df9-b54e-4c9a907de02b.pdf
+CSE | 4 | Placement Preparation | Notes | Answer Key_ Factors Concept.pdf | https://cdn-wl-assets.classplus.co/production/436362/17563306-eeeb-4bdf-a161-c6fe5c887c8a.pdf
+CSE | 4 | Placement Preparation | Notes | Successive Divisibilty_Answer Key.pdf | https://cdn-wl-assets.classplus.co/production/436362/4f5c762f-71c6-4819-a30a-507bdff58709.pdf
+CSE | 4 | Placement Preparation | Notes | Successive_Divisibility.pdf | https://cdn-wl-assets.classplus.co/production/436362/42071a50-2112-4bff-beb0-6d827f9731b1.pdf
+CSE | 4 | Placement Preparation | Notes | Practice Sheet Highest Power in Factorial .pdf | https://cdn-wl-assets.classplus.co/production/436362/9475c8e4-fe72-408e-ae90-d77cfb21527e.pdf
+CSE | 4 | Placement Preparation | Notes | LCM HCF Part 1 Practice Sheet.pdf | https://cdn-wl-assets.classplus.co/production/436362/cb899e21-523f-4509-aba0-f54541309555.pdf
+CSE | 4 | Placement Preparation | Notes | LCM HCF Part 1 Answer Key.pdf | https://cdn-wl-assets.classplus.co/production/436362/52f5df84-c27c-469c-8c73-3d51869cfb96.pdf
+CSE | 4 | Placement Preparation | Notes | Part 2 Application of HCF_LCM_Worksheet.pdf | https://cdn-wl-assets.classplus.co/production/436362/821339eb-3ec8-42b9-8393-1122c3f173c0.pdf
+CSE | 4 | Placement Preparation | Notes | LCM HCF Part-2 Answer Key.pdf | https://cdn-wl-assets.classplus.co/production/436362/8d33f9a1-243b-4154-bc8a-2be6cb7a7bd5.pdf
+CSE | 4 | Placement Preparation | Notes | Percentage-D.pdf | https://cdn-wl-assets.classplus.co/production/436362/c61d0353-ace6-45d7-a8d5-02671b932486.pdf
+CSE | 4 | Placement Preparation | PYQs | Part 1 Percnetage PYQ.pdf | https://cdn-wl-assets.classplus.co/production/436362/563ab370-23c4-47bf-aed6-a83273285e2c.pdf
+CSE | 4 | Placement Preparation | Notes | Course Modules- Roadmap | https://cdn-wl-assets.classplus.co/production/436362/91e05e15-9083-4771-94a9-253ead63198e.pdf
+CSE | 3 | General Syllabus | Syllabus | Syll CS Allied 2nd Year | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/1f9f431b-8965-4f23-a37b-eaa4b9049445.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-1 ONE SHOTNOTES | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/43b005d6-b7c9-46df-9027-393ec5f7b1ab.pdf
+CSE | 3 | Mathematics-IV | Syllabus | Maths-4 UNIT-2 ONE SHOT NOTES | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/e74ac578-4597-46d5-a24b-7bc7a0be755b.pdf
+CSE | 3 | Mathematics-IV | Syllabus | Maths-4 I Unit-3 ONE SHOT NOTES | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/d3f1aeae-53eb-4388-af4f-5546c9f16aad.pdf
+CSE | 3 | Mathematics-IV | Syllabus | Math-4 Unit-4 ONE SHOT NOTES | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/7b5ba8cf-fc70-4796-99f4-af86a329d0f4.pdf
+CSE | 3 | Mathematics-IV | Syllabus | Math-4 Unit-5 ONE SHOT NOTES | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/4cab52c7-1db6-4b51-be23-55c6a5921107.pdf
+CSE | 3 | Mathematics-IV | Syllabus | Maths-4 U-1 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/d432e70c-e677-457a-a23c-90be275bb76f.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-3 ONE SHOT NOTES | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/d3f1aeae-53eb-4388-af4f-5546c9f16aad.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-3 Hand Written Notes | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/7920e8a0-29d1-4756-83be-d2b97de86a79.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-3 COMBINED DPP SOL | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/20c65d84-78a7-4086-8f62-be4e3d3566dd.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-3 Combined Notes | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/52c60c83-0803-46ab-b83b-9d1b5c138f3f.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-3 DPP-1 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/97abf0d5-1325-48a8-8f32-5d6651c42d19.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-3 DPP-2 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/fe828353-8ac7-4c19-8c23-a53ec4e452fc.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-3 DPP-3 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/14939f8a-ac7a-4af5-97d0-83a02e019940.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-3 DPP-4 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/d94e8d66-9b27-47d1-bf77-14f00bef0a65.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-3 DPP-5 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/9c2a1d64-d800-411d-bac9-4951d8fbddf1.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-3 DPP-6 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/fc32b4cc-c137-412d-97c0-f6332c422589.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-3 DPP-7 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/9caace4a-ccae-4f7a-b27e-a40933d305d5.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-3 DPP-8 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/4855668f-779a-4ddb-ac11-e18b4ed9b6f1.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-3 DPP-9 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/b900538c-afff-4483-887e-6a1dc71cb31a.pdf
+CSE | 3 | Mathematics-IV | Syllabus | MATHS IV unit-3 dpp 10 | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/9e81bb1b-dd9f-4de8-9fc9-c3b67f03b4a9.pdf
+CSE | 3 | Mathematics-IV | Syllabus | MATHS IV unit-3 dpp 11 | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/f1f24919-9f81-4f62-af81-dea7c20f95da.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-4 ONE SHOT NOTES | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/7b5ba8cf-fc70-4796-99f4-af86a329d0f4.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-4 COMBINED DPP SOL | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/e6d939aa-c8aa-4548-949b-0b5b2fa20555.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-4 Hand Written Notes | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/66e672c0-2546-46e2-9017-511ccd3e73b3.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-4 Combined Notes | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/01d12c84-5098-436d-a3e0-bedcf573313a.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-4 Dpp-1 | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/abc91ab0-8405-48f5-a8fb-9868e639495e.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-4 Dpp-2 | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/084fc51b-f0fa-4fd4-8181-605b1a782df4.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-4 Dpp-3 | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/36da65ad-e34a-4030-8467-2134c8ad5aaf.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-4 Dpp-4 | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/80731dcd-fd1e-4326-8112-4f1ca8ad827a.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-4 Dpp-5 | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/ee8fe1ef-2b77-44f9-b398-344a0c9c07c9.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-4 Dpp-6 | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/1d05a749-e766-4bf3-b254-a13be6f1300e.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-4 Dpp-7 | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/79e766b8-9d12-4025-bf1d-c9759fad7e76.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-4 Dpp-8 | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/83ebde9d-50f5-4653-81df-f0a6a10270c2.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-4 Dpp-9 | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/cfe6e134-11cb-4f24-a192-8e7b4cc379c5.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-5 ONE SHOT NOTES | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/4cab52c7-1db6-4b51-be23-55c6a5921107.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-5 Combined Notes | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/483fb160-dc4a-4ae8-a014-3f5c55551ec3.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-5 Dpp-2 | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/9405ae73-754e-4a73-87c6-003c3f3b8e8b.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-5 Dpp-3 | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/2eb59c92-d033-40fe-99b0-f9e8b31ca05b.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-5 Dpp-4 | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/fd556a42-2404-4249-a83f-7836c7e456e3.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-5 Dpp-5 | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/e1512fb9-9cc6-4604-826c-55208c3b151c.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-5 Dpp-6 | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/3a3692d9-d74f-4c0b-b933-565ef1cef704.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-5 Dpp-7 | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/bef02274-0a14-47a3-a829-a5c59df33b61.pdf
+CSE | 3 | Mathematics-IV | Syllabus | M-4 U-5 Dpp-8 | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/b7bffe78-de83-49c8-8696-bdccce173b8d.pdf
+CSE | 3 | Data Structures | Syllabus | DS Syll introduction | https://cdn-wl-assets.classplus.co/production/436362/685ec734-d98d-4aae-a2da-98f696404848.pdf
+CSE | 3 | Data Structures | Notes | DS U-1 P-1 + P-2 ONE SHOT  Notes | https://cdn-wl-assets.classplus.co/production/436362/9542127e-44bf-4a40-a563-1e51dec7390c.pdf
+CSE | 3 | Data Structures | Notes | DS U-1 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/934dc3f9-2c69-4d85-bff2-14b88af0e437.pdf
+CSE | 3 | Data Structures | Notes | Executed Linked List programs.pdf | https://cdn-wl-assets.classplus.co/production/436362/6ddc9502-c021-4c4f-bd57-480cff3c1211.pdf
+CSE | 3 | Data Structures | Notes | DS U-2 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/361a6462-1858-4278-98de-6054321b0e04.pdf
+CSE | 3 | Data Structures | Notes | additional stack programs and queue programs.pdf | https://cdn-wl-assets.classplus.co/production/436362/9757eb0a-d04b-46de-b978-641d31962532.pdf
+CSE | 3 | Data Structures | Notes | DS U-2 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/2f63cb57-dca1-4c4c-ac90-94dce5868ede.pdf
+CSE | 3 | Data Structures | Notes | DS U-3 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/9f5d9081-9188-41d4-a654-ae93cde6a690.pdf
+CSE | 3 | Data Structures | Notes | DS U-3 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/4afa6efc-028b-406c-84a7-c2765de1ed86.pdf
+CSE | 3 | Data Structures | Notes | DS U-4 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/49fd89bd-03c3-4b97-9045-522b97e06cc6.pdf
+CSE | 3 | Data Structures | Notes | DS U-4 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/2dbe711e-4d82-4540-b742-b5ca9a66fb6d.pdf
+CSE | 3 | Data Structures | Notes | DS U-5 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/c3216133-5fa9-41b9-9942-8af6b5155e70.pdf
+CSE | 3 | Data Structures | Notes | DS U-5 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/92ed7c2f-89eb-4a06-b4c5-3445a5f4d69a.pdf
+CSE | 3 | Data Structures | Quantum | DS IMP. Questions | https://cdn-wl-assets.classplus.co/production/436362/afc0596e-054a-4fd2-a151-15f02e2cb79f.pdf
+CSE | 3 | Data Structures | Notes | DS U-1 P-1 + P-2 ONE SHOT  Notes | https://cdn-wl-assets.classplus.co/production/436362/9542127e-44bf-4a40-a563-1e51dec7390c.pdf
+CSE | 3 | Data Structures | Notes | DS U-2 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/2f63cb57-dca1-4c4c-ac90-94dce5868ede.pdf
+CSE | 3 | Data Structures | Notes | DS U-3 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/4afa6efc-028b-406c-84a7-c2765de1ed86.pdf
+CSE | 3 | Data Structures | Notes | DS U-4 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/11d4ad90-30e7-4275-beef-ed902a1d6125.pdf
+CSE | 3 | Data Structures | Notes | DS U-5 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/92ed7c2f-89eb-4a06-b4c5-3445a5f4d69a.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Syllabus | COA Syll Introduction | https://cdn-wl-assets.classplus.co/production/436362/f3f0f3bd-1e44-4ea5-be88-474a47864067.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Syllabus | COA Syll Introduction | https://cdn-wl-assets.classplus.co/production/436362/9b8d8f82-f395-44b9-8963-13ed38148775.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA U-1 One Shot Notes | https://cdn-wl-assets.classplus.co/production/436362/b3b530fd-c7f0-4c78-91e4-d662cb43ee24.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA Unit-2 One Shot Notes | https://cdn-wl-assets.classplus.co/production/436362/690a9d0e-0892-46c1-871d-34e90b0734a8.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA U-1 E-Book Notes | https://cdn-wl-assets.classplus.co/production/436362/bcd9fb9b-af93-40fd-9abb-0cd8584303b2.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA U-1 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/94837709-2b85-4095-bb92-f681af4ab612.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA U-2 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/f8c0971e-62eb-4781-bfd3-32fde23311b0.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA U-3 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/97a64f94-3541-4540-9297-e21e9bf687a5.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA U-1 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/c87ed131-ab70-471e-8774-cdf292019c51.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA U-2 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/c63a4d5d-6573-40d1-9c80-6e9c1cc2b5bd.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA U-3 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/911efec0-35ee-4975-83d5-617c985801ed.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA U-4 ONE SHOT NOTES | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/6e1473f1-e34c-4f6d-9677-595d72c8860f.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA U-5 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/6b5f805f-2f9c-4f8f-aa66-620fa9b7cfa3.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA UNIT-1 ONE SHOT NOTES | https://cdn-wl-assets.classplus.co/production/436362/7cef9ee7-4298-44ba-9f20-dbabb6246391.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA UNIT-2 ONE SHOT NOTES | https://cdn-wl-assets.classplus.co/production/436362/b1e502cd-2e7b-4dad-96ed-a4b0dbba2672.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA UNIT-3 ONE SHOT NOTES | https://cdn-wl-assets.classplus.co/production/436362/91ec90a8-aa84-4e84-8d93-e2fd0671f5f1.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA U-4 ONE SHOT NOTES | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/6e1473f1-e34c-4f6d-9677-595d72c8860f.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA UNIT-5 ONE SHOT NOTES | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/f2272ae3-78a1-438f-8f69-b0fbad2f5df3.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA U-1 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/c87ed131-ab70-471e-8774-cdf292019c51.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA U-1 Hand Written Notes | https://cdn-wl-assets.classplus.co/production/436362/0f5a0ced-e869-4c3e-9615-4fd69f919340.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA U-1 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/4bd585a3-02f4-4adb-b881-fc619dadf270.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA U-2 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/c63a4d5d-6573-40d1-9c80-6e9c1cc2b5bd.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA U-2 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/89ddcc8b-d3ee-4dfe-82ef-05ba8ab1387c.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA U-2 Hand Written Notes | https://cdn-wl-assets.classplus.co/production/436362/886b0fd1-3cc0-4e31-86eb-8d9d4abd5925.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA U-3 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/911efec0-35ee-4975-83d5-617c985801ed.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA U-3 Hand Written Notes | https://cdn-wl-assets.classplus.co/production/436362/a10db096-5018-4373-b7b7-dba6a62c0e2c.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA U-3 Combined Notes | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/c33c6215-b4cc-40dd-9759-2646555b6487.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA U-4 ONE SHOT NOTES | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/6e1473f1-e34c-4f6d-9677-595d72c8860f.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA U-4 Hand Written Notes | https://cdn-wl-assets.classplus.co/production/436362/02d9c355-cf83-4a3e-805f-2ea01aa7b2ec.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA U-4 Combined Notes | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/390c5135-e982-4974-baea-ce5aa9ccdb5f.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA U-5 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/6b5f805f-2f9c-4f8f-aa66-620fa9b7cfa3.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Notes | COA U-5 Combined Notes | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/393be644-ca57-4c3a-92a7-f0f364723386.pdf
+CSE | 3 | Computer Organization & Architecture (COA) | Quantum | COA IMP QUESTIONS | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/9eef5a2f-aef0-4d08-a663-6015f5822c1e.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Syllabus | Dstl syllabus introduction | https://cdn-wl-assets.classplus.co/production/436362/68480689-4062-4266-9ded-677d6d8708bd.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-1 E-Book Notes | https://cdn-wl-assets.classplus.co/production/436362/917f3af8-8df7-4060-a2c2-b81082135bc9.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-1 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/a15bf4a8-875c-4e03-99d3-739d20c82b95.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-2 E-Book Notes | https://cdn-wl-assets.classplus.co/production/436362/cea7be51-7332-437c-94b7-578580abe871.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-2 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/804f6479-3c73-40ad-ac49-7c378f78dad2.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-3 One shot Notes | https://cdn-wl-assets.classplus.co/production/436362/7c2d8e2b-8b60-4e62-abc4-7ec7c0e236ba.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-1 ONE SHOT NOTES | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/284a9303-5c3f-45ef-bd10-b69ece5bcc84.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-1 Combined DPP Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/1f48441a-5969-45ff-a1a7-fde5929cae19.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-1 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/6fa59cd3-4ad9-4fce-bee3-39007a9eefbe.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-1 DPP-9 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/be4e1a6e-96fa-4a1b-8a8c-145f758dd34b.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-1 DPP-10 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/bd70d1cc-5c37-468a-a317-9f0560403517.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-1 DPP-11 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/032360b4-240d-4b75-a9b0-e2d6721780c9.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-1 DPP-12 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/b33a859d-de34-413b-8bd6-cc2ee17ea26b.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-1 DPP-13 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/cfaabf40-e1e2-4c9c-986b-dedb069e5228.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-1 DPP-14 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/34d80ce4-8955-4fb0-bea8-07cce39f2317.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-1 DPP-15 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/017924cf-d77f-431e-8bf2-8cf7f0d71697.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-1 DPP-16 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/99395f9c-9c96-48a1-8cfa-2d3f221a0a89.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-2 ONE SHOT NOTES | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/36439ad2-7994-4efc-a7ea-819b7077cbd7.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-2 Combined DPP Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/ac4cb92e-787c-4afe-992e-b440f8b67953.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-2 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/08b4fcd6-841b-442f-8237-c8d56223eace.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-2 DPP-1 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/74c57572-34ba-414c-ae20-f7a2ab2f938b.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-2 DPP 2 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/12bdad19-4f2f-450f-a474-11b261abe6bd.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-2 DPP 3 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/91d24c50-7d56-4525-ae66-793f6820d5c2.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-2 DPP 6 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/6b2fe0b2-aa19-4310-8584-7c3cf83cd7ae.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-2 DPP 7 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/0b551dec-e9cd-4f2a-a819-c26382febe59.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-2 DPP 8 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/d7139ec0-c2c4-4596-a5db-9af59883d24c.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-2 DPP 9 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/0f675322-3060-4e2d-a621-073fb5feb93b.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-3 ONE SHOT FINAL NOTES | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/332dce8a-21ba-4b07-937b-d8f4b0dd7d62.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-3 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/100a243a-b842-4697-ba81-629308d65e65.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-3 DPP 2 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/cbcc8dd1-1095-4a6a-a58c-20d09ad61199.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-3 DPP 3 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/b50a54de-8802-494d-bbdd-2dcfd09da50a.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-3 DPP 4 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/10213830-847d-41a8-867e-601afe313415.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-3 DPP 5 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/96d76a79-0769-4ec6-994d-f1bad1adb86b.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-3 DPP 6 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/fad0a510-1c9f-409b-8a41-e78a58a23510.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-4 ONE SHOT NOTES | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/fca6178e-7477-4b51-bc36-9db93bb6d33d.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-4 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/466a37dd-577b-4313-b828-d2e676b6df82.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-4 Combined DPP Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/bded5cfe-69e1-487e-b8e9-0b8cc3d4eea8.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | PYQs | DSTL-Unit-4 (5 Year PYQs) | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/cdb43340-89d1-45c0-ac02-d749f0bd644c.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-4 DPP-1 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/186e2c39-fb58-4a34-b503-adaea6cd086e.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-4 DPP-2 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/dbb58d39-424f-46ee-be09-d13f5ac1276b.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-4 DPP-3 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/b4b9fd3f-8e43-42a3-b1b7-50e32c4e696f.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-4 DPP-4  Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/90deb3b4-ae0c-4709-a1df-36ebcdaaf749.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-4 DPP-5  Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/e2797009-71e6-4f8d-8a75-b4d8670a5e98.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-4 DPP-6 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/f36b8a4b-92e4-4282-8e13-02d05b827691.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-4 DPP-7  Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/bb7745db-db77-4dff-ae19-1ac4964bcadc.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-4 DPP-8 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/0b8a26f0-c568-4ccd-90f2-94e5e71e1867.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-4 DPP-9 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/189d507f-49f6-4257-a94b-f1d81557f465.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-4 DPP-10 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/6f69a7eb-6a26-480f-9be2-b9ef486e0ba1.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-4 DPP-11 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/99bff5d9-094b-43ca-a897-d46fd1616808.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-4 DPP-12 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/9698ccf3-b885-48bb-9a0b-675b1f7f9338.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-5 ONE SHOT NOTES | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/f0137fba-917d-4385-97b4-82ccc2a78b40.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-5 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/5c294b16-8204-4809-a66c-d711f8d41d7c.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | PYQs | DSTL-Unit-5 (5 Year PYQs) | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/54fa2391-6c25-4341-bc8b-71a0e0c2fa0c.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-5 DPP-1 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/48b8ddf9-5687-4921-8f8d-f76124d2e1f8.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-5 DPP-2  Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/cae04cd4-9037-4f20-85b9-14bf7107d9f3.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-5 DPP-3  Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/ed785cb4-8c82-4590-ab83-bff8b505eaca.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-5 DPP-4  Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/7bb6d1a4-cae6-48d5-afdc-f1df593a5c0a.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-5 DPP-5 Sol | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/934f6552-1013-46d9-a9f1-ac326c47cfa0.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-1  Hand Written Notes | https://cdn-wl-assets.classplus.co/production/436362/cac5321a-aae7-486f-9ce0-a371cd2c5ab6.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-2  Hand Written Notes | https://cdn-wl-assets.classplus.co/production/436362/304f9477-566c-436a-8b95-59e8302987df.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-3  Hand Written Notes | https://cdn-wl-assets.classplus.co/production/436362/849963c5-9d28-443d-b393-5c797e25b6b0.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-1 ONE SHOT NOTES | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/284a9303-5c3f-45ef-bd10-b69ece5bcc84.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-2 ONE SHOT NOTES | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/36439ad2-7994-4efc-a7ea-819b7077cbd7.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-3 ONE SHOT FINAL NOTES | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/332dce8a-21ba-4b07-937b-d8f4b0dd7d62.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-4 ONE SHOT NOTES | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/fca6178e-7477-4b51-bc36-9db93bb6d33d.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Notes | DSTL U-5 ONE SHOT NOTES | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/f0137fba-917d-4385-97b4-82ccc2a78b40.pdf
+CSE | 3 | Discrete Structures & Theory of Logic (DSTL) | Quantum | DSTL Most Important Topics.pdf | https://cdn-wl-assets.classplus.co/production/436362/33c34587-e326-4fc5-afc4-ed33eff2c4e5.pdf
+CSE | 3 | Python Programming | Syllabus | Python Syllabus Introduction | https://cdn-wl-assets.classplus.co/production/436362/39e9cd73-0176-481d-86b6-c2e04ef4b69f.pdf
+CSE | 3 | Python Programming | Notes | Python U-1 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/e72e9267-ff22-47d4-b8cd-002ed0b1f1d0.pdf
+CSE | 3 | Python Programming | Notes | Python U-1 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/a03dd794-ce74-4f22-8d86-60801fb9f117.pdf
+CSE | 3 | Python Programming | Notes | Python U-2 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/aef0fce4-08c4-48db-b5b9-d84219d94b5f.pdf
+CSE | 3 | Python Programming | Notes | Pyhton U-2 One Shot Notes | https://cdn-wl-assets.classplus.co/production/436362/9a8c33dc-c81e-420f-9e39-f0e763b87f20.pdf
+CSE | 3 | Python Programming | Notes | Python U-3 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/8acf71f7-e5ab-45ef-9375-a15616a0bf9f.pdf
+CSE | 3 | Python Programming | Notes | Python U- 3 ONE SHOT  Notes | https://cdn-wl-assets.classplus.co/production/436362/500ad2e2-8245-485f-ba19-be6fc07f0e23.pdf
+CSE | 3 | Python Programming | Notes | Python U-3 ONE SHOT P-2 Notes | https://cdn-wl-assets.classplus.co/production/436362/6b43fba7-9079-478e-88fa-80a77e4e3e27.pdf
+CSE | 3 | Python Programming | Notes | Python U-4 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/364ccc6f-00cf-4343-b030-a14f32e530ae.pdf
+CSE | 3 | Python Programming | Notes | Python U-4 One Shot Notes | https://cdn-wl-assets.classplus.co/production/436362/930c83e0-8655-481e-813a-1eac27c9f5e3.pdf
+CSE | 3 | Python Programming | Notes | Python U-1 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/8ac96985-d555-4125-8e6d-a13d98d65fb3.pdf
+CSE | 3 | Python Programming | Notes | Python U-2 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/dffb9609-9798-41d2-a4a9-956711694c62.pdf
+CSE | 3 | Python Programming | Notes | Python U-3 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/29472eff-d782-402b-bfb1-bf0b35f9bcbf.pdf
+CSE | 3 | Python Programming | Notes | Python U-4 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/c6ae1452-462b-4c8c-81a5-f2a6172ed368.pdf
+CSE | 3 | Python Programming | Notes | Python U-5 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/6da87dc5-4462-4a27-b209-284e26176b10.pdf
+CSE | 3 | Python Programming | Notes | Python U-1 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/b8d461ed-5b5e-4216-abca-7459982cba52.pdf
+CSE | 3 | Python Programming | Notes | Python U-2 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/6807f161-f243-47e3-a4d7-06823b4965a4.pdf
+CSE | 3 | Python Programming | Notes | Python U-3 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/c1e65fae-4e11-4a08-89c5-b89c793e58d0.pdf
+CSE | 3 | Python Programming | Notes | Python U-3 Part-1/3 Notes | https://cdn-wl-assets.classplus.co/production/436362/ea95629a-0341-4c24-a6e1-430c311da7a9.pdf
+CSE | 3 | Python Programming | Notes | Python U-3 Topics -String Notes | https://cdn-wl-assets.classplus.co/production/436362/1951adcc-03d4-4b27-bbb3-9c3ecd0e12eb.pdf
+CSE | 3 | Python Programming | Notes | Python U-3 Part-2/3 Notes | https://cdn-wl-assets.classplus.co/production/436362/33443d4f-984e-4629-8d5d-6f13333052fe.pdf
+CSE | 3 | Python Programming | Notes | Python U-3 Part-3/3 Notes | https://cdn-wl-assets.classplus.co/production/436362/43a7a850-cce3-42e0-8255-64cd307a95e0.pdf
+CSE | 3 | Python Programming | Notes | Python U-4 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/79bdf22a-f11f-4049-b82e-8f7d57171324.pdf
+CSE | 3 | Python Programming | Notes | Python U-5 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/f1056480-d8a5-4220-831b-d25e5fbdf916.pdf
+CSE | 3 | Python Programming | Notes | Python U-1 Hand Written Notes | https://cdn-wl-assets.classplus.co/production/436362/9ef428c8-3ff5-4949-a407-735abb84f46f.pdf
+CSE | 3 | Python Programming | Notes | Python U-2 Hand Written Notes | https://cdn-wl-assets.classplus.co/production/436362/da629914-f291-4567-903a-9f2cebdf07ab.pdf
+CSE | 3 | Python Programming | Notes | Python U-3 Hand Written Notes | https://cdn-wl-assets.classplus.co/production/436362/4a774095-d56f-455c-971d-f9214a1f557a.pdf
+CSE | 3 | Python Programming | Notes | Python U-4 Hand Written Notes | https://cdn-wl-assets.classplus.co/production/436362/207aea7f-c61e-4c34-9154-20cc399c7e18.pdf
+CSE | 3 | Python Programming | Notes | Python U-5 Hand Written Notes | https://cdn-wl-assets.classplus.co/production/436362/77a5bce7-c60d-4366-9742-00728ddeb66d.pdf
+CSE | 3 | Python Programming | Notes | PYTHON U-5 COMBINED NOTES | https://cdn-wl-assets.classplus.co/production/436362/3c171c17-dc2f-4d9a-a193-564d2f72c5f3.pdf
+CSE | 3 | Python Programming | Notes | Python U-1 One Shot Notes | https://cdn-wl-assets.classplus.co/production/436362/ff8e3349-a005-447d-b062-b2399199a3d6.pdf
+CSE | 3 | Python Programming | Notes | Python  U-2 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/0804a936-b4db-4762-8393-eeaf5a5736db.pdf
+CSE | 3 | Python Programming | Notes | Python U-3 One Shot Notes | https://cdn-wl-assets.classplus.co/production/436362/946eae7e-8db6-475a-ad6f-67cee6680b2c.pdf
+CSE | 3 | Python Programming | Notes | Python U-4  One Shot Notes | https://cdn-wl-assets.classplus.co/production/436362/965d1a20-67ab-49b2-9b63-97b66a6ffb11.pdf
+CSE | 3 | Python Programming | Notes | Python U-5 One Shot Notes | https://cdn-wl-assets.classplus.co/production/436362/e3d93b5c-4b3c-46e9-be6a-5ca6a19034fe.pdf
+CSE | 3 | Python Programming | Notes | Python 2023-24 Odd Sem.pdf | https://ali-cdn-wl-assets.classplus.co/production/436362/c9c87c7c-98e2-4c36-b9c8-303fc8f8d635.pdf
+CSE | 3 | Python Programming | Notes | Solution Python 2023-24 Odd Sem.pdf | https://ali-cdn-wl-assets.classplus.co/production/436362/45b739ad-6a06-4c1d-b4df-e1a19a6e41ec.pdf
+CSE | 3 | Cyber Security | Notes | Cyber security U-1 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/31fc4b73-7ca9-4657-86d5-3e2b13bfa5ee.pdf
+CSE | 3 | Cyber Security | Notes | Cyber Security U-2 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/2a984ee0-d673-4292-8b62-de126ead4dc0.pdf
+CSE | 3 | Cyber Security | Notes | Cyber Security U-3 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/6d0af637-c89e-4243-85a5-933f778d0cf8.pdf
+CSE | 3 | Cyber Security | Notes | Cyber Security  Unit-1 Notes | https://cdn-wl-assets.classplus.co/production/436362/a558db62-7ef3-4f82-913f-e0679b14f932.pdf
+CSE | 3 | Cyber Security | Notes | Cyber Security  Unit-2 Notes | https://cdn-wl-assets.classplus.co/production/436362/7e315b4f-4390-463b-b2fa-8b10663c70ed.pdf
+CSE | 3 | Cyber Security | Notes | Cyber Security  Unit-3 Notes | https://cdn-wl-assets.classplus.co/production/436362/0734de8a-bb62-4528-9b01-10c7464a34f6.pdf
+CSE | 3 | Cyber Security | Notes | Cyber Security  Unit-4 Notes | https://cdn-wl-assets.classplus.co/production/436362/16e6cb20-83e2-4616-b545-4b26424a4001.pdf
+CSE | 3 | Cyber Security | Notes | Cyber Security  Unit-5 Notes | https://cdn-wl-assets.classplus.co/production/436362/cb1bfa8f-45e9-4738-ad1d-8fd3db330591.pdf
+CSE | 3 | Universal Human Values (UHVPE) | Notes | Human Value U-1 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/f73da975-bd50-4624-bf1e-bb9773fe0ecd.pdf
+CSE | 3 | Universal Human Values (UHVPE) | Notes | Human Value U-2 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/50d125d3-af87-4cd7-b9d8-b290230dcd80.pdf
+CSE | 3 | Universal Human Values (UHVPE) | Notes | Human Value U-3 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/90242a68-f80c-4730-9471-8df0a53816a0.pdf
+CSE | 3 | Universal Human Values (UHVPE) | Notes | Human Value U-4 One Shot Notes | https://cdn-wl-assets.classplus.co/production/436362/6c557a08-e34d-47cd-baf7-336b57d8ba09.pdf
+CSE | 3 | Universal Human Values (UHVPE) | Notes | Human Value U-5 One Shot Notes | https://cdn-wl-assets.classplus.co/production/436362/2edd0efc-77d6-4d8f-9508-65bfe4532416.pdf
+CSE | 3 | Universal Human Values (UHVPE) | Quantum | Human Values- Most Important Questions | https://cdn-wl-assets.classplus.co/production/436362/b662bd7a-3602-4d09-a6b6-e24ce3c48ff4.pdf
+CSE | 3 | Universal Human Values (UHVPE) | Notes | UHVPE U-1 Hand Written Notes | https://cdn-wl-assets.classplus.co/production/436362/17e43686-0e0f-446b-baab-d2168bf6d574.pdf
+CSE | 3 | Universal Human Values (UHVPE) | Notes | UHVPE U-1 Complete Notes by Sachin Kumar Mittal Sir | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/7042cb4d-27df-4651-94c5-c3aee7e0f3e9.pdf
+CSE | 3 | Universal Human Values (UHVPE) | Notes | HV U-2 Complete Notes | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/059b4aff-9171-4e00-ae4d-d3cb3dfa1627.pdf
+CSE | 3 | Universal Human Values (UHVPE) | Notes | UHVPE U-3 Combined Notes | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/70c41318-95d6-4021-96a8-216f91b6fea6.pdf
+CSE | 3 | Universal Human Values (UHVPE) | Notes | Human Values U-4 Combined Notes | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/ae8bc26d-3a80-4113-8882-2a00a6bc66b1.pdf
+CSE | 3 | Universal Human Values (UHVPE) | Notes | Human Values U-5 Combined Notes | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/525f923e-b46b-45a3-9cbd-5559ba4e483d.pdf
+CSE | 3 | Technical Communication | Quantum | Technical Comm. IMP. Questions.pdf | https://cdn-wl-assets.classplus.co/production/436362/c33e4705-107d-4578-9064-cdef579895a2.pdf
+CSE | 3 | Technical Communication | Notes | TC U-1 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/97f6e7f6-343c-4ff0-88d3-4b5b451bf2bd.pdf
+CSE | 3 | Technical Communication | Notes | TC U-2 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/d864f452-cda0-4967-8e7e-5d7f3b6a20f0.pdf
+CSE | 3 | Technical Communication | Notes | TC U-3 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/c1077333-27e3-49d5-8268-414a090e9f66.pdf
+CSE | 3 | Technical Communication | Notes | TC U-4 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/02711f36-3d58-4171-938e-9b3f62288e8b.pdf
+CSE | 3 | Technical Communication | Notes | TC U-5 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/789e233a-d14f-44f8-928a-bab0376c8261.pdf
+CSE | 3 | Technical Communication | Notes | TC U-1 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/97f6e7f6-343c-4ff0-88d3-4b5b451bf2bd.pdf
+CSE | 3 | Technical Communication | Quantum | Technical Comm. IMP. Questions.pdf | https://cdn-wl-assets.classplus.co/production/436362/c33e4705-107d-4578-9064-cdef579895a2.pdf
+CSE | 3 | Technical Communication | Notes | TC Unit-1 Combined Notes | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/5df48fb9-ce2c-4d7b-b96a-ee774ed6fc82.pdf
+CSE | 3 | Technical Communication | Notes | TC U-2 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/d864f452-cda0-4967-8e7e-5d7f3b6a20f0.pdf
+CSE | 3 | Technical Communication | Notes | TC UNIT-2 Combined Notes(HandOuts) | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/2bf74d7f-0273-40dc-be03-f3f067c243d3.pdf
+CSE | 3 | Technical Communication | Notes | TC UNIT-2 Combined Notes | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/02ca8ecd-4cc9-4dd0-8ceb-d21eb2219a19.pdf
+CSE | 3 | Technical Communication | Notes | TC U-3 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/c1077333-27e3-49d5-8268-414a090e9f66.pdf
+CSE | 3 | Technical Communication | Notes | TC Unit-3 Combined Notes | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/7d0bc435-943c-4ca4-9fab-5d148563fd0f.pdf
+CSE | 3 | Technical Communication | Notes | TC U-4 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/02711f36-3d58-4171-938e-9b3f62288e8b.pdf
+CSE | 3 | Technical Communication | Notes | TC U-4 Combined Notes | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/79973806-eebe-4d32-bc19-a387a99ac28d.pdf
+CSE | 3 | Technical Communication | Notes | TC U-5 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/789e233a-d14f-44f8-928a-bab0376c8261.pdf
+CSE | 3 | Technical Communication | Notes | TC UNIT-5 Combined Notes | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/ee44d749-f81a-4abd-b642-5f0287392104.pdf
+CSE | 3 | Technical Communication | Quantum | Technical Comm. IMP. Questions.pdf | https://cdn-wl-assets.classplus.co/production/436362/648f981b-cda1-470a-913d-fd52ad3400d4.pdf
+CSE | 3 | Technical Communication | Quantum | TC IMP.QUESTIONS PDF | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/ee88d8f9-2c5e-4b1a-8d77-effb6f305a5d.pdf
+CSE | 4 | Operating Systems | Notes | OS U-1 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/4b4b4b87-582c-4bae-af38-a96e52c3dd60.pdf
+CSE | 4 | Operating Systems | Notes | OS U-1 One Shot Notes | https://cdn-wl-assets.classplus.co/production/436362/4736ef38-f530-42ff-8d60-378d0216de4e.pdf
+CSE | 4 | Operating Systems | Notes | OS U-2 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/3636afe5-590e-46d4-a261-f24bcfd6a0bc.pdf
+CSE | 4 | Operating Systems | Notes | OS U-2 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/a58ae4ca-6aa9-488d-acb8-812e4ee4c882.pdf
+CSE | 4 | Operating Systems | Notes | OS U-3 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/2b22110d-933d-4ac0-aa9f-2c64e1ebbf15.pdf
+CSE | 4 | Operating Systems | Notes | OS U-3 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/7e6ab734-726a-4e14-a93a-0e147f2c5311.pdf
+CSE | 4 | Operating Systems | Notes | OS U-4 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/fe1784e9-3fdd-41d9-a199-7d4c894eb56d.pdf
+CSE | 4 | Operating Systems | Notes | OS U-5 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/0ecabff5-924b-4a5c-b6fa-8c4e3b0e64ec.pdf
+CSE | 4 | Theory of Automata and Formal Languages (TAFL) | Notes | TAFL U-1 One Shot Notes | https://cdn-wl-assets.classplus.co/production/436362/69c42551-92f3-4dc6-a1ab-f021da3bdb2d.pdf
+CSE | 4 | Theory of Automata and Formal Languages (TAFL) | Notes | TAFL Unit-2 One Shot Notes | https://cdn-wl-assets.classplus.co/production/436362/8991c630-5419-433c-9473-f67917b96862.pdf
+CSE | 4 | Theory of Automata and Formal Languages (TAFL) | Notes | TAFL Unit-3 One Shot Notes | https://cdn-wl-assets.classplus.co/production/436362/12aaacf7-e3a9-42f1-96a2-5423ac0210b4.pdf
+CSE | 4 | Theory of Automata and Formal Languages (TAFL) | Notes | TAFL U-4 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/6335d169-38c8-4d06-b147-6c5efb1cfbb3.pdf
+CSE | 4 | Theory of Automata and Formal Languages (TAFL) | Notes | TAFL U-5 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/d434de52-cd95-4ebc-b1a3-9109f64e3965.pdf
+CSE | 4 | Theory of Automata and Formal Languages (TAFL) | Notes | TAFL U-1 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/669c7b18-7f62-4f1d-bc53-c6fb16069092.pdf
+CSE | 4 | Theory of Automata and Formal Languages (TAFL) | Notes | TAFL U-2 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/1e1ddbed-ded4-4be0-9b9b-bb1e59106d9c.pdf
+CSE | 4 | Theory of Automata and Formal Languages (TAFL) | Notes | TAFL U-3 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/4e916a44-f76e-4728-9f6f-adda353319f7.pdf
+CSE | 4 | Theory of Automata and Formal Languages (TAFL) | Notes | TAFL U-4 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/060f8ba8-38aa-4e3c-bea2-ff889f208ef3.pdf
+CSE | 4 | Theory of Automata and Formal Languages (TAFL) | Notes | TAFL U-5 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/b093b2b5-20d9-4a7d-a624-9f1a1541a2a4.pdf
+CSE | 4 | Theory of Automata and Formal Languages (TAFL) | Notes | TAFL U-1 Combined Notes | https://ali-cdn-wl-assets.classplus.co/production/436362/66c17bda-3a23-4654-868c-a3b876c3445b.pdf
+CSE | 4 | Theory of Automata and Formal Languages (TAFL) | Notes | TAFL U-2 Combined Notes | https://ali-cdn-wl-assets.classplus.co/production/436362/1f65d406-3dc0-44d4-8495-614f80758f12.pdf
+CSE | 4 | Theory of Automata and Formal Languages (TAFL) | Notes | TAFL U-3 Combined Notes | https://ali-cdn-wl-assets.classplus.co/production/436362/967872c8-c7ed-44f8-9987-f2631dfdb6a2.pdf
+CSE | 4 | Theory of Automata and Formal Languages (TAFL) | Notes | TAFL U-4 Combined Notes | https://ali-cdn-wl-assets.classplus.co/production/436362/cb641e34-e73c-4e85-aedd-cf60cbd7c227.pdf
+CSE | 4 | Theory of Automata and Formal Languages (TAFL) | Notes | TAFL U-5 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/51485848-67ac-4665-b16d-c97c7b18b7a9.pdf
+CSE | 4 | Theory of Automata and Formal Languages (TAFL) | Notes | TAFL U-1 One Shot Notes | https://cdn-wl-assets.classplus.co/production/436362/7fbe3a9e-f737-471c-aa6a-3d86962eab6b.pdf
+CSE | 4 | Theory of Automata and Formal Languages (TAFL) | Notes | TAFL UNIT-2 One Shot Notes | https://cdn-wl-assets.classplus.co/production/436362/4a77af2f-e678-46c1-bf49-dd3d7b34d06a.pdf
+CSE | 4 | Theory of Automata and Formal Languages (TAFL) | Notes | TAFL UNIT-3 One Shot Notes | https://cdn-wl-assets.classplus.co/production/436362/60675f0e-6a7c-4ad9-a3d5-134673f31cf9.pdf
+CSE | 4 | Theory of Automata and Formal Languages (TAFL) | Notes | TAFL UNIT-4 One Shot Notes | https://cdn-wl-assets.classplus.co/production/436362/febff503-7f42-4716-a2d0-dbe1cd5f5237.pdf
+CSE | 4 | Theory of Automata and Formal Languages (TAFL) | Notes | TAFL UNIT-5 One Shot Notes | https://cdn-wl-assets.classplus.co/production/436362/d1aed204-d66e-4d66-b27b-f57e6d369a47.pdf
+CSE | 4 | OOP with Java | Notes | Java Introduction pdf | https://cdn-wl-assets.classplus.co/production/436362/7e4114dc-2fd0-4a74-88ff-66582e2b75e8.pdf
+CSE | 4 | OOP with Java | Notes | Unit I - PRACTICE QUESTIONS.pdf | https://cdn-wl-assets.classplus.co/production/436362/99fb3e06-25ce-4f62-aa95-0384b6896f92.pdf
+CSE | 4 | OOP with Java | Notes | Java U-1 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/fe123f41-dea7-4148-93a0-fbd88c8c6a7f.pdf
+CSE | 4 | OOP with Java | Notes | Java U-1 Unmarked Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/b0766eb5-4899-4841-b403-ab00e1fe83b5.pdf
+CSE | 4 | OOP with Java | Notes | Java U-2 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/4dbc995f-bf5d-4d35-b515-17b732bfb0f0.pdf
+CSE | 4 | OOP with Java | Notes | Java U-2 Unmarked Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/139c7556-c9c3-409c-bcfa-a06df5709f85.pdf
+CSE | 4 | OOP with Java | Notes | JAVA UNIT-2 ONE SHOT NOTES | https://cdn-wl-assets.classplus.co/production/436362/cb94e7e6-97ba-40c8-99d6-763c30a9c524.pdf
+CSE | 4 | OOP with Java | Notes | Java U-3 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/65e3a719-ff80-4949-8fb1-626f11a55ca9.pdf
+CSE | 4 | OOP with Java | Notes | Java U-3 Unmarked Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/b8730099-aad6-4d60-9197-303dd005c577.pdf
+CSE | 4 | OOP with Java | Notes | JAVA UNIT-3 ONE SHOT NOTES | https://cdn-wl-assets.classplus.co/production/436362/f3d5baa0-52b6-4215-83b7-9bd78e9e6773.pdf
+CSE | 4 | OOP with Java | Notes | Java U-4 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/bedea482-21da-4d81-b4bd-fd9c940dbdbe.pdf
+CSE | 4 | OOP with Java | Notes | Java U-4 Unmarked Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/e5afcfb6-e196-4d75-bdfe-d5fbda6adccc.pdf
+CSE | 4 | OOP with Java | Notes | Java U-4 U-4 One Shot Notes | https://cdn-wl-assets.classplus.co/production/436362/c20be7a1-8303-4ea6-a4c3-cf676b5dfcff.pdf
+CSE | 4 | OOP with Java | Notes | Java Unit-5 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/5ed66b17-c260-4ec6-a8a1-9847d464e791.pdf
+CSE | 4 | OOP with Java | Notes | JAVA UNIT-2 ONE SHOT NOTES | https://cdn-wl-assets.classplus.co/production/436362/cb94e7e6-97ba-40c8-99d6-763c30a9c524.pdf
+CSE | 4 | OOP with Java | Notes | JAVA UNIT-3 ONE SHOT NOTES | https://cdn-wl-assets.classplus.co/production/436362/f3d5baa0-52b6-4215-83b7-9bd78e9e6773.pdf
+CSE | 4 | OOP with Java | Notes | JAVA UNIT-4 ONE SHOT NOTES | https://cdn-wl-assets.classplus.co/production/436362/c20be7a1-8303-4ea6-a4c3-cf676b5dfcff.pdf
+CSE | 4 | OOP with Java | Notes | JAVA UNIT-5 ONE SHOT NOTES | https://cdn-wl-assets.classplus.co/production/436362/5ed66b17-c260-4ec6-a8a1-9847d464e791.pdf
+CSE | 4 | OOP with Java | Notes | JAVA U-1 Combined Notes | https://ali-cdn-wl-assets.classplus.co/production/436362/0985e6bf-d1af-4805-9f69-e1f3cd1761db.pdf
+CSE | 4 | OOP with Java | Notes | Java Unit-1 Notes | https://ali-cdn-wl-assets.classplus.co/production/436362/2c41af73-49e5-465f-859e-6393591bfe11.pdf
+CSE | 4 | OOP with Java | Notes | JAVA U-2 Combined Notes | https://ali-cdn-wl-assets.classplus.co/production/436362/1bfd18fd-29c9-48db-a6de-8a6289df83bd.pdf
+CSE | 4 | OOP with Java | Notes | Java Unit-2 Notes | https://ali-cdn-wl-assets.classplus.co/production/436362/9291a4ab-7c2a-4078-822c-28e2ddb04ed8.pdf
+CSE | 4 | OOP with Java | Notes | Java U-5 Notes.pdf | https://ali-cdn-wl-assets.classplus.co/production/436362/ea32b45c-3e47-4269-95ce-a6d386dc135e.pdf
+CSE | 4 | OOP with Java | Notes | Java Unit-1 One Shot Notes | https://ali-cdn-wl-assets.classplus.co/production/436362/1110bfa7-2237-4ac6-978c-58b12f385f3c.pdf
+CSE | 4 | OOP with Java | Notes | Java U-2 One Shot Notes | https://ali-cdn-wl-assets.classplus.co/production/436362/1382a5a8-05fa-496a-b34e-ebc0b9c62761.pdf
+CSE | 4 | OOP with Java | Notes | Java U-3 One Shot Notes | https://ali-cdn-wl-assets.classplus.co/production/436362/84466fd9-21f7-4ccf-aad5-92568d09edfe.pdf
+CSE | 4 | OOP with Java | Notes | Java U-4 One Shot Notes | https://cdn-wl-assets.classplus.co/production/436362/ea71a446-2be9-4cee-9d6a-fe234b1073cc.pdf
+CSE | 4 | OOP with Java | Notes | Java U-5 One Shot Notes | https://cdn-wl-assets.classplus.co/production/436362/c455f937-315b-4a60-90a0-2bdb5137c5e0.pdf
+CSE | 4 | Digital System Design (DSD) | Notes | DSD U-1 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/472cfb2e-dc6d-4365-8cd6-bf11570a11d6.pdf
+CSE | 4 | Digital System Design (DSD) | Notes | DSD U-1 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/159ec5d0-d17c-4cce-abd6-f6743fd14123.pdf
+CSE | 4 | Digital System Design (DSD) | Notes | DSD U-2 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/527275cc-9dc3-4acd-aa03-9f11f8b71919.pdf
+CSE | 4 | Digital System Design (DSD) | Notes | DSD U-3 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/076b0612-aef0-4c00-93a4-2cbc23f4fd50.pdf
+CSE | 4 | Digital System Design (DSD) | Notes | DSD U-4 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/a0f9f8dc-641b-4d1d-a041-3c8b164fb79f.pdf
+CSE | 4 | Digital System Design (DSD) | Notes | DSD U-5 One Shot Notes | https://cdn-wl-assets.classplus.co/production/436362/2b08d854-6a4a-42ad-bd1d-b2960eb4dcc7.pdf
+CSE | 4 | Digital System Design (DSD) | Quantum | DSD Most Imp.Questions | https://cdn-wl-assets.classplus.co/production/436362/e42d1371-295e-4170-b6ff-7839d8a9113d.pdf
+CSE | 4 | Network Analysis & Synthesis (NAS) | Notes | NAS U-1 ONE SHOT  Notes | https://cdn-wl-assets.classplus.co/production/436362/030e853e-d095-4594-b2ff-1fc0ff3d733e.pdf
+CSE | 4 | Network Analysis & Synthesis (NAS) | Notes | NAS U-2 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/059cbb0f-fa67-4500-850b-48a020794a7c.pdf
+CSE | 4 | Network Analysis & Synthesis (NAS) | Notes | NAS U-2 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/f1b4211e-b4df-41bf-8e19-fd70836c9da5.pdf
+CSE | 4 | Network Analysis & Synthesis (NAS) | Notes | NAS U-3 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/f7ca7de2-a5bc-461d-a782-e71d51b586e1.pdf
+CSE | 4 | Network Analysis & Synthesis (NAS) | Notes | NAS U-4 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/2db52c9e-bb41-4023-a88d-89dea54126d6.pdf
+CSE | 4 | Network Analysis & Synthesis (NAS) | Notes | NAS U-5 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/2df15f75-47ad-44bc-bf08-19f230faf71d.pdf
+CSE | 4 | Network Analysis & Synthesis (NAS) | Notes | NAS U-1 Combined Notes | https://ali-cdn-wl-assets.classplus.co/production/436362/1af6e7b4-00b1-4aeb-8a4c-52440368397a.pdf
+CSE | 4 | Network Analysis & Synthesis (NAS) | Notes | NAS U-2  Combined Notes | https://ali-cdn-wl-assets.classplus.co/production/436362/3bebbed0-ef77-4aa4-afac-1892a710de7b.pdf
+CSE | 4 | Network Analysis & Synthesis (NAS) | Notes | NAS U-3  Combined Notes | https://ali-cdn-wl-assets.classplus.co/production/436362/8c941489-6e7e-4952-bcab-3f342d28bd7a.pdf
+CSE | 4 | Network Analysis & Synthesis (NAS) | Notes | NAS U-4 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/fdc270e5-687c-4fd7-aaee-8dae5da32735.pdf
+CSE | 4 | Network Analysis & Synthesis (NAS) | Syllabus | NAS Syll Introduction | https://cdn-wl-assets.classplus.co/production/436362/9788d44c-57f4-4bfd-85fb-23e844acc8b5.pdf
+CSE | 3 | Digital Electronics | Notes | DE U-1 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/5db76ee1-7034-40ed-8b92-bf30ff5608f9.pdf
+CSE | 3 | Digital Electronics | Notes | DE U-2 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/f2f710db-d33e-491e-b160-44819d8896a2.pdf
+CSE | 3 | Digital Electronics | Notes | DE U-3 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/a77e72f7-eed3-42b2-bbe7-3beedc4dc110.pdf
+CSE | 3 | Digital Electronics | Notes | DE U-4 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/f0115fbd-3183-4e81-947d-335c68807932.pdf
+CSE | 3 | Digital Electronics | Notes | DE U-5 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/9505b5e1-f5c2-4201-bd90-c8fc0bfb3afc.pdf
+CSE | 3 | Electronics Engineering | Notes | Electronics U-1 Hand written Notes | https://cdn-wl-assets.classplus.co/production/436362/f39b9d19-9282-46bc-940c-e391afe28323.pdf
+CSE | 3 | Electronics Engineering | Notes | Electronics U-2 Hand written Notes | https://cdn-wl-assets.classplus.co/production/436362/f1337300-3176-46f3-b175-549c53a376c6.pdf
+CSE | 3 | Electronics Engineering | Notes | Electronics U-3 Hand written Notes | https://cdn-wl-assets.classplus.co/production/436362/878792c6-ed90-4804-ba9d-b0774efcd099.pdf
+CSE | 3 | Electronics Engineering | Notes | Electronics U-4 Hand written Notes | https://cdn-wl-assets.classplus.co/production/436362/10844bb3-9b67-4f43-9e33-81ec98116060.pdf
+CSE | 3 | Electronics Engineering | Notes | Electronics U-5 Hand written Notes | https://cdn-wl-assets.classplus.co/production/436362/7b607af6-5b75-4560-b005-129ca5a592c4.pdf
+CSE | 3 | Electronics Engineering | Quantum | ELECTRONICS MOST IMP  QUESTIONS | https://cdn-wl-assets.classplus.co/production/436362/58cfb4b8-fd62-4f15-8085-c295930a4d0e.pdf
+CSE | 3 | Electronics Engineering | Notes | Electronics U-1 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/92996b3d-d9f9-405f-91b9-f3f3ebcfb0fd.pdf
+CSE | 3 | Electronics Engineering | Notes | Electronics U-1 P-1+P-2 One Shot Notes | https://cdn-wl-assets.classplus.co/production/436362/7cea5b96-687f-4206-8ffb-d776b8d3258b.pdf
+CSE | 3 | Electronics Engineering | Notes | Electronics U-2 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/5dd3ed59-812a-446c-aa03-03f43829fd94.pdf
+CSE | 3 | Electronics Engineering | Notes | Electronics U-2 P-1 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/6f4dcca5-51e6-4e6a-8c35-a6760583de11.pdf
+CSE | 3 | Electronics Engineering | Notes | Electronics U-2 P-2 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/3312082a-505d-4c58-bd01-2d88d055c14b.pdf
+CSE | 3 | Electronics Engineering | Notes | Electronics U-3 One Shot Notes | https://cdn-wl-assets.classplus.co/production/436362/cb58d5ed-96bd-4756-af99-fdebbff118ab.pdf
+CSE | 3 | Electronics Engineering | Notes | Electronics Unit-4 Notes by Gulshan Sir | https://cdn-wl-assets.classplus.co/production/436362/1eb3b161-c97c-4d66-9afb-ded8721ebf05.pdf
+CSE | 3 | Electronics Engineering | Notes | Electronics U-5 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/47450b9f-8293-4b36-9ca6-f7f3c563d1d5.pdf
+CSE | 4 | Laser Systems & Applications | Notes | LASER SYSTEM  U-1 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/aa06df5a-d336-4dfb-bf15-7bc6165ff719.pdf
+CSE | 4 | Laser Systems & Applications | Notes | LASER SYSTEM  U-2 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/a80adff5-a572-475f-9d9b-590db41b2913.pdf
+CSE | 4 | Laser Systems & Applications | Notes | LASER SYSTEM  U-3 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/595e697b-dcab-4627-a455-92ee66d245ef.pdf
+CSE | 4 | Laser Systems & Applications | Notes | LASER SYSTEM  U-4 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/5af7b191-eefd-4fbb-92c9-2d01e17d8e53.pdf
+CSE | 4 | Laser Systems & Applications | Notes | LASER SYSTEM  U-5 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/f03c1f3b-0d52-4b74-8ba6-23279a5c4b01.pdf
+CSE | 4 | Energy Science & Engineering | PYQs | Energy Science Important Ques and PYQs | https://cdn-wl-assets.classplus.co/production/436362/c06f5bef-ca75-4c48-90f0-c8e041134291.pdf
+CSE | 4 | Energy Science & Engineering | Notes | Energy Science Unit-1 One Shot ( P1+P2) Notes | https://cdn-wl-assets.classplus.co/production/436362/579884f1-c708-4a27-ab6c-2d78b6e856ec.pdf
+CSE | 4 | Energy Science & Engineering | Notes | Energy Science Unit-2 One Shot Notes.pdf | https://cdn-wl-assets.classplus.co/production/436362/9bf4cae2-02b6-4e51-8abc-aab289fac081.pdf
+CSE | 4 | Energy Science & Engineering | Notes | Energy Science Unit-3 One Shot Notes.pdf | https://cdn-wl-assets.classplus.co/production/436362/92fc0eb7-816f-453d-bd18-28f035dc3ee1.pdf
+CSE | 4 | Energy Science & Engineering | Notes | Energy Science Unit-4 One Shot Notes.pdf | https://cdn-wl-assets.classplus.co/production/436362/f81889f2-a2c0-4fa9-974e-6aae1a9925ac.pdf
+CSE | 4 | Energy Science & Engineering | Notes | Energy Science Unit-5 One Shot Notes.pdf | https://cdn-wl-assets.classplus.co/production/436362/c932e121-5fcb-4037-9605-262655e55f06.pdf
+CSE | 4 | Energy Science & Engineering | Notes | ES-Unit1-Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/8533962e-179b-4c7d-8e2c-c68a62fbb5a2.pdf
+CSE | 4 | Energy Science & Engineering | Notes | ES-Unit2-Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/f274ccd9-75c7-4af6-8db9-40fa0aca5af5.pdf
+CSE | 4 | Energy Science & Engineering | Notes | ES-Unit-3 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/92da5c43-2c69-4e56-bc40-15c458cf7d22.pdf
+CSE | 4 | Energy Science & Engineering | Notes | ES Unit-4 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/c2cc6ef6-e2dc-46c2-af0c-aaa65fe9618a.pdf
+CSE | 4 | Energy Science & Engineering | Notes | ES Unit-5 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/56dd4cb8-9e04-410f-ad77-6f0c42957928.pdf
+CSE | 4 | Analog Circuits | Notes | Analog U-1 Combined Notes | https://ali-cdn-wl-assets.classplus.co/production/436362/97efaa0b-13c3-4f79-a850-5e83618efa7e.pdf
+CSE | 4 | Analog Circuits | Notes | Analog U-2 Combined Notes | https://ali-cdn-wl-assets.classplus.co/production/436362/e128e454-95d0-4506-a640-9db914c22e06.pdf
+CSE | 4 | Analog Circuits | Notes | Analog U-3 Combined Notes | https://ali-cdn-wl-assets.classplus.co/production/436362/1ea51063-55e0-47da-8032-8ad83bb28fe3.pdf
+CSE | 4 | Analog Circuits | Notes | Analog U-4 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/8d076073-5f11-4614-bdf5-b4b3fd7a2e06.pdf
+CSE | 4 | Analog Circuits | Notes | Analog U-5 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/1b2d33d4-f72d-4f89-9e84-101d95871240.pdf
+CSE | 4 | Analog Circuits | Notes | Analog Circuit U-1 One Shot Notes | https://cdn-wl-assets.classplus.co/production/436362/e6533308-96f1-47fe-b3fe-a2a02499e14e.pdf
+CSE | 4 | Analog Circuits | Notes | Analog Circuit U-3 One Shot Notes | https://cdn-wl-assets.classplus.co/production/436362/6b4c8890-f987-4c6b-8c59-f1522660afbe.pdf
+CSE | 4 | Analog Circuits | Notes | Analog Circuit U-4 One Shot Notes | https://cdn-wl-assets.classplus.co/production/436362/cd4ee983-0b6b-4f62-b19a-fa467ce1f7a1.pdf
+CSE | 4 | Analog Circuits | Notes | Analog Circuit  U-5 One Shot Notes | https://cdn-wl-assets.classplus.co/production/436362/75eb7b38-9bf9-4b01-89a4-19d970fff916.pdf
+CSE | 4 | Analog Circuits | Syllabus | EC IV-SEM SYLLABUS and Course Details | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/6819f551-156d-423a-b9a0-3784289ae43f.pdf
+CSE | 4 | Analog Circuits | Syllabus | Analog  Circuit  Syll  Intro | https://ali-cdn-wl-assets.classplus.co/production/single/mvxiz/d65a8f13-0a4a-41bd-8ea9-1f4d5aa7285c.pdf
+CSE | 4 | Analog Circuits | Quantum | Analog Circuit Question Bank.pdf | https://cdn-wl-assets.classplus.co/production/436362/7ca0ae3e-91ba-4e78-ab7f-4f23cd7a002d.pdf
+CSE | 4 | Material Science | Notes | Material Science U-1 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/9b0e58af-ae0c-455c-b846-5bf05a5da09d.pdf
+CSE | 4 | Material Science | Notes | Material Science U-2 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/04719feb-4235-4f6a-b265-67a496f9c4f1.pdf
+CSE | 4 | Material Science | Notes | Material Science U-3 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/a1e89dee-baf9-456d-aa23-e080b0283228.pdf
+ECE | 5 | General Syllabus | Syllabus | (Content) ECE 3rd Year Syllabus 2024-25 | https://cdn-wl-assets.classplus.co/production/436362/9bfed543-1066-4040-a4b6-c54ed3286038.pdf
+ECE | 5 | Integrated Circuits (IC) | PYQs | (AKTU PYQS (B Code)) BEC501-INTEGRATED-CIRCUITS (1).pdf | https://cdn-wl-assets.classplus.co/production/436362/ca871875-754a-464a-9e95-a38355bdefb2.pdf
+ECE | 5 | Microprocessor & Microcontroller (MM) | PYQs | (AKTU PYQS (B Code)) BEC502-MICROPROCESSOR-MICROCONTROLLER PYQs.pdf | https://cdn-wl-assets.classplus.co/production/436362/6ec7b0c1-857e-4fba-af41-511b06fc6d4c.pdf
+ECE | 5 | Digital Signal Processing (DSP) | PYQs | (AKTU PYQS (B Code)) BEC503-DIGITAL-SIGNAL-PROCESSING.pdf | https://cdn-wl-assets.classplus.co/production/436362/3ece0592-8725-4af6-8d55-de87df8ffedc.pdf
+ECE | 6 | Digital Communication | PYQs | (AKTU PYQS (B Code)) BEC601-DIGITAL-COMMUNICATION-PYQs.pdf | https://cdn-wl-assets.classplus.co/production/436362/4e9171f3-1b7f-4a20-8781-bc00a8bdfb53.pdf
+ECE | 6 | Control System | PYQs | (AKTU PYQS (B Code)) BEC602-CONTROL-SYSTEM-PYQs.pdf | https://cdn-wl-assets.classplus.co/production/436362/58b0232a-e1bc-4317-a634-686d12079e3e.pdf
+ECE | 6 | Antenna & Wave Propagation | PYQs | (AKTU PYQS (B Code)) BEC603-ANTENNA-AND-WAVE-PROPAGATION-PYQs.pdf | https://cdn-wl-assets.classplus.co/production/436362/604982ca-768e-49b9-ab80-2a35345c3063.pdf
+ECE | 6 | Constitution of India (COI) | PYQs | (AKTU PYQS (B Code)) BNC601-CONSTITUTION-OF-INDIA-PYQs.pdf | https://cdn-wl-assets.classplus.co/production/436362/e9e35be2-20aa-4997-857d-5dce05fa9cd8.pdf
+ECE | 6 | Essence of Indian Traditional Knowledge (EITK) | PYQs | (AKTU PYQS (B Code)) BNC602-ESSENCE-OF-INDIAN-TRADITIONAL-KNOWLEDGE-PYQs.pdf | https://cdn-wl-assets.classplus.co/production/436362/89018756-da93-4399-bb12-fe54961521ee.pdf
+ECE | 5 | VLSI Technology | PYQs | (AKTU PYQS (B Code)) BEC054-VLSI TECHNOLOGY .pdf | https://cdn-wl-assets.classplus.co/production/436362/9f65946d-e379-42fb-921e-464a407cf9e1.pdf
+ECE | 5 | Electronics Switching | PYQs | (AKTU PYQS (B Code)) BEC055-ELECTRONICS SWITCHING.pdf | https://cdn-wl-assets.classplus.co/production/436362/99ec2647-d877-4813-a4b8-830bfba33f25.pdf
+ECE | 5 | Optical Communication | PYQs | (AKTU PYQS (B Code)) BEC057-OPTICAL-COMMUNICATION.pdf | https://cdn-wl-assets.classplus.co/production/436362/2b8bef88-4769-4a9e-b37c-2a4090657712.pdf
+ECE | 5 | Integrated Circuits (IC) | PYQs | (AKTU PYQs 5th Sem) BEC501-INTEGRATED-CIRCUITS.pdf | https://cdn-wl-assets.classplus.co/production/436362/ef666d8a-3df1-40c6-9862-ba0cbd1a0788.pdf
+ECE | 5 | Microprocessor & Microcontroller (MM) | PYQs | (AKTU PYQs 5th Sem) BEC502-MICROPROCESSOR-MICROCONTROLLER.pdf | https://cdn-wl-assets.classplus.co/production/436362/020a432b-f6c6-4cae-ac64-fc154f21bbaf.pdf
+ECE | 5 | Digital Signal Processing (DSP) | PYQs | (AKTU PYQs 5th Sem) BEC503-DIGITAL-SIGNAL-PROCESSING.pdf | https://cdn-wl-assets.classplus.co/production/436362/cf41ad4c-77f4-4d84-bcf5-88d2347a201f.pdf
+ECE | 5 | VLSI Technology | PYQs | (AKTU PYQs 5th Sem) BEC054-VLSI TECHNOLOGY .pdf | https://cdn-wl-assets.classplus.co/production/436362/9ece849e-1d51-47a6-85d4-c3bb5658d103.pdf
+ECE | 5 | Electronics Switching | PYQs | (AKTU PYQs 5th Sem) BEC055-ELECTRONICS SWITCHING.pdf | https://cdn-wl-assets.classplus.co/production/436362/dced4db8-04a9-4b51-b8f9-1e653e5a4b64.pdf
+ECE | 5 | Optical Communication | PYQs | (AKTU PYQs 5th Sem) BEC057-OPTICAL-COMMUNICATION.pdf | https://cdn-wl-assets.classplus.co/production/436362/3c079057-291e-431c-982c-395841752994.pdf
+ECE | 5 | Integrated Circuits (IC) | Quantum | (Most Imp Questions ( EC V-Sem)) IC IMPORTANT QUESTIONS | https://cdn-wl-assets.classplus.co/production/436362/4e828363-a594-4c6a-ade8-5b41e8927837.pdf
+ECE | 5 | Microprocessor & Microcontroller (MM) | Quantum | (Most Imp Questions ( EC V-Sem)) MM IMPORTANT QUESTIONS | https://cdn-wl-assets.classplus.co/production/436362/fad26566-a051-480e-8275-52b3cf8ae448.pdf
+ECE | 5 | Digital Signal Processing (DSP) | Quantum | (Most Imp Questions ( EC V-Sem)) DSP IMPORTANT QUESTIONS | https://cdn-wl-assets.classplus.co/production/436362/42cf8b3b-65d7-4a64-80f1-248e6e0de115.pdf
+ECE | 5 | Digital Signal Processing (DSP) | Syllabus | (3️⃣ Digital Signal Processing) DSP Syll Introduction | https://cdn-wl-assets.classplus.co/production/436362/a06ebfae-b499-4b45-9a64-a53663bed357.pdf
+ECE | 5 | Digital Signal Processing (DSP) | Notes | (3️⃣ Digital Signal Processing - DSP ( By Swati Ma'am ) - DSP Unit-1) DSP U-1 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/3cbdc5f2-2172-48b2-aff4-1de5cb60c437.pdf
+ECE | 5 | Digital Signal Processing (DSP) | Notes | (3️⃣ Digital Signal Processing - DSP ( By Swati Ma'am ) - DSP Unit-2) DSP U-2 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/b298d588-5372-4dd9-8abe-51fad18dd0c3.pdf
+ECE | 5 | Digital Signal Processing (DSP) | Notes | (3️⃣ Digital Signal Processing - DSP ( By Swati Ma'am ) - DSP Unit-3) DSP U-1 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/7e638635-3d58-41a9-9435-23f244b08f7e.pdf
+ECE | 5 | Digital Signal Processing (DSP) | Notes | (3️⃣ Digital Signal Processing - DSP ( By Praveen Sir ) - DSP UNIT-1) DSP U-1 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/3f4f72c4-c545-4bc6-8148-e934f7006a9a.pdf
+ECE | 5 | Digital Signal Processing (DSP) | Notes | (3️⃣ Digital Signal Processing - DSP ( By Praveen Sir ) - DSP UNIT-2) DSP U-2 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/f3f27fb8-de1b-4d0a-b211-28bfeba4abf8.pdf
+ECE | 5 | Digital Signal Processing (DSP) | Notes | (3️⃣ Digital Signal Processing - DSP ( By Praveen Sir ) - DSP UNIT-3) DSP U-3 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/85507548-cc3f-4be2-9ec6-9dd92304ee19.pdf
+ECE | 5 | Digital Signal Processing (DSP) | Notes | (3️⃣ Digital Signal Processing - DSP ( By Praveen Sir ) - DSP UNIT-4) DSP U-4 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/4d46425b-85ba-452a-88c6-6e2c8f625920.pdf
+ECE | 5 | Digital Signal Processing (DSP) | Notes | (3️⃣ Digital Signal Processing - DSP ( By Praveen Sir ) - DSP UNIT-5) DSP U-5 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/15499313-b34c-429c-ae3a-1eb7ee300b83.pdf
+ECE | 5 | Digital Signal Processing (DSP) | Quantum | (3️⃣ Digital Signal Processing - DSP ( By Praveen Sir ) - Imp.Questions Unit Wise) DSP IMPORTANT QUESTIONS | https://cdn-wl-assets.classplus.co/production/436362/69c77859-73f2-4ba3-8193-a2964a3ce111.pdf
+ECE | 5 | Integrated Circuits (IC) | Syllabus | (1️⃣ Integrated Circuits) IC Syllabus Introduction | https://cdn-wl-assets.classplus.co/production/436362/4f0110e9-9141-477c-8976-10d05059349d.pdf
+ECE | 5 | Integrated Circuits (IC) | Notes | (1️⃣ Integrated Circuits - IC ( By Swati Ma'am ) - UNIT-1) IC U-1 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/5001d406-6961-4b84-98e5-37f4ee0d5888.pdf
+ECE | 5 | Integrated Circuits (IC) | Notes | (1️⃣ Integrated Circuits - IC ( By Swati Ma'am ) - UNIT-2) IC U-2 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/ab19da70-3fed-454d-b9bf-d41650d9da4d.pdf
+ECE | 5 | Integrated Circuits (IC) | Notes | (1️⃣ Integrated Circuits - IC ( By Praveen  Sir ) - UNIT-1) IC U-1 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/aaf89487-8768-4691-b1c5-b10b03c4ea1b.pdf
+ECE | 5 | Integrated Circuits (IC) | Notes | (1️⃣ Integrated Circuits - IC ( By Praveen  Sir ) - UNIT-2) IC U-2 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/423f5632-995f-49d4-9003-1ae8af805442.pdf
+ECE | 5 | Integrated Circuits (IC) | Notes | (1️⃣ Integrated Circuits - IC ( By Praveen  Sir ) - UNIT-2) IC U-2 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/fc1f92ae-09ed-4bcc-b0f5-81afaab70bfa.pdf
+ECE | 5 | Integrated Circuits (IC) | Notes | (1️⃣ Integrated Circuits - IC ( By Praveen  Sir ) - UNIT-3) IC U-3 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/f8f79a3d-5f4e-4cda-87c6-818714f1e002.pdf
+ECE | 5 | Integrated Circuits (IC) | Notes | (1️⃣ Integrated Circuits - IC ( By Praveen  Sir ) - UNIT-4) IC U-4 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/b49c266d-6515-42e1-af61-b9f9541b253a.pdf
+ECE | 5 | Integrated Circuits (IC) | Notes | (1️⃣ Integrated Circuits - IC ( By Praveen  Sir ) - UNIT-5) IC U-5 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/7bb15f5a-c1e3-40eb-92b4-d3114e48c803.pdf
+ECE | 5 | Integrated Circuits (IC) | Quantum | (1️⃣ Integrated Circuits - IC ( By Praveen  Sir ) - Imp.Questions Unit Wise) IC IMPORTANT QUESTIONS | https://cdn-wl-assets.classplus.co/production/436362/4dfdd7b7-46a0-40a9-af67-e12804a443f6.pdf
+ECE | 5 | Microprocessor & Microcontroller (MM) | Syllabus | (2️⃣ Microprocessor &  Microcontroller) MM Syllabus Introduction | https://cdn-wl-assets.classplus.co/production/436362/05bd13ef-21b1-49b1-b874-0bed7f2669fa.pdf
+ECE | 5 | Microprocessor & Microcontroller (MM) | Notes | (2️⃣ Microprocessor &  Microcontroller - UNIT-1) MM U-1 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/c2e11ff7-a0b3-45d8-9728-11106e38dd93.pdf
+ECE | 5 | Microprocessor & Microcontroller (MM) | Notes | (2️⃣ Microprocessor &  Microcontroller - UNIT-2) MM U-2 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/466897c2-e5a8-4222-8744-d067c47f324b.pdf
+ECE | 5 | Microprocessor & Microcontroller (MM) | Notes | (2️⃣ Microprocessor &  Microcontroller - UNIT-3) MM U-3 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/d811d0b0-ab2c-4e28-a785-67adc23f06e2.pdf
+ECE | 5 | Microprocessor & Microcontroller (MM) | Notes | (2️⃣ Microprocessor &  Microcontroller - UNIT-4) MM U-4 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/9fd31519-bbe2-42b3-b21f-b85bbb65ab53.pdf
+ECE | 5 | Microprocessor & Microcontroller (MM) | Notes | (2️⃣ Microprocessor &  Microcontroller - UNIT-5) MM U-5 Combined Notes | https://cdn-wl-assets.classplus.co/production/436362/63161584-6261-4989-acd0-5f9ec7cedbcd.pdf
+ECE | 5 | Microprocessor & Microcontroller (MM) | Quantum | (2️⃣ Microprocessor &  Microcontroller - Imp.Questions Unit Wise) MM IMPORTANT QUESTIONS | https://cdn-wl-assets.classplus.co/production/436362/092a7404-ef6f-43aa-816e-e2b2a5704315.pdf
+ECE | 6 | Constitution of India (COI) | Notes | (7️⃣ Constitution of India) COI UNIT-1 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/825f24f1-94ae-4eb5-8a94-5b2318931f08.pdf
+ECE | 6 | Constitution of India (COI) | Notes | (7️⃣ Constitution of India) COI UNIT-2 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/796d415a-8f8c-4ece-81a8-1dde6e57288d.pdf
+ECE | 6 | Constitution of India (COI) | Notes | (7️⃣ Constitution of India) COI UNIT-3 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/d22c5399-53db-4fea-99ca-6aa94aa985cd.pdf
+ECE | 6 | Constitution of India (COI) | Notes | (7️⃣ Constitution of India) COI UNIT-4 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/2fa3dc6f-8601-4bc5-87d6-b8fed9942f48.pdf
+ECE | 6 | Constitution of India (COI) | Notes | (7️⃣ Constitution of India) COI UNIT-5 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/8c717994-9716-4e09-b0fd-c59812b72205.pdf
+ECE | 6 | Essence of Indian Traditional Knowledge (EITK) | Notes | (8️⃣ Essence of Indian Traditional Knowledge) EITK U-1 One shot Notes | https://cdn-wl-assets.classplus.co/production/436362/d2c1a1a6-3390-44a4-8cba-9c2f8bc30db3.pdf
+ECE | 6 | Essence of Indian Traditional Knowledge (EITK) | Notes | (8️⃣ Essence of Indian Traditional Knowledge) EITK U-2 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/9aa1c5d3-4a7f-452e-b8c0-07ddb4b4a0ed.pdf
+ECE | 6 | Essence of Indian Traditional Knowledge (EITK) | Notes | (8️⃣ Essence of Indian Traditional Knowledge) EITK U-3 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/e8491ddc-d508-4452-a404-91b548118bf3.pdf
+ECE | 6 | Essence of Indian Traditional Knowledge (EITK) | Notes | (8️⃣ Essence of Indian Traditional Knowledge) EITK U-4 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/5b802d43-8595-4d6c-a8d2-bab18a020030.pdf
+ECE | 6 | Essence of Indian Traditional Knowledge (EITK) | Notes | (8️⃣ Essence of Indian Traditional Knowledge) EITK U-5 ONE SHOT Notes | https://cdn-wl-assets.classplus.co/production/436362/278d5281-07d1-4b2c-be00-c04157deacdd.pdf

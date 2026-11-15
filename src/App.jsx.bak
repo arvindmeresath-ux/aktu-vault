@@ -1,0 +1,533 @@
+import SecurityGuard from "./security/SecurityGuard";
+import React, { useState, useEffect, useMemo, useRef } from 'react';
+import WebApp from '@twa-dev/sdk';
+import { 
+  ArrowLeft, 
+  Search, 
+  ShieldCheck, 
+  Loader2,
+  Monitor,
+  CornerUpLeft,
+  Maximize2
+} from 'lucide-react';
+
+const ALL_BRANCHES = [
+  { id: 'CSE', name: 'Computer Science (CSE)' },
+  { id: 'ECE', name: 'Electronics & Comm. (ECE)' },
+  { id: 'EE', name: 'Electrical Engg. (EE)' },
+  { id: 'ME', name: 'Mechanical Engg. (ME)' },
+  { id: 'CE', name: 'Civil Engineering (CE)' },
+  { id: 'IT', name: 'Information Tech. (IT)' },
+];
+
+const YEARS = [
+  { id: '1st Year', folder: '1ST_YEAR', subtitle: 'Common to all (Sem 1 & 2)' },
+  { id: '2nd Year', folder: '2ND_YEAR', subtitle: 'Core Basics (Sem 3 & 4)' },
+  { id: '3rd Year', folder: '3RD_YEAR', subtitle: 'Advanced & Labs (Sem 5 & 6)' },
+  { id: '4th Year', folder: '4TH_YEAR', subtitle: 'Specializations (Sem 7 & 8)' },
+];
+
+const getYearFromSem = (semStr) => {
+  if (!semStr) return '3rd Year';
+  const s = semStr.toString().toLowerCase();
+  if (s.includes('1st') || s === '1' || s === '2') return '1st Year';
+  if (s.includes('2nd') || s === '3' || s === '4') return '2nd Year';
+  if (s.includes('3rd') || s === '5' || s === '6') return '3rd Year';
+  if (s.includes('4th') || s === '7' || s === '8') return '4th Year';
+  return '3rd Year';
+};
+
+function PageCanvas({ pdfDoc, pageNum, scale = 1.5, isZen = false }) {
+  const canvasRef = useRef(null);
+  useEffect(() => {
+    let isMounted = true;
+    let renderTask = null;
+    if (pdfDoc && canvasRef.current) {
+      pdfDoc.getPage(pageNum).then(page => {
+        if (!isMounted) return;
+        const canvas = canvasRef.current;
+        if (!canvas) return;
+        const context = canvas.getContext('2d');
+        const viewport = page.getViewport({ scale });
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+        renderTask = page.render({ canvasContext: context, viewport: viewport });
+      });
+    }
+    return () => {
+      isMounted = false;
+      if (renderTask) { try { renderTask.cancel(); } catch(e){} }
+    };
+  }, [pdfDoc, pageNum, scale]);
+
+  return (
+    <div className={`w-full flex flex-col items-center ${isZen ? 'my-2 shadow-2xl bg-white' : 'my-2 shadow-[2px_2px_0px_#000] border border-black bg-white'}`}>
+      <canvas ref={canvasRef} className="w-full h-auto block" />
+      {!isZen && (
+        <div className="w-full text-center py-1 bg-[#c0c0c0] text-[10px] text-black font-mono border-t border-black">
+          --- PAGE {pageNum} ---
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default function App() {
+  const [data, setData] = useState([]);
+  const [selectedBranch, setSelectedBranch] = useState(null);
+  const [selectedYear, setSelectedYear] = useState(null);
+  const [selectedSubject, setSelectedSubject] = useState(null);
+  const [activeTab, setActiveTab] = useState('Notes');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [currentTime, setCurrentTime] = useState('');
+  
+  // PDF Viewer States
+  const [activePdf, setActivePdf] = useState(null);
+  const [activePdfTitle, setActivePdfTitle] = useState('');
+  const [pdfDoc, setPdfDoc] = useState(null);
+  const [numPages, setNumPages] = useState(0);
+  const [pdfLoading, setPdfLoading] = useState(false);
+  const [pdfError, setPdfError] = useState(false);
+  
+  // Naya Complete Fullscreen Mode (Sab UI Gayab)
+  const [isZenMode, setIsZenMode] = useState(false);
+
+  useEffect(() => {
+    const updateTime = () => {
+      const now = new Date();
+      setCurrentTime(now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
+    };
+    updateTime();
+    const interval = setInterval(updateTime, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    try {
+      WebApp.ready();
+      WebApp.expand();
+      WebApp.disableVerticalSwipes();
+      WebApp.enableClosingConfirmation();
+    } catch (e) {}
+
+    fetch('/notes_data.txt')
+      .then(res => res.text())
+      .then(text => {
+        const parsed = text
+          .split('\n')
+          .map(l => l.trim())
+          .filter(l => l.length > 0)
+          .map(l => {
+            const [branch, sem, subject, section, title, link] = l.split('|').map(s => s ? s.trim() : '');
+            const year = getYearFromSem(sem);
+            return { branch, sem, year, subject, section, title, link };
+          });
+        setData(parsed);
+      })
+      .catch(err => console.error(err));
+  }, []);
+
+  const handleSelectBranch = (branchId) => {
+    window.history.pushState({ step: 'year' }, '');
+    setSelectedBranch(branchId);
+  };
+
+  const handleSelectYear = (yearId) => {
+    window.history.pushState({ step: 'subject' }, '');
+    setSelectedYear(yearId);
+  };
+
+  const handleSelectSubject = (subjectName) => {
+    window.history.pushState({ step: 'material' }, '');
+    setSelectedSubject(subjectName);
+    setActiveTab('Notes');
+    setSearchQuery('');
+  };
+
+  const handleOpenPdf = (item) => {
+    window.history.pushState({ step: 'reader' }, '');
+    setActivePdfTitle(item.title);
+    setActivePdf(item.link);
+    setIsZenMode(false);
+  };
+
+  const goBack = () => {
+    window.history.back();
+  };
+
+  // Hardware Back Button: Complete Screen mode khula ho toh pehle use band karega
+  useEffect(() => {
+    const handlePopState = () => {
+      if (isZenMode) {
+        setIsZenMode(false);
+      } else if (activePdf) {
+        setActivePdf(null);
+      } else if (selectedSubject) {
+        setSelectedSubject(null);
+      } else if (selectedYear) {
+        setSelectedYear(null);
+      } else if (selectedBranch) {
+        setSelectedBranch(null);
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, [isZenMode, activePdf, selectedSubject, selectedYear, selectedBranch]);
+
+  useEffect(() => {
+    try {
+      if (selectedBranch || selectedYear || selectedSubject || activePdf || isZenMode) {
+        WebApp.BackButton.show();
+        WebApp.BackButton.onClick(goBack);
+      } else {
+        WebApp.BackButton.hide();
+      }
+      return () => WebApp.BackButton.offClick(goBack);
+    } catch (e) {}
+  }, [selectedBranch, selectedYear, selectedSubject, activePdf, isZenMode]);
+
+  useEffect(() => {
+    if (!activePdf) {
+      setPdfDoc(null);
+      setNumPages(0);
+      return;
+    }
+    setPdfLoading(true);
+    setPdfError(false);
+
+    if (!window.pdfjsLib) {
+      setPdfError(true);
+      setPdfLoading(false);
+      return;
+    }
+
+    const task = window.pdfjsLib.getDocument({
+      url: activePdf,
+      cMapUrl: 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/cmaps/',
+      cMapPacked: true,
+    });
+
+    task.promise
+      .then(pdf => {
+        setPdfDoc(pdf);
+        setNumPages(pdf.numPages);
+        setPdfLoading(false);
+      })
+      .catch(err => {
+        console.error('PDF Load Error:', err);
+        setPdfError(true);
+        setPdfLoading(false);
+      });
+  }, [activePdf]);
+
+  const currentSubjects = useMemo(() => {
+    if (!selectedBranch || !selectedYear) return [];
+    const list = data
+      .filter(d => d.branch.toUpperCase() === selectedBranch.toUpperCase() && d.year === selectedYear)
+      .map(d => d.subject);
+    return [...new Set(list)];
+  }, [data, selectedBranch, selectedYear]);
+
+  const tabFilteredItems = useMemo(() => {
+    if (!selectedBranch || !selectedYear || !selectedSubject) return [];
+    return data.filter(d => {
+      const matchBranch = d.branch.toUpperCase() === selectedBranch.toUpperCase();
+      const matchYear = d.year === selectedYear;
+      const matchSub = d.subject === selectedSubject;
+      const sec = (d.section || '').toLowerCase();
+      
+      const matchSec = 
+        activeTab === 'Notes' ? (sec.includes('note') || sec.includes('syllabus')) :
+        activeTab === 'PYQ' ? (sec.includes('pyq') || sec.includes('paper')) :
+        (sec.includes('imp') || sec.includes('quantum'));
+
+      const matchSearch = searchQuery.trim() === '' || d.title.toLowerCase().includes(searchQuery.toLowerCase());
+      return matchBranch && matchYear && matchSub && matchSec && matchSearch;
+    });
+  }, [data, selectedBranch, selectedYear, selectedSubject, activeTab, searchQuery]);
+
+  const currentPath = useMemo(() => {
+    let p = 'C:\\AKTU_PORTAL';
+    if (selectedBranch) p += '\\' + selectedBranch;
+    if (selectedYear) p += '\\' + selectedYear.toUpperCase().replace(' ', '_');
+    if (selectedSubject) p += '\\' + selectedSubject.slice(0, 15).toUpperCase().replace(/\s+/g, '_');
+    return p;
+  }, [selectedBranch, selectedYear, selectedSubject]);
+
+  return (
+    <SecurityGuard>
+    <div className="min-h-screen bg-[#008080] font-mono text-black p-2 flex flex-col justify-between select-none">
+      
+      {/* WINDOWS 98 EXPLORER WINDOW FRAME */}
+      <div className="w-full max-w-lg mx-auto bg-[#c0c0c0] border-2 border-t-white border-l-white border-b-black border-r-black shadow-[3px_3px_0px_#000] flex flex-col my-auto">
+        
+        {/* Title Bar */}
+        <div className="bg-gradient-to-r from-[#000080] to-[#1084d0] text-white px-2 py-1 flex items-center justify-between font-bold text-xs">
+          <div className="flex items-center gap-1.5 truncate">
+            <Monitor size={14} className="shrink-0 text-yellow-300" />
+            <span className="truncate">{currentPath}</span>
+          </div>
+          <div className="flex items-center gap-1 shrink-0 ml-2">
+            <button className="w-4 h-4 bg-[#c0c0c0] text-black border border-t-white border-l-white border-b-black border-r-black flex items-center justify-center font-bold text-[9px]">_</button>
+            <button className="w-4 h-4 bg-[#c0c0c0] text-black border border-t-white border-l-white border-b-black border-r-black flex items-center justify-center font-bold text-[9px]">□</button>
+            <button onClick={goBack} className="w-4 h-4 bg-[#c0c0c0] text-black border border-t-white border-l-white border-b-black border-r-black flex items-center justify-center font-bold text-[9px]">✕</button>
+          </div>
+        </div>
+
+        {/* Win98 Menu Strip */}
+        <div className="px-2 py-0.5 border-b border-[#808080] flex gap-3 text-xs text-black">
+          <span className="cursor-pointer hover:bg-[#000080] hover:text-white px-1"><span className="underline">F</span>ile</span>
+          <span className="cursor-pointer hover:bg-[#000080] hover:text-white px-1"><span className="underline">E</span>dit</span>
+          <span className="cursor-pointer hover:bg-[#000080] hover:text-white px-1"><span className="underline">V</span>iew</span>
+          <span className="cursor-pointer hover:bg-[#000080] hover:text-white px-1"><span className="underline">H</span>elp</span>
+        </div>
+
+        {/* Toolbar */}
+        <div className="p-1.5 border-b border-[#808080] bg-[#c0c0c0] flex items-center gap-1.5 text-xs">
+          {(selectedBranch || selectedYear || selectedSubject) && (
+            <button onClick={goBack} className="px-2 py-0.5 bg-[#c0c0c0] border-2 border-t-white border-l-white border-b-black border-r-black active:border-t-black active:border-l-black active:border-b-white active:border-r-white flex items-center gap-1 font-bold shrink-0">
+              <CornerUpLeft size={13} />
+              <span>Up</span>
+            </button>
+          )}
+          <div className="flex-1 flex items-center gap-1 bg-white border-2 border-t-black border-l-black border-b-white border-r-white px-1.5 py-0.5 overflow-hidden">
+            <span className="text-[10px] text-gray-500 shrink-0 font-bold">Address</span>
+            <span className="text-xs text-black font-mono truncate">{currentPath}</span>
+          </div>
+        </div>
+
+        {/* Inset Content Box */}
+        <div className="p-2 min-h-[420px] bg-[#c0c0c0]">
+          
+          {/* VIEW 1: BRANCH LIST */}
+          {!selectedBranch && (
+            <div className="bg-white border-2 border-t-black border-l-black border-b-white border-r-white p-3 min-h-[400px]">
+              <div className="mb-2 pb-1 border-b border-gray-300 flex items-center justify-between text-xs text-gray-600 font-bold">
+                <span>Select Folder to Open:</span>
+                <span>{ALL_BRANCHES.length} Object(s)</span>
+              </div>
+              <div className="grid grid-cols-2 gap-2">
+                {ALL_BRANCHES.map(branch => {
+                  const count = data.filter(d => d.branch.toUpperCase() === branch.id).length;
+                  return (
+                    <div key={branch.id} onClick={() => handleSelectBranch(branch.id)} className="p-2 hover:bg-[#000080] hover:text-white cursor-pointer flex items-center gap-2 select-none group">
+                      <div className="w-8 h-8 rounded bg-yellow-400 border border-black flex items-center justify-center text-black font-bold shrink-0 text-sm">📁</div>
+                      <div className="overflow-hidden">
+                        <p className="text-xs font-bold truncate group-hover:text-white underline">{branch.id}</p>
+                        <p className="text-[10px] text-gray-600 group-hover:text-gray-300 truncate">{count > 0 ? count + ' files' : 'empty'}</p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          {/* VIEW 2: YEAR SELECTION */}
+          {selectedBranch && !selectedYear && (
+            <div className="bg-white border-2 border-t-black border-l-black border-b-white border-r-white p-3 min-h-[400px]">
+              <div className="mb-3 pb-1 border-b border-gray-300 flex items-center justify-between text-xs font-bold text-gray-600">
+                <span>Directory: \{selectedBranch}</span>
+                <span>4 Folders</span>
+              </div>
+              <div className="space-y-1.5">
+                {YEARS.map(yr => {
+                  const count = data.filter(d => d.branch.toUpperCase() === selectedBranch.toUpperCase() && d.year === yr.id).length;
+                  return (
+                    <div key={yr.id} onClick={() => handleSelectYear(yr.id)} className="p-2 border border-gray-200 hover:bg-[#000080] hover:text-white cursor-pointer flex items-center justify-between group">
+                      <div className="flex items-center gap-2.5">
+                        <span className="text-base">📁</span>
+                        <div>
+                          <p className="text-xs font-bold group-hover:text-white underline">{yr.id} ({yr.folder})</p>
+                          <p className="text-[10px] text-gray-500 group-hover:text-gray-300">{yr.subtitle}</p>
+                        </div>
+                      </div>
+                      <span className="text-[10px] bg-[#c0c0c0] text-black px-1.5 py-0.5 border border-black font-bold group-hover:bg-white">{count > 0 ? count + ' DOCS' : '0 FILES'}</span>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          {/* VIEW 3: SUBJECT SELECTION */}
+          {selectedBranch && selectedYear && !selectedSubject && (
+            <div className="bg-white border-2 border-t-black border-l-black border-b-white border-r-white p-3 min-h-[400px]">
+              <div className="mb-3 p-1.5 bg-[#c0c0c0] border-2 border-t-white border-l-white border-b-black border-r-black flex items-center gap-2">
+                <span className="text-[11px] font-bold">Find:</span>
+                <input type="text" placeholder="Type subject..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} className="flex-1 bg-white border-2 border-t-black border-l-black border-b-white border-r-white px-2 py-0.5 text-xs text-black font-mono focus:outline-none" />
+              </div>
+              <div className="divide-y divide-gray-200">
+                {currentSubjects.length === 0 ? (
+                  <div className="text-center py-10 text-xs text-gray-500">[NO_RECORDS_FOUND_IN_DIR]</div>
+                ) : (
+                  currentSubjects.map((sub, idx) => {
+                    const subCount = data.filter(d => d.branch.toUpperCase() === selectedBranch.toUpperCase() && d.year === selectedYear && d.subject === sub).length;
+                    return (
+                      <div key={idx} onClick={() => handleSelectSubject(sub)} className="py-2 px-1 hover:bg-[#000080] hover:text-white cursor-pointer flex items-center justify-between group select-none">
+                        <div className="flex items-center gap-2">
+                          <span className="text-sm">💾</span>
+                          <span className="text-xs font-bold underline group-hover:text-white">{sub}</span>
+                        </div>
+                        <span className="text-[10px] text-gray-600 group-hover:text-gray-200 font-mono">[{subCount} files]</span>
+                      </div>
+                    );
+                  })
+                )}
+              </div>
+            </div>
+          )}
+
+          {/* VIEW 4: MATERIAL TABS */}
+          {selectedBranch && selectedYear && selectedSubject && (
+            <div>
+              <div className="flex gap-1 px-1 -mb-[2px] z-10 relative">
+                {[
+                  { id: 'Notes', label: 'Notes.txt', icon: '📝' },
+                  { id: 'PYQ', label: 'PYQ_Archive', icon: '📁' },
+                  { id: 'Important', label: 'Quantum.exe', icon: '⚡' }
+                ].map(tab => (
+                  <button key={tab.id} onClick={() => setActiveTab(tab.id)} className={'px-3 py-1 text-xs font-bold flex items-center gap-1 border-2 ' + (activeTab === tab.id ? 'bg-[#c0c0c0] border-t-white border-l-white border-r-black border-b-[#c0c0c0] pt-1.5 pb-1 -mt-0.5' : 'bg-[#b0b0b0] border-t-white border-l-white border-r-black border-b-black text-gray-700')}>
+                    <span>{tab.icon}</span>
+                    <span>{tab.label}</span>
+                  </button>
+                ))}
+              </div>
+              <div className="bg-[#c0c0c0] border-2 border-t-white border-l-white border-b-black border-r-black p-3">
+                <div className="bg-white border-2 border-t-black border-l-black border-b-white border-r-white p-2 min-h-[320px] max-h-[380px] overflow-y-auto">
+                  <div className="text-[10px] text-gray-500 pb-1 mb-1 border-b border-gray-300 flex justify-between font-bold">
+                    <span>NAME</span>
+                    <span>ACTION</span>
+                  </div>
+                  {tabFilteredItems.length === 0 ? (
+                    <div className="text-center py-12 text-xs text-gray-500">Empty Folder. No items.</div>
+                  ) : (
+                    tabFilteredItems.map((item, idx) => (
+                      <div key={idx} onClick={() => handleOpenPdf(item)} className="py-1.5 px-1 hover:bg-[#000080] hover:text-white cursor-pointer flex items-center justify-between group select-none">
+                        <div className="flex items-center gap-1.5 pr-2 overflow-hidden">
+                          <span className="text-sm shrink-0">📄</span>
+                          <span className="text-xs truncate font-mono underline group-hover:text-white">{item.title}</span>
+                        </div>
+                        <span className="text-[10px] font-bold px-1.5 py-0.5 bg-[#c0c0c0] text-black border border-black group-hover:bg-yellow-300 shrink-0">OPEN</span>
+                      </div>
+                    ))
+                  )}
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* Win98 Footer Bar */}
+        <div className="px-2 py-1 bg-[#c0c0c0] border-t border-[#808080] flex items-center justify-between text-[11px] text-black">
+          <div className="flex items-center gap-2 border-r border-[#808080] pr-2">
+            <span className="w-2 h-2 rounded-full bg-emerald-600 inline-block"></span>
+            <span>SYSTEM_READY</span>
+          </div>
+          <div className="flex items-center gap-1 font-mono text-[10px]">
+            <ShieldCheck size={12} className="text-blue-800" />
+            <span>AKTU_READ_ONLY</span>
+          </div>
+        </div>
+      </div>
+
+      {/* PDF VIEWER: MODE 1 (PEHLE JAISA RETRO WINDOW) & MODE 2 (COMPLETE FULLSCREEN) */}
+      {activePdf && (
+        <>
+          {/* MODE 2: PURE COMPLETE SCREEN (SAARE UI GAYAB, SIRF SLIDES & FLOATING BUTTON) */}
+          {isZenMode ? (
+            <div className="fixed inset-0 z-50 bg-[#121212] flex flex-col items-center overflow-y-auto">
+              
+              {/* Floating Top Control Bar */}
+              <div className="sticky top-3 z-50 self-end mr-4 flex items-center gap-2">
+                <button
+                  onClick={() => setIsZenMode(false)}
+                  className="bg-black/85 hover:bg-black text-white px-3.5 py-1.5 rounded-full text-xs font-sans font-bold border border-white/20 backdrop-blur-md shadow-2xl flex items-center gap-1.5 transition active:scale-95 cursor-pointer"
+                >
+                  ✕ Exit Fullscreen
+                </button>
+              </div>
+
+              {/* Edge-to-Edge Pure Clean Slides */}
+              <div className="w-full max-w-4xl px-2 sm:px-4 pb-12 flex flex-col items-center">
+                {pdfLoading && (
+                  <div className="my-auto mt-20 flex flex-col items-center text-white/70 gap-2">
+                    <Loader2 className="animate-spin text-blue-400" size={32} />
+                    <span className="text-xs">Loading complete view...</span>
+                  </div>
+                )}
+                {pdfDoc && numPages > 0 && (
+                  Array.from({ length: numPages }, (_, i) => i + 1).map(pageNo => (
+                    <PageCanvas 
+                      key={pageNo} 
+                      pdfDoc={pdfDoc} 
+                      pageNum={pageNo} 
+                      scale={1.8} 
+                      isZen={true} 
+                    />
+                  ))
+                )}
+              </div>
+            </div>
+          ) : (
+            /* MODE 1: PEHLE JAISA CLASSIC RETRO DIALOG WINDOW */
+            <div className="fixed inset-0 z-50 bg-[#008080] p-2 flex flex-col justify-between">
+              <div className="w-full max-w-lg mx-auto bg-[#c0c0c0] border-2 border-t-white border-l-white border-b-black border-r-black shadow-[4px_4px_0px_#000] flex-1 flex flex-col overflow-hidden my-auto">
+                
+                {/* Title Bar */}
+                <div className="bg-gradient-to-r from-[#000080] to-[#1084d0] text-white px-2 py-1 flex items-center justify-between font-bold text-xs">
+                  <span className="truncate">PDFVIEW.EXE - [{activePdfTitle}]</span>
+                  <button onClick={goBack} className="w-4 h-4 bg-[#c0c0c0] text-black border border-t-white border-l-white border-b-black border-r-black flex items-center justify-center font-bold text-[9px]">✕</button>
+                </div>
+
+                {/* Toolbar With New "Complete Screen" Button */}
+                <div className="p-1.5 bg-[#c0c0c0] border-b border-[#808080] flex items-center justify-between text-xs gap-1.5">
+                  <button onClick={goBack} className="px-2 py-0.5 bg-[#c0c0c0] border-2 border-t-white border-l-white border-b-black border-r-black font-bold flex items-center gap-1 active:border-t-black active:border-l-black active:border-b-white active:border-r-white">
+                    <ArrowLeft size={13} />
+                    <span>Close</span>
+                  </button>
+
+                  {/* Naya Option: Sab UI hata kar pure screen par dekhne ke liye */}
+                  <button 
+                    onClick={() => setIsZenMode(true)}
+                    className="px-2 py-0.5 bg-[#000080] text-white border-2 border-t-white border-l-white border-b-black border-r-black font-bold flex items-center gap-1 active:border-t-black active:border-l-black active:border-b-white active:border-r-white text-[11px] shadow-sm cursor-pointer"
+                    title="Sab UI hata kar screen par full open karein"
+                  >
+                    <span>⛶ Complete Screen</span>
+                  </button>
+
+                  {numPages > 0 && <span className="text-[10px] font-bold bg-white px-1.5 py-0.5 border border-black font-mono shrink-0">Pages: {numPages}</span>}
+                </div>
+
+                {/* Viewport */}
+                <div className="flex-1 bg-[#808080] p-2 overflow-y-auto border-2 border-t-black border-l-black border-b-white border-r-white flex flex-col items-center">
+                  {pdfLoading && (
+                    <div className="my-auto bg-[#c0c0c0] border-2 border-t-white border-l-white border-b-black border-r-black p-4 flex flex-col items-center gap-2">
+                      <Loader2 className="animate-spin text-blue-800" size={24} />
+                      <span className="text-xs font-bold">Loading Document...</span>
+                    </div>
+                  )}
+                  {pdfError && (
+                    <div className="my-auto bg-[#c0c0c0] border-2 border-t-white border-l-white border-b-black border-r-black p-4 text-center max-w-xs">
+                      <p className="text-xs font-bold mb-2">Preview Error.</p>
+                      <a href={activePdf} target="_blank" rel="noreferrer" className="text-xs bg-[#000080] text-white px-3 py-1 font-bold inline-block border border-black">Open Link</a>
+                    </div>
+                  )}
+                  {pdfDoc && numPages > 0 && (
+                    <div className="w-full flex flex-col items-center">
+                      {Array.from({ length: numPages }, (_, i) => i + 1).map(pageNo => (
+                        <PageCanvas key={pageNo} pdfDoc={pdfDoc} pageNum={pageNo} isZen={false} />
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          )}
+        </>
+      )}
+    </div>
+      </SecurityGuard>
+  );
+}

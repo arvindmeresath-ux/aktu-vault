@@ -1,0 +1,3 @@
+﻿# Paste new AKTU PDF links below in 'Title | URL' or plain URL format, then run: npm run pipeline
+# Example:
+# BEE-053 Industrial Automation Unit-1 Notes | https://example.com/bee053-u1.pdf

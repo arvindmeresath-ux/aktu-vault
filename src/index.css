@@ -1,0 +1,298 @@
+﻿:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --code-bg: #f4f3ec;
+  --accent: #aa3bff;
+  --accent-bg: rgba(170, 59, 255, 0.1);
+  --accent-border: rgba(170, 59, 255, 0.5);
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;
+    --text-h: #f3f4f6;
+    --bg: #16171d;
+    --border: #2e303a;
+    --code-bg: #1f2028;
+    --accent: #c084fc;
+    --accent-bg: rgba(192, 132, 252, 0.15);
+    --accent-border: rgba(192, 132, 252, 0.5);
+    --social-bg: rgba(47, 48, 58, 0.5);
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  }
+
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  }
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+p {
+  margin: 0;
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}
+
+
+
+
+
+
+
+
+
+
+/* === MODERN STUDY VAULT (EXACT LEGACY SKIN) === */
+body[data-theme="modern-dark"],
+body[data-theme="modern-dark"] > div,
+body[data-theme="modern-dark"] .min-h-screen.w-full.bg-black {
+  color: #f1f5f9 !important;
+  background: radial-gradient(circle at 50% 0%, #1e1b4b 0%, #030712 100%) !important;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif !important;
+}
+
+/* Main Glassmorphic Frame */
+body[data-theme="modern-dark"] .max-w-\[580px\] {
+  max-width: 600px !important;
+  background: linear-gradient(180deg, #0d1322 0%, #090e1a 100%) !important;
+  border: 1px solid #1e293b !important;
+  border-radius: 20px !important;
+  padding: 20px 22px 16px !important;
+  box-shadow: 0 25px 60px -15px #000000f2, 0 0 40px #38bdf814 !important;
+}
+
+/* Title Bar (`C:\AKTU_PORTAL`) */
+body[data-theme="modern-dark"] .max-w-\[580px\] > div:first-child {
+  height: auto !important;
+  background: transparent !important;
+  border-bottom: 1px solid #ffffff0f !important;
+  padding: 2px 2px 14px !important;
+}
+
+body[data-theme="modern-dark"] .max-w-\[580px\] > div:first-child > div:last-child {
+  display: none !important;
+}
+
+/* Toolbar */
+body[data-theme="modern-dark"] .modern-toolbar {
+  height: auto !important;
+  background: transparent !important;
+  border-bottom: none !important;
+  padding: 14px 2px 16px !important;
+  gap: 10px !important;
+}
+
+body[data-theme="modern-dark"] .modern-toolbar > span:nth-of-type(3),
+body[data-theme="modern-dark"] .modern-toolbar > span:nth-of-type(4),
+body[data-theme="modern-dark"] .modern-toolbar > button:not(.modern-offline-btn):not(.modern-theme-btn):not(.modern-tools-btn) {
+  display: none !important;
+}
+
+/* Hide Address Bar (`nth-child(3)`) */
+body[data-theme="modern-dark"] .max-w-\[580px\] > div:nth-child(3) {
+  display: none !important;
+}
+
+/* Strip ALL Grey Win98 Panel Backgrounds from inner wrappers */
+body[data-theme="modern-dark"] .max-w-\[580px\] > div:nth-child(4),
+body[data-theme="modern-dark"] .max-w-\[580px\] > div:nth-child(4) > div,
+body[data-theme="modern-dark"] .max-w-\[580px\] > div:nth-child(4) > div > div:not(.grid),
+body[data-theme="modern-dark"] .max-w-\[580px\] [class*="bg-"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Hide "Select Folder (Use 1-6 or ↑↓): 6 Object(s)" Sub-Header */
+body[data-theme="modern-dark"] .max-w-\[580px\] > div:nth-child(4) > div > div:first-child:not(.grid),
+body[data-theme="modern-dark"] .max-w-\[580px\] .win98-scroll > div:first-child:not(.grid) {
+  display: none !important;
+}
+
+/* 2-Column Folder Cards (`#141c2e`, `border-radius: 18px`) */
+body[data-theme="modern-dark"] .max-w-\[580px\] .grid {
+  gap: 14px !important;
+  padding-top: 4px !important;
+  padding-bottom: 90px !important;
+}
+
+body[data-theme="modern-dark"] .max-w-\[580px\] .grid > div {
+  background: #141c2e !important;
+  background-color: #141c2e !important;
+  border: 1px solid #ffffff12 !important;
+  border-radius: 18px !important;
+  padding: 18px 20px !important;
+  transition: all 0.15s ease !important;
+}
+
+body[data-theme="modern-dark"] .max-w-\[580px\] .grid > div:hover {
+  background: #192338 !important;
+  background-color: #192338 !important;
+  border-color: #38bdf844 !important;
+}
+
+/* Active Card Yellow Dashed Border */
+body[data-theme="modern-dark"] .max-w-\[580px\] .grid > div.bg-\[\#000080\],
+body[data-theme="modern-dark"] .max-w-\[580px\] .grid > div.border-dashed,
+body[data-theme="modern-dark"] .max-w-\[580px\] .grid > div[class*="border-yellow"],
+body[data-theme="modern-dark"] .max-w-\[580px\] .grid > div[class*="border-[#ffff00]"] {
+  background: #141c2e !important;
+  background-color: #141c2e !important;
+  border: 1.5px dashed #eab308 !important;
+}
+
+/* Re-apply button & dropdown backgrounds after [class*="bg-"] reset */
+body[data-theme="modern-dark"] .modern-pinned-btn,
+body[data-theme="modern-dark"] .modern-theme-btn,
+body[data-theme="modern-dark"] .modern-search-btn {
+  background: #0b1120 !important;
+  background-color: #0b1120 !important;
+}
+
+body[data-theme="modern-dark"] .modern-offline-btn { border-color: #10b98166 !important; }
+
+body[data-theme="modern-dark"] .modern-theme-btn {
+  border-color: #0891b2 !important;
+}
+
+body[data-theme="modern-dark"] .modern-tools-btn { border-color: #6366f166 !important; }
+
+body[data-theme="modern-dark"] .max-w-\[580px\] .z-\[99999\] {
+  background: #0d1726 !important;
+  background-color: #0d1726 !important;
+  border: 1px solid #38bdf855 !important;
+}
+
+/* Crisp White Folder Titles */
+body[data-theme="modern-dark"] .max-w-\[580px\] .grid > div span:first-child {
+  color: #f8fafc !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+}
+
+body[data-theme="modern-dark"] .max-w-\[580px\] .grid > div span:last-child {
+  color: #94a3b8 !important;
+  text-decoration: none !important;
+}
+
+/* Bottom Footer (`✦ Free Student Vault • Built for AKTU`) */
+body[data-theme="modern-dark"] .max-w-\[580px\] > div:last-child {
+  background: transparent !important;
+  border-top: 1px solid #ffffff12 !important;
+  padding-top: 12px !important;
+  margin-top: 4px !important;
+  color: #64748b !important;
+}
+
+body[data-theme="modern-dark"] .max-w-\[580px\] > div:last-child > * {
+  display: none !important;
+}
+
+body[data-theme="modern-dark"] .max-w-\[580px\] > div:last-child:after {
+  content: "✦ Free Student Vault • Built for AKTU" !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  color: #64748b !important;
+}
+/* === END MODERN STUDY VAULT === */
+
+/* Hide legacy Win98 duplicate [THEME] & [TOOLS] divs in modern-dark */
+body[data-theme="modern-dark"] .modern-toolbar > div:not(:has(.modern-theme-btn)):not(:has(.modern-tools-btn)) {
+  display: none !important;
+}
+
+/* Keep Quick Toolbox compact & preserve its tinted card backgrounds */
+body[data-theme="modern-dark"] .modern-toolbox-menu {
+  background: #0b1220 !important;
+  background-color: #0b1220 !important;
+}
+body[data-theme="modern-dark"] .modern-toolbox-menu .modern-tb-item {
+  padding: 6px 10px !important;
+  border-radius: 8px !important;
+}
+/* aktu-universal-focus-ring: Guarantees visible keyboard selection on ALL inner screens */
+[data-theme="modern-dark"] [data-focused="true"],
+.modern-dark-shell [data-focused="true"] {
+  outline: 1.5px dashed #facc15 !important;
+  outline-offset: -2px !important;
+  background-color: rgba(255, 255, 255, 0.07) !important;
+  border-radius: 14px !important;
+}
