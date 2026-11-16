@@ -97,7 +97,14 @@ export default function Win98Engine({
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   useEffect(() => {
-    if (vaultData) setData(vaultData);
+    if (vaultData) {
+      setData(vaultData);
+      return;
+    }
+    fetch('/vault_data.json?v=' + Date.now())
+      .then((res) => res.json())
+      .then((d) => setData(d))
+      .catch((err) => console.error('Error loading vault_data.json:', err));
   }, [vaultData]);
 
   useEffect(() => {
@@ -203,14 +210,6 @@ export default function Win98Engine({
       return [];
     }
   });
-
-  useEffect(() => {
-    if (vaultData) return;
-    fetch('/vault_data.json?v=' + Date.now())
-      .then((res) => res.json())
-      .then((d) => setData(d))
-      .catch((err) => console.error('Error loading vault_data.json:', err));
-  }, [vaultData]);
 
   const isRoot = !navPath.dept;
   const win98PopRef = useRef(false);
@@ -332,7 +331,7 @@ export default function Win98Engine({
         (d) => (d.code || '').toLowerCase() === navPath.dept.toLowerCase() || (d.deptKey || '').toLowerCase() === navPath.dept.toLowerCase()
       );
     }
-    return data[navPath.dept] || null;
+    return data[navPath.dept] || data[navPath.dept.toLowerCase()] || data[navPath.dept.toUpperCase()] || null;
   }, [data, navPath.dept]);
 
   const yearCards = useMemo(() => {
@@ -411,14 +410,18 @@ export default function Win98Engine({
     if (!currentYearObj) return [];
     const q = searchQuery.trim().toLowerCase();
     const rawSubs = currentYearObj.subjects || currentYearObj;
-    const subsArray = Array.isArray(rawSubs)
-      ? rawSubs
-      : Object.entries(rawSubs).map(([subKey, subObj]) => ({
-          subKey,
-          name: subObj?.name || subKey,
-          files: getSubjectFiles(subObj),
-          ...subObj,
-        }));
+    
+    let subsArray = [];
+    if (Array.isArray(rawSubs)) {
+      subsArray = rawSubs;
+    } else if (rawSubs && typeof rawSubs === 'object') {
+      subsArray = Object.entries(rawSubs).map(([subKey, subObj]) => ({
+        subKey,
+        name: subObj?.name || subKey,
+        files: getSubjectFiles(subObj),
+        ...subObj,
+      }));
+    }
 
     return subsArray
       .map((s) => ({
