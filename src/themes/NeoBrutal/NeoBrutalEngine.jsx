@@ -485,7 +485,7 @@ export default function NeoBrutalEngine({
 
   return (
     <div
-      className="min-h-screen w-full p-3 sm:p-6 flex flex-col items-center justify-center font-sans select-none"
+      className="min-h-screen w-full p-0 sm:p-6 flex flex-col items-center justify-center font-sans select-none overflow-x-hidden"
       style={{
         backgroundColor: '#f3f4f6',
         backgroundImage: 'radial-gradient(#9ca3af 1.2px, transparent 1.2px)',
@@ -495,7 +495,7 @@ export default function NeoBrutalEngine({
       {/* 1. TOP HEADER BAR */}
       <div
         ref={headerRef}
-        className="w-full max-w-[580px] flex items-center justify-between gap-2 mb-3 px-0.5 relative z-50"
+        className="w-full max-w-[580px] flex items-center justify-between gap-2 mb-3 px-3 sm:px-0.5 relative z-50 pt-3 sm:pt-0"
       >
         {/* LEFT CONTAINER: REPO & BUILD */}
         <div className="flex items-center gap-1.5 shrink-0">
@@ -730,7 +730,7 @@ export default function NeoBrutalEngine({
       </div>
 
       {/* 2. MAIN CONTAINER FRAME */}
-      <div className="w-full max-w-[580px] bg-white border-[3.5px] border-black rounded-3xl p-5 shadow-[8px_8px_0px_#000000] flex flex-col justify-between min-h-[580px] relative z-10">
+      <div className="w-full sm:max-w-[580px] min-h-screen sm:min-h-[580px] bg-white border-0 sm:border-[3.5px] border-black sm:rounded-3xl rounded-none p-3.5 sm:p-5 shadow-none sm:shadow-[8px_8px_0px_#000000] flex flex-col justify-between relative z-10">
         <div>
           {/* Top Header */}
           {selectedDept ? (
@@ -964,7 +964,7 @@ export default function NeoBrutalEngine({
         </div>
 
         {/* BOTTOM SHORTCUTS BAR */}
-        <div className="pt-3 border-t-[2.5px] border-black mt-3 flex items-center justify-center text-[10px] sm:text-[11px] font-extrabold text-zinc-700 tracking-tight select-none">
+        <div className="pt-3 border-t-[2.5px] border-black mt-3 flex items-center justify-center text-[10px] sm:text-[11px] font-extrabold text-zinc-700 tracking-tight select-none pb-2 sm:pb-0">
           ⌨ [↑↓ NAVIGATE] [ENTER OPEN] [ESC / ⌫ BACK] [1-6 DIRECT JUMP]
         </div>
       </div>

@@ -95,7 +95,7 @@ export default function App() {
 
   return (
     <SecurityGuard>
-      <div className="w-full min-h-screen bg-[#f8fafc]">
+      <div className="w-full min-h-screen bg-[#f8fafc] overflow-x-hidden flex flex-col">
         {activeTheme === 'neo-brutal' && (
           <NeoBrutalEngine
             vaultData={vaultData}
