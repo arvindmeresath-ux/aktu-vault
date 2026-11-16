@@ -339,14 +339,16 @@ export default function Win98Engine({
     const rawYears = currentDeptObj?.years;
     return YEAR_SLOTS.map((slot, i) => {
       let yrObj = null;
+      const yearNum = String(i + 1);
+
       if (Array.isArray(rawYears)) {
         yrObj = rawYears.find(
-          (y) => (y.year || y.key || '').toUpperCase() === slot.key || (y.id || '').toUpperCase() === slot.key
-        );
+          (y) => (y.year || y.key || '').toUpperCase() === slot.key || (y.id || '').toUpperCase() === slot.key || String(y.year || y.id || '') === yearNum
+        ) || rawYears[i];
       } else if (rawYears && typeof rawYears === 'object') {
         const actualKey = Object.keys(rawYears).find(
-          (k) => k.toUpperCase() === slot.key
-        ) || slot.key;
+          (k) => k.toUpperCase() === slot.key || String(k).replace(/\D/g, '') === yearNum
+        ) || Object.keys(rawYears)[i] || slot.key;
         yrObj = rawYears[actualKey];
       }
 
@@ -358,7 +360,7 @@ export default function Win98Engine({
           );
 
       return {
-        id: yrObj?.year || yrObj?.key || slot.key,
+        id: slot.key,
         name: `[${i + 1}] ${slot.label}`,
         subtitle: yrObj?.subtitle || slot.subtitle,
         badge: `${fileCount} FILES`,
@@ -370,12 +372,39 @@ export default function Win98Engine({
   const currentYearObj = useMemo(() => {
     if (!navPath.year || !currentDeptObj?.years) return null;
     const rawYears = currentDeptObj.years;
+    
+    // 1. Direct match check
     if (Array.isArray(rawYears)) {
-      return rawYears.find(
+      const found = rawYears.find(
         (y) => (y.year || y.key || '').toUpperCase() === navPath.year.toUpperCase() || (y.id || '').toUpperCase() === navPath.year.toUpperCase()
       );
+      if (found) return found;
+    } else if (rawYears[navPath.year]) {
+      return rawYears[navPath.year];
     }
-    return rawYears[navPath.year] || null;
+
+    // 2. Smart Fallback: Extract numeric digit (e.g., '2' from '2ND_YEAR')
+    const yearNum = String(navPath.year).replace(/\D/g, '');
+    if (Array.isArray(rawYears)) {
+      const foundNum = rawYears.find(
+        (y) => String(y.year || y.key || y.id || '') === yearNum || String(y.year || '').replace(/\D/g, '') === yearNum
+      );
+      if (foundNum) return foundNum;
+      
+      const idx = Number(yearNum) - 1;
+      if (rawYears[idx]) return rawYears[idx];
+    } else if (rawYears) {
+      const matchingKey = Object.keys(rawYears).find(
+        (k) => k === yearNum || String(k).replace(/\D/g, '') === yearNum
+      );
+      if (matchingKey) return rawYears[matchingKey];
+      
+      const values = Object.values(rawYears);
+      const idx = Number(yearNum) - 1;
+      if (values[idx]) return values[idx];
+    }
+
+    return null;
   }, [currentDeptObj, navPath.year]);
 
   const filteredSubjects = useMemo(() => {
