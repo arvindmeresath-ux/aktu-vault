@@ -492,25 +492,25 @@ export default function NeoBrutalEngine({
         backgroundSize: '20px 20px'
       }}
     >
-      {/* 1. TOP HEADER BAR WITH RESPONSIVE WRAPPING */}
+      {/* 1. TOP HEADER BAR - STRICT SINGLE LINE (flex-nowrap) */}
       <div
         ref={headerRef}
-        className="w-full max-w-[580px] flex items-center justify-between gap-1.5 mb-3 px-2 sm:px-0.5 relative z-50 pt-2 sm:pt-0 flex-wrap"
+        className="w-full max-w-[580px] flex items-center justify-between gap-1 mb-2 px-2 sm:px-0.5 relative z-50 pt-2 sm:pt-0 flex-nowrap"
       >
         {/* LEFT CONTAINER: REPO & BUILD */}
         <div className="flex items-center gap-1 shrink-0">
-          <div className="bg-[#fb7185] border-[2px] sm:border-[2.5px] border-black rounded-xl px-2 py-1 sm:px-2.5 sm:py-1.5 shadow-[2.5px_2.5px_0px_#000] sm:shadow-[3px_3px_0px_#000] !text-black font-black text-[9px] sm:text-xs tracking-wide whitespace-nowrap">
+          <div className="bg-[#fb7185] border-[2px] border-black rounded-lg px-1.5 py-1 shadow-[2px_2px_0px_#000] !text-black font-black text-[9px] sm:text-[10px] tracking-tight whitespace-nowrap">
             REPO: AKTU-VAULT
           </div>
 
-          <div className="bg-white border-[2px] sm:border-[2.5px] border-black rounded-xl px-2 py-1 sm:px-2.5 sm:py-1.5 shadow-[2.5px_2.5px_0px_#000] sm:shadow-[3px_3px_0px_#000] !text-black font-mono font-black text-[9px] sm:text-[11px] tracking-tight whitespace-nowrap">
-            BUILD: v2.4 [{totalDocs}]
+          <div className="bg-white border-[2px] border-black rounded-lg px-1.5 py-1 shadow-[2px_2px_0px_#000] !text-black font-mono font-black text-[9px] sm:text-[10px] tracking-tight whitespace-nowrap">
+            v2.4 [{totalDocs}]
           </div>
         </div>
 
         {/* RIGHT CONTAINER: OFFLINE VAULT, QUICK TOOLS & THEME */}
-        <div className="flex items-center gap-1 shrink-0">
-          {/* FANCY OFFLINE VAULT ICON PILL */}
+        <div className="flex items-center gap-1 shrink-0 flex-nowrap">
+          {/* OFFLINE VAULT BUTTON */}
           <button
             type="button"
             onClick={() => {
@@ -521,151 +521,35 @@ export default function NeoBrutalEngine({
             }}
             title={`In-App Offline Vault (${offlineCount} saved)`}
             aria-label="Offline Vault"
-            className="relative bg-[#86efac] hover:bg-[#4ade80] active:translate-x-[1px] active:translate-y-[1px] !text-black font-black text-[9px] sm:text-xs px-2 sm:px-2.5 py-1 sm:py-1.5 border-[2px] sm:border-[2.5px] border-black rounded-xl shadow-[2.5px_2.5px_0px_#000] sm:shadow-[3px_3px_0px_#000] cursor-pointer flex items-center justify-center whitespace-nowrap transition-all"
+            className="relative bg-[#86efac] hover:bg-[#4ade80] active:translate-x-[1px] active:translate-y-[1px] !text-black font-black text-[9px] sm:text-[10px] px-2 py-1 border-[2px] border-black rounded-lg shadow-[2px_2px_0px_#000] cursor-pointer flex items-center justify-center whitespace-nowrap transition-all"
           >
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
               <polyline points="7 10 12 15 17 10" />
               <line x1="12" y1="15" x2="12" y2="3" />
             </svg>
             {offlineCount > 0 && (
-              <span className="ml-1 bg-black text-[#86efac] font-mono font-black text-[8px] sm:text-[9px] px-1 py-0.5 rounded-md leading-tight">
+              <span className="ml-0.5 bg-black text-[#86efac] font-mono font-black text-[8px] px-1 py-0.2 rounded leading-none">
                 {offlineCount}
               </span>
             )}
           </button>
 
-          {/* CUTE TOOLS BUTTON & POPOVER */}
-          <div className="relative">
-            <button
-              type="button"
-              onClick={() => {
-                setIsToolsOpen(!isToolsOpen);
-                setIsThemeOpen(false);
-              }}
-              title="Quick Tools"
-              aria-label="Quick Tools"
-              className="bg-[#fef08a] hover:bg-[#fde047] active:translate-x-[1px] active:translate-y-[1px] !text-black font-black text-xs px-2 sm:px-2.5 py-1 sm:py-1.5 border-[2px] sm:border-[2.5px] border-black rounded-xl shadow-[2.5px_2.5px_0px_#000] sm:shadow-[3px_3px_0px_#000] cursor-pointer flex items-center justify-center whitespace-nowrap transition-all"
-            >
-              <span className="text-xs sm:text-sm leading-none">{noisePreset !== "off" ? "🎧" : "🧰"}</span>
-            </button>
+          {/* TOOLS BUTTON */}
+          <button
+            type="button"
+            onClick={() => {
+              setIsToolsOpen(!isToolsOpen);
+              setIsThemeOpen(false);
+            }}
+            title="Quick Tools"
+            aria-label="Quick Tools"
+            className="bg-[#fef08a] hover:bg-[#fde047] active:translate-x-[1px] active:translate-y-[1px] !text-black font-black text-xs px-2 py-1 border-[2px] border-black rounded-lg shadow-[2px_2px_0px_#000] cursor-pointer flex items-center justify-center whitespace-nowrap transition-all"
+          >
+            <span className="text-xs leading-none">{noisePreset !== "off" ? "🎧" : "🧰"}</span>
+          </button>
 
-            {isToolsOpen && (
-              <div className="absolute right-0 mt-2 w-56 bg-white border-[3px] border-black rounded-2xl overflow-hidden shadow-[5px_5px_0px_#000] z-50">
-                <div className="bg-[#fef08a] border-b-[2.5px] border-black px-3 py-2 flex items-center justify-between">
-                  <span className="text-[10px] font-black uppercase tracking-wider !text-black">
-                    ✨ Quick Toolbox
-                  </span>
-                  <span className="text-[9px] font-mono font-black bg-white border border-black rounded px-1.5 py-0.5 !text-black">
-                    KEYS
-                  </span>
-                </div>
-
-                <div className="p-2 flex flex-col gap-1.5 bg-white">
-                  {!isInstalled && (
-                    <button
-                      type="button"
-                      onClick={async () => {
-                        setIsToolsOpen(false);
-                        const status = await triggerInstall();
-                        if (status === 'unavailable') {
-                          alert(
-                            "To install AKTUVault as an App:\n\n1. Open this site in a normal (non-Incognito) Google Chrome window.\n2. Click the Install icon in the right side of Chrome's address bar (or Chrome Menu ⋮ → Cast, save, and share → Install AKTUVault)."
-                          );
-                        }
-                      }}
-                      className="w-full text-left !text-black font-extrabold text-xs p-2 rounded-xl bg-[#bbf7d0] hover:bg-[#86efac] border-2 border-black shadow-[2px_2px_0px_#000] active:translate-x-[1px] active:translate-y-[1px] transition-all flex items-center justify-between cursor-pointer"
-                    >
-                      <span className="flex items-center gap-1.5">
-                        <span>📲</span>
-                        <span>Install App</span>
-                      </span>
-                      <span className="text-[9px] font-mono font-black bg-white border border-black rounded px-1.5 py-0.5 !text-black">
-                        {canPrompt ? 'READY' : 'PWA'}
-                      </span>
-                    </button>
-                  )}
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setPinnedDocs(loadPinnedDocs());
-                      setIsPinnedModalOpen(true);
-                      setIsToolsOpen(false);
-                    }}
-                    className="w-full text-left !text-black font-extrabold text-xs p-2 rounded-xl bg-[#fef08a] hover:bg-[#fde047] border-2 border-black shadow-[2px_2px_0px_#000] active:translate-x-[1px] active:translate-y-[1px] transition-all flex items-center justify-between cursor-pointer"
-                  >
-                    <span className="flex items-center gap-1.5">
-                      <span>📌</span>
-                      <span>Pinned Docs</span>
-                    </span>
-                    <span className="text-[9px] font-mono font-black bg-white border border-black rounded px-1.5 py-0.5 !text-black">
-                      {pinnedDocs.length}
-                    </span>
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setIsNoiseModalOpen(true);
-                      setIsToolsOpen(false);
-                    }}
-                    className="w-full text-left !text-black font-extrabold text-xs p-2 rounded-xl bg-[#ddd6fe] hover:bg-[#c4b5fd] border-2 border-black shadow-[2px_2px_0px_#000] active:translate-x-[1px] active:translate-y-[1px] transition-all flex items-center justify-between cursor-pointer"
-                  >
-                    <span className="flex items-center gap-1.5">
-                      <span>🎧</span>
-                      <span>Study Ambience</span>
-                    </span>
-                    <span className="text-[9px] font-mono font-black bg-white border border-black rounded px-1.5 py-0.5 !text-black">
-                      {noisePreset === 'off' ? 'NOISE' : noisePreset.toUpperCase()}
-                    </span>
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      const next = soundEngine.toggle();
-                      setNeoSfxOn(next);
-                    }}
-                    className="w-full text-left !text-black font-extrabold text-xs p-2 rounded-xl bg-[#bae6fd] hover:bg-[#7dd3fc] border-2 border-black shadow-[2px_2px_0px_#000] active:translate-x-[1px] active:translate-y-[1px] transition-all flex items-center justify-between cursor-pointer"
-                  >
-                    <span className="flex items-center gap-1.5">
-                      <span>{neoSfxOn ? '🔊' : '🔇'}</span>
-                      <span>Sound Effects</span>
-                    </span>
-                    <span className="text-[9px] font-mono font-black bg-white border border-black rounded px-1.5 py-0.5 !text-black">
-                      {neoSfxOn ? 'SFX ON' : 'OFF'}
-                    </span>
-                  </button>
-
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setSelectedSubject(null);
-                      setSelectedYear(null);
-                      setSelectedDept(null);
-                      setIsToolsOpen(false);
-                    }}
-                    className="w-full text-left !text-black font-extrabold text-xs p-2 rounded-xl bg-[#fed7aa] hover:bg-[#fdba74] border-2 border-black shadow-[2px_2px_0px_#000] active:translate-x-[1px] active:translate-y-[1px] transition-all flex items-center justify-between cursor-pointer"
-                  >
-                    <span className="flex items-center gap-1.5">
-                      <span>🏠</span>
-                      <span>Reset to Home</span>
-                    </span>
-                    <kbd className="text-[10px] font-mono font-black bg-white border border-black rounded px-1.5 py-0.5 !text-black">
-                      Esc
-                    </kbd>
-                  </button>
-
-                  <div className="mt-0.5 px-2 py-1.5 rounded-xl bg-zinc-100 border border-dashed border-zinc-400 text-[10px] font-bold !text-zinc-700 flex items-center justify-between">
-                    <span>PDF Fullscreen</span>
-                    <kbd className="font-mono font-black bg-white border border-black rounded px-1.5 py-0.5 !text-black">
-                      F
-                    </kbd>
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
-
-          {/* THEME SELECTOR DROPDOWN */}
+          {/* THEME BUTTON */}
           <div className="relative">
             <button
               type="button"
@@ -675,7 +559,7 @@ export default function NeoBrutalEngine({
               }}
               title="Select Theme"
               aria-label="Select Theme"
-              className="bg-[#bae6fd] hover:bg-[#7dd3fc] active:translate-x-[1px] active:translate-y-[1px] !text-black font-black text-[10px] sm:text-xs px-2 sm:px-2.5 py-1 sm:py-1.5 border-[2px] sm:border-[2.5px] border-black rounded-xl shadow-[2.5px_2.5px_0px_#000] sm:shadow-[3px_3px_0px_#000] cursor-pointer flex items-center gap-1 whitespace-nowrap transition-all"
+              className="bg-[#bae6fd] hover:bg-[#7dd3fc] active:translate-x-[1px] active:translate-y-[1px] !text-black font-black text-[9px] sm:text-[10px] px-2 py-1 border-[2px] border-black rounded-lg shadow-[2px_2px_0px_#000] cursor-pointer flex items-center gap-0.5 whitespace-nowrap transition-all"
             >
               <span>🎨</span>
               <span>THEME</span>
@@ -727,6 +611,121 @@ export default function NeoBrutalEngine({
             )}
           </div>
         </div>
+
+        {/* TOOLS DROPDOWN CONTAINER */}
+        {isToolsOpen && (
+          <div className="absolute right-0 top-12 w-56 bg-white border-[3px] border-black rounded-2xl overflow-hidden shadow-[5px_5px_0px_#000] z-50">
+            <div className="bg-[#fef08a] border-b-[2.5px] border-black px-3 py-2 flex items-center justify-between">
+              <span className="text-[10px] font-black uppercase tracking-wider !text-black">
+                ✨ Quick Toolbox
+              </span>
+              <span className="text-[9px] font-mono font-black bg-white border border-black rounded px-1.5 py-0.5 !text-black">
+                KEYS
+              </span>
+            </div>
+
+            <div className="p-2 flex flex-col gap-1.5 bg-white">
+              {!isInstalled && (
+                <button
+                  type="button"
+                  onClick={async () => {
+                    setIsToolsOpen(false);
+                    const status = await triggerInstall();
+                    if (status === 'unavailable') {
+                      alert(
+                        "To install AKTUVault as an App:\n\n1. Open this site in a normal (non-Incognito) Google Chrome window.\n2. Click the Install icon in the right side of Chrome's address bar (or Chrome Menu ⋮ → Cast, save, and share → Install AKTUVault)."
+                      );
+                    }
+                  }}
+                  className="w-full text-left !text-black font-extrabold text-xs p-2 rounded-xl bg-[#bbf7d0] hover:bg-[#86efac] border-2 border-black shadow-[2px_2px_0px_#000] active:translate-x-[1px] active:translate-y-[1px] transition-all flex items-center justify-between cursor-pointer"
+                >
+                  <span className="flex items-center gap-1.5">
+                    <span>📲</span>
+                    <span>Install App</span>
+                  </span>
+                  <span className="text-[9px] font-mono font-black bg-white border border-black rounded px-1.5 py-0.5 !text-black">
+                    {canPrompt ? 'READY' : 'PWA'}
+                  </span>
+                </button>
+              )}
+              <button
+                type="button"
+                onClick={() => {
+                  setPinnedDocs(loadPinnedDocs());
+                  setIsPinnedModalOpen(true);
+                  setIsToolsOpen(false);
+                }}
+                className="w-full text-left !text-black font-extrabold text-xs p-2 rounded-xl bg-[#fef08a] hover:bg-[#fde047] border-2 border-black shadow-[2px_2px_0px_#000] active:translate-x-[1px] active:translate-y-[1px] transition-all flex items-center justify-between cursor-pointer"
+              >
+                <span className="flex items-center gap-1.5">
+                  <span>📌</span>
+                  <span>Pinned Docs</span>
+                </span>
+                <span className="text-[9px] font-mono font-black bg-white border border-black rounded px-1.5 py-0.5 !text-black">
+                  {pinnedDocs.length}
+                </span>
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setIsNoiseModalOpen(true);
+                  setIsToolsOpen(false);
+                }}
+                className="w-full text-left !text-black font-extrabold text-xs p-2 rounded-xl bg-[#ddd6fe] hover:bg-[#c4b5fd] border-2 border-black shadow-[2px_2px_0px_#000] active:translate-x-[1px] active:translate-y-[1px] transition-all flex items-center justify-between cursor-pointer"
+              >
+                <span className="flex items-center gap-1.5">
+                  <span>🎧</span>
+                  <span>Study Ambience</span>
+                </span>
+                <span className="text-[9px] font-mono font-black bg-white border border-black rounded px-1.5 py-0.5 !text-black">
+                  {noisePreset === 'off' ? 'NOISE' : noisePreset.toUpperCase()}
+                </span>
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  const next = soundEngine.toggle();
+                  setNeoSfxOn(next);
+                }}
+                className="w-full text-left !text-black font-extrabold text-xs p-2 rounded-xl bg-[#bae6fd] hover:bg-[#7dd3fc] border-2 border-black shadow-[2px_2px_0px_#000] active:translate-x-[1px] active:translate-y-[1px] transition-all flex items-center justify-between cursor-pointer"
+              >
+                <span className="flex items-center gap-1.5">
+                  <span>{neoSfxOn ? '🔊' : '🔇'}</span>
+                  <span>Sound Effects</span>
+                </span>
+                <span className="text-[9px] font-mono font-black bg-white border border-black rounded px-1.5 py-0.5 !text-black">
+                  {neoSfxOn ? 'SFX ON' : 'OFF'}
+                </span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => {
+                  setSelectedSubject(null);
+                  setSelectedYear(null);
+                  setSelectedDept(null);
+                  setIsToolsOpen(false);
+                }}
+                className="w-full text-left !text-black font-extrabold text-xs p-2 rounded-xl bg-[#fed7aa] hover:bg-[#fdba74] border-2 border-black shadow-[2px_2px_0px_#000] active:translate-x-[1px] active:translate-y-[1px] transition-all flex items-center justify-between cursor-pointer"
+              >
+                <span className="flex items-center gap-1.5">
+                  <span>🏠</span>
+                  <span>Reset to Home</span>
+                </span>
+                <kbd className="text-[10px] font-mono font-black bg-white border border-black rounded px-1.5 py-0.5 !text-black">
+                  Esc
+                </kbd>
+              </button>
+
+              <div className="mt-0.5 px-2 py-1.5 rounded-xl bg-zinc-100 border border-dashed border-zinc-400 text-[10px] font-bold !text-zinc-700 flex items-center justify-between">
+                <span>PDF Fullscreen</span>
+                <kbd className="font-mono font-black bg-white border border-black rounded px-1.5 py-0.5 !text-black">
+                  F
+                </kbd>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* 2. MAIN CONTAINER FRAME */}
