@@ -492,24 +492,24 @@ export default function NeoBrutalEngine({
         backgroundSize: '20px 20px'
       }}
     >
-      {/* 1. TOP HEADER BAR */}
+      {/* 1. TOP HEADER BAR WITH RESPONSIVE WRAPPING */}
       <div
         ref={headerRef}
-        className="w-full max-w-[580px] flex items-center justify-between gap-2 mb-3 px-3 sm:px-0.5 relative z-50 pt-3 sm:pt-0"
+        className="w-full max-w-[580px] flex items-center justify-between gap-1.5 mb-3 px-2 sm:px-0.5 relative z-50 pt-2 sm:pt-0 flex-wrap"
       >
         {/* LEFT CONTAINER: REPO & BUILD */}
-        <div className="flex items-center gap-1.5 shrink-0">
-          <div className="bg-[#fb7185] border-[2.5px] border-black rounded-xl px-2.5 py-1.5 shadow-[3px_3px_0px_#000] !text-black font-black text-[10px] sm:text-xs tracking-wide whitespace-nowrap">
+        <div className="flex items-center gap-1 shrink-0">
+          <div className="bg-[#fb7185] border-[2px] sm:border-[2.5px] border-black rounded-xl px-2 py-1 sm:px-2.5 sm:py-1.5 shadow-[2.5px_2.5px_0px_#000] sm:shadow-[3px_3px_0px_#000] !text-black font-black text-[9px] sm:text-xs tracking-wide whitespace-nowrap">
             REPO: AKTU-VAULT
           </div>
 
-          <div className="bg-white border-[2.5px] border-black rounded-xl px-2.5 py-1.5 shadow-[3px_3px_0px_#000] !text-black font-mono font-black text-[10px] sm:text-[11px] tracking-tight whitespace-nowrap">
+          <div className="bg-white border-[2px] sm:border-[2.5px] border-black rounded-xl px-2 py-1 sm:px-2.5 sm:py-1.5 shadow-[2.5px_2.5px_0px_#000] sm:shadow-[3px_3px_0px_#000] !text-black font-mono font-black text-[9px] sm:text-[11px] tracking-tight whitespace-nowrap">
             BUILD: v2.4 [{totalDocs}]
           </div>
         </div>
 
         {/* RIGHT CONTAINER: OFFLINE VAULT, QUICK TOOLS & THEME */}
-        <div className="flex items-center gap-1.5 shrink-0 flex-nowrap">
+        <div className="flex items-center gap-1 shrink-0">
           {/* FANCY OFFLINE VAULT ICON PILL */}
           <button
             type="button"
@@ -521,15 +521,15 @@ export default function NeoBrutalEngine({
             }}
             title={`In-App Offline Vault (${offlineCount} saved)`}
             aria-label="Offline Vault"
-            className="relative bg-[#86efac] hover:bg-[#4ade80] active:translate-x-[1px] active:translate-y-[1px] !text-black font-black text-[10px] sm:text-xs px-2.5 py-1.5 border-[2.5px] border-black rounded-xl shadow-[3px_3px_0px_#000] cursor-pointer flex items-center justify-center whitespace-nowrap transition-all"
+            className="relative bg-[#86efac] hover:bg-[#4ade80] active:translate-x-[1px] active:translate-y-[1px] !text-black font-black text-[9px] sm:text-xs px-2 sm:px-2.5 py-1 sm:py-1.5 border-[2px] sm:border-[2.5px] border-black rounded-xl shadow-[2.5px_2.5px_0px_#000] sm:shadow-[3px_3px_0px_#000] cursor-pointer flex items-center justify-center whitespace-nowrap transition-all"
           >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
               <polyline points="7 10 12 15 17 10" />
               <line x1="12" y1="15" x2="12" y2="3" />
             </svg>
             {offlineCount > 0 && (
-              <span className="ml-1 bg-black text-[#86efac] font-mono font-black text-[9px] px-1.5 py-0.5 rounded-md leading-tight">
+              <span className="ml-1 bg-black text-[#86efac] font-mono font-black text-[8px] sm:text-[9px] px-1 py-0.5 rounded-md leading-tight">
                 {offlineCount}
               </span>
             )}
@@ -545,9 +545,9 @@ export default function NeoBrutalEngine({
               }}
               title="Quick Tools"
               aria-label="Quick Tools"
-              className="bg-[#fef08a] hover:bg-[#fde047] active:translate-x-[1px] active:translate-y-[1px] !text-black font-black text-xs px-2.5 py-1.5 border-[2.5px] border-black rounded-xl shadow-[3px_3px_0px_#000,0_0_12px_rgba(250,204,21,0.85)] hover:shadow-[3px_3px_0px_#000,0_0_16px_rgba(34,211,238,0.95)] cursor-pointer flex items-center justify-center whitespace-nowrap transition-all"
+              className="bg-[#fef08a] hover:bg-[#fde047] active:translate-x-[1px] active:translate-y-[1px] !text-black font-black text-xs px-2 sm:px-2.5 py-1 sm:py-1.5 border-[2px] sm:border-[2.5px] border-black rounded-xl shadow-[2.5px_2.5px_0px_#000] sm:shadow-[3px_3px_0px_#000] cursor-pointer flex items-center justify-center whitespace-nowrap transition-all"
             >
-              <span className="text-sm leading-none drop-shadow-[0_0_6px_rgba(250,204,21,0.9)]">{noisePreset !== "off" ? "🎧" : "🧰"}</span>
+              <span className="text-xs sm:text-sm leading-none">{noisePreset !== "off" ? "🎧" : "🧰"}</span>
             </button>
 
             {isToolsOpen && (
@@ -675,7 +675,7 @@ export default function NeoBrutalEngine({
               }}
               title="Select Theme"
               aria-label="Select Theme"
-              className="bg-[#bae6fd] hover:bg-[#7dd3fc] active:translate-x-[1px] active:translate-y-[1px] !text-black font-black text-xs px-2.5 py-1.5 border-[2.5px] border-black rounded-xl shadow-[3px_3px_0px_#000] cursor-pointer flex items-center gap-1 whitespace-nowrap transition-all"
+              className="bg-[#bae6fd] hover:bg-[#7dd3fc] active:translate-x-[1px] active:translate-y-[1px] !text-black font-black text-[10px] sm:text-xs px-2 sm:px-2.5 py-1 sm:py-1.5 border-[2px] sm:border-[2.5px] border-black rounded-xl shadow-[2.5px_2.5px_0px_#000] sm:shadow-[3px_3px_0px_#000] cursor-pointer flex items-center gap-1 whitespace-nowrap transition-all"
             >
               <span>🎨</span>
               <span>THEME</span>
