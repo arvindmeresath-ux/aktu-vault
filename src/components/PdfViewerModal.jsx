@@ -529,7 +529,7 @@ export default function PdfViewerModal({ file, onClose, activeTheme = 'neo-bruta
                       type="button"
                       onClick={handleRotate}
                       title="Rotate 90°"
-                      className="px-2 py-0.5 bg-white hover:bg-[#fef08a] text-black border-[2px] border-black rounded-xl text-[10px] font-black shadow-[1.5px_1.5px_0px_#000] active:translate-y-[0.5px] cursor-pointer shrink-0"
+                      className="hidden sm:inline-flex px-2 py-0.5 bg-white hover:bg-[#fef08a] text-black border-[2px] border-black rounded-xl text-[10px] font-black shadow-[1.5px_1.5px_0px_#000] active:translate-y-[0.5px] cursor-pointer shrink-0"
                     >
                       ↻ {rotationOffset}°
                     </button>
@@ -537,7 +537,7 @@ export default function PdfViewerModal({ file, onClose, activeTheme = 'neo-bruta
                       type="button"
                       onClick={() => setTrimMargins((v) => !v)}
                       title="Auto-Trim White Margins"
-                      className={`px-2 py-0.5 border-[2px] border-black rounded-xl text-[10px] font-black shadow-[1.5px_1.5px_0px_#000] active:translate-y-[0.5px] cursor-pointer shrink-0 ${
+                      className={`hidden sm:inline-flex px-2 py-0.5 border-[2px] border-black rounded-xl text-[10px] font-black shadow-[1.5px_1.5px_0px_#000] active:translate-y-[0.5px] cursor-pointer shrink-0 ${
                         trimMargins ? 'bg-[#bae6fd] text-black' : 'bg-white hover:bg-[#fef08a] text-black'
                       }`}
                     >
@@ -547,7 +547,7 @@ export default function PdfViewerModal({ file, onClose, activeTheme = 'neo-bruta
                       type="button"
                       onClick={() => setDualPageView((v) => !v)}
                       title="2-Page Book View"
-                      className={`px-2 py-0.5 border-[2px] border-black rounded-xl text-[10px] font-black shadow-[1.5px_1.5px_0px_#000] active:translate-y-[0.5px] cursor-pointer shrink-0 ${
+                      className={`hidden sm:inline-flex px-2 py-0.5 border-[2px] border-black rounded-xl text-[10px] font-black shadow-[1.5px_1.5px_0px_#000] active:translate-y-[0.5px] cursor-pointer shrink-0 ${
                         dualPageView ? 'bg-[#bbf7d0] text-black' : 'bg-white hover:bg-[#fef08a] text-black'
                       }`}
                     >
@@ -594,7 +594,7 @@ export default function PdfViewerModal({ file, onClose, activeTheme = 'neo-bruta
                   <button
                     type="button"
                     onClick={() => window.dispatchEvent(new CustomEvent('aktu_open_noise'))}
-                    className="px-2 py-0.5 bg-[#c0c0c0] text-black border border-t-white border-l-white border-b-black border-r-black text-[10px] font-mono font-bold flex items-center gap-1 cursor-pointer hover:bg-white shrink-0"
+                    className="hidden sm:inline-flex px-2 py-0.5 bg-[#c0c0c0] text-black border border-t-white border-l-white border-b-black border-r-black text-[10px] font-mono font-bold items-center gap-1 cursor-pointer hover:bg-white shrink-0"
                   >
                     <span>🎧 NOISE</span>
                   </button>
@@ -639,12 +639,12 @@ export default function PdfViewerModal({ file, onClose, activeTheme = 'neo-bruta
                       type="button"
                       onClick={handleZoomOut}
                       title="Zoom Out"
-                      className="w-5 h-5 bg-[#c0c0c0] text-black border border-t-white border-l-white border-b-black border-r-black text-[11px] font-black flex items-center justify-center cursor-pointer hover:bg-white shrink-0"
+                      className="hidden sm:inline-flex w-5 h-5 bg-[#c0c0c0] text-black border border-t-white border-l-white border-b-black border-r-black text-[11px] font-black items-center justify-center cursor-pointer hover:bg-white shrink-0"
                     >
                       -
                     </button>
 
-                    <span className="bg-white border border-t-black border-l-black border-b-white border-r-white px-1.5 py-0.5 text-[10px] font-mono font-black text-black min-w-[38px] text-center shrink-0">
+                    <span className="hidden sm:inline-block bg-white border border-t-black border-l-black border-b-white border-r-white px-1.5 py-0.5 text-[10px] font-mono font-black text-black min-w-[38px] text-center shrink-0">
                       {Math.round(scale * 100)}%
                     </span>
 
@@ -652,12 +652,12 @@ export default function PdfViewerModal({ file, onClose, activeTheme = 'neo-bruta
                       type="button"
                       onClick={handleZoomIn}
                       title="Zoom In"
-                      className="w-5 h-5 bg-[#c0c0c0] text-black border border-t-white border-l-white border-b-black border-r-black text-[11px] font-black flex items-center justify-center cursor-pointer hover:bg-white shrink-0"
+                      className="hidden sm:inline-flex w-5 h-5 bg-[#c0c0c0] text-black border border-t-white border-l-white border-b-black border-r-black text-[11px] font-black items-center justify-center cursor-pointer hover:bg-white shrink-0"
                     >
                       +
                     </button>
 
-                    <span className="bg-white border border-t-black border-l-black border-b-white border-r-white px-1.5 py-0.5 text-[10px] font-mono font-black text-black shrink-0">
+                    <span className="hidden sm:inline-block bg-white border border-t-black border-l-black border-b-white border-r-white px-1.5 py-0.5 text-[10px] font-mono font-black text-black shrink-0">
                       Pg / {numPages || '...'}
                     </span>
                   </div>
@@ -677,7 +677,7 @@ export default function PdfViewerModal({ file, onClose, activeTheme = 'neo-bruta
                       type="button"
                       onClick={() => setTrimMargins((v) => !v)}
                       title="Auto-Trim White Margins"
-                      className={`px-2 py-1 rounded-xl border text-[11px] font-bold flex items-center gap-1 cursor-pointer shrink-0 transition-colors ${
+                      className={`hidden sm:inline-flex px-2 py-1 rounded-xl border text-[11px] font-bold items-center gap-1 cursor-pointer shrink-0 transition-colors ${
                         trimMargins
                           ? 'bg-[#0ea5e9] text-[#06101d] border-[#38bdf8]'
                           : 'bg-[#111b2e] hover:bg-[#16243d] text-slate-200 border-white/10'
@@ -723,7 +723,7 @@ export default function PdfViewerModal({ file, onClose, activeTheme = 'neo-bruta
                     <button
                       type="button"
                       onClick={() => window.dispatchEvent(new CustomEvent('aktu_open_noise'))}
-                      className="px-2 py-1 rounded-xl bg-[#111b2e] hover:bg-[#16243d] text-[#38bdf8] border border-[#38bdf844] text-[11px] font-bold flex items-center gap-1 cursor-pointer shrink-0 transition-colors"
+                      className="hidden sm:inline-flex px-2 py-1 rounded-xl bg-[#111b2e] hover:bg-[#16243d] text-[#38bdf8] border border-[#38bdf844] text-[11px] font-bold items-center gap-1 cursor-pointer shrink-0 transition-colors"
                     >
                       <span>🎧 NOISE</span>
                     </button>
@@ -759,10 +759,10 @@ export default function PdfViewerModal({ file, onClose, activeTheme = 'neo-bruta
                         </svg>
                       )}
                     </button>
-                    <button type="button" onClick={handleRotate} title="Rotate 90°" className="px-2 py-1 rounded-xl bg-[#111b2e] hover:bg-[#16243d] text-slate-200 border border-white/10 text-[11px] font-bold flex items-center gap-1 cursor-pointer shrink-0 transition-colors">↻ {rotationOffset}°</button>
-                    <button type="button" onClick={() => setDualPageView((v) => !v)} title="2-Page Book View" className={`px-2 py-1 rounded-xl border text-[11px] font-bold flex items-center gap-1 cursor-pointer shrink-0 transition-colors ${dualPageView ? 'bg-[#0ea5e9] text-[#06101d] border-[#38bdf8]' : 'bg-[#111b2e] hover:bg-[#16243d] text-slate-200 border-white/10'}`}>📖 2-Pg</button>
+                    <button type="button" onClick={handleRotate} title="Rotate 90°" className="hidden sm:inline-flex px-2 py-1 rounded-xl bg-[#111b2e] hover:bg-[#16243d] text-slate-200 border border-white/10 text-[11px] font-bold items-center gap-1 cursor-pointer shrink-0 transition-colors">↻ {rotationOffset}°</button>
+                    <button type="button" onClick={() => setDualPageView((v) => !v)} title="2-Page Book View" className={`hidden sm:inline-flex px-2 py-1 rounded-xl border text-[11px] font-bold items-center gap-1 cursor-pointer shrink-0 transition-colors ${dualPageView ? 'bg-[#0ea5e9] text-[#06101d] border-[#38bdf8]' : 'bg-[#111b2e] hover:bg-[#16243d] text-slate-200 border-white/10'}`}>📖 2-Pg</button>
                   </div>
-                  <div className="flex items-center gap-1.5 ml-auto text-[11px] font-bold shrink-0">
+                  <div className="hidden sm:flex items-center gap-1.5 ml-auto text-[11px] font-bold shrink-0">
                     <button type="button" onClick={handleZoomOut} className="w-6 h-6 rounded-lg bg-[#111b2e] hover:bg-[#16243d] text-sky-300 border border-white/10 flex items-center justify-center cursor-pointer">-</button>
                     <button type="button" onClick={() => setScale(1.0)} className="px-2 py-0.5 rounded-lg bg-[#111b2e] text-slate-200 border border-white/10 cursor-pointer">{Math.round(scale * 100)}%</button>
                     <button type="button" onClick={handleZoomIn} className="w-6 h-6 rounded-lg bg-[#111b2e] hover:bg-[#16243d] text-sky-300 border border-white/10 flex items-center justify-center cursor-pointer">+</button>
@@ -779,7 +779,7 @@ export default function PdfViewerModal({ file, onClose, activeTheme = 'neo-bruta
                       type="button"
                       onClick={() => setTrimMargins((v) => !v)}
                       title="Auto-Trim White Margins"
-                      className={`px-2 py-1 rounded-lg border text-[11px] font-bold cursor-pointer shrink-0 transition-colors ${
+                      className={`hidden sm:inline-flex px-2 py-1 rounded-lg border text-[11px] font-bold cursor-pointer shrink-0 transition-colors ${
                         trimMargins
                           ? 'bg-[#c5a059] text-[#23160e] border-[#f7eed8]'
                           : 'bg-[#23160e] hover:bg-[#52301b] text-[#f7eed8] border-[#c5a059]/60'
@@ -815,7 +815,7 @@ export default function PdfViewerModal({ file, onClose, activeTheme = 'neo-bruta
                 <div className="bg-[#23160e] px-3 py-1.5 flex items-center justify-between gap-1.5 flex-nowrap overflow-x-auto">
                   <div className="flex items-center gap-1.5 flex-nowrap">
                     <button type="button" onClick={() => setIsCompleteScreen(true)} className="px-2.5 py-1 rounded-lg bg-[#c5a059] hover:bg-[#d4af37] text-[#23160e] font-bold flex items-center gap-1 text-[11px] cursor-pointer shrink-0"><span>⛶ Complete Screen [F]</span></button>
-                    <button type="button" onClick={() => window.dispatchEvent(new CustomEvent('aktu_open_noise'))} className="px-2 py-1 rounded-lg bg-[#3d2314] hover:bg-[#52301b] text-[#f7eed8] border border-[#c5a059]/50 text-[11px] font-bold cursor-pointer shrink-0">🎧 NOISE</button>
+                    <button type="button" onClick={() => window.dispatchEvent(new CustomEvent('aktu_open_noise'))} className="hidden sm:inline-flex px-2 py-1 rounded-lg bg-[#3d2314] hover:bg-[#52301b] text-[#f7eed8] border border-[#c5a059]/50 text-[11px] font-bold items-center cursor-pointer shrink-0">🎧 NOISE</button>
                     <button type="button" onClick={cycleReadMode} className="px-2 py-1 rounded-lg bg-[#3d2314] hover:bg-[#52301b] text-[#f7eed8] border border-[#c5a059]/50 text-[11px] font-bold cursor-pointer shrink-0">{readMode === 'light' ? '☀️ Light' : readMode === 'sepia' ? '📜 Sepia' : '🌙 Dark'}</button>
                     <button
                       type="button"
@@ -842,10 +842,10 @@ export default function PdfViewerModal({ file, onClose, activeTheme = 'neo-bruta
                         </svg>
                       )}
                     </button>
-                    <button type="button" onClick={handleRotate} title="Rotate 90°" className="px-2 py-1 rounded-lg bg-[#3d2314] hover:bg-[#52301b] text-[#f7eed8] border border-[#c5a059]/50 text-[11px] font-bold cursor-pointer shrink-0">↻ {rotationOffset}°</button>
-                    <button type="button" onClick={() => setDualPageView((v) => !v)} title="2-Page Book View" className={`px-2 py-1 rounded-lg border text-[11px] font-bold cursor-pointer shrink-0 ${dualPageView ? 'bg-[#c5a059] text-[#23160e] border-[#f7eed8]' : 'bg-[#3d2314] text-[#f7eed8] border-[#c5a059]/50'}`}>📖 2-Pg</button>
+                    <button type="button" onClick={handleRotate} title="Rotate 90°" className="hidden sm:inline-flex px-2 py-1 rounded-lg bg-[#3d2314] hover:bg-[#52301b] text-[#f7eed8] border border-[#c5a059]/50 text-[11px] font-bold items-center cursor-pointer shrink-0">↻ {rotationOffset}°</button>
+                    <button type="button" onClick={() => setDualPageView((v) => !v)} title="2-Page Book View" className={`hidden sm:inline-flex px-2 py-1 rounded-lg border text-[11px] font-bold items-center cursor-pointer shrink-0 ${dualPageView ? 'bg-[#c5a059] text-[#23160e] border-[#f7eed8]' : 'bg-[#3d2314] text-[#f7eed8] border-[#c5a059]/50'}`}>📖 2-Pg</button>
                   </div>
-                  <div className="flex items-center gap-1.5 ml-auto text-[11px] font-bold shrink-0">
+                  <div className="hidden sm:flex items-center gap-1.5 ml-auto text-[11px] font-bold shrink-0">
                     <button type="button" onClick={handleZoomOut} className="w-6 h-6 rounded-lg bg-[#3d2314] text-[#c5a059] border border-[#c5a059]/40 flex items-center justify-center cursor-pointer">-</button>
                     <button type="button" onClick={() => setScale(1.0)} className="bg-[#1a100a] text-[#f7eed8] px-2 py-0.5 rounded-lg border border-[#c5a059]/40 cursor-pointer">{Math.round(scale * 100)}%</button>
                     <button type="button" onClick={handleZoomIn} className="w-6 h-6 rounded-lg bg-[#3d2314] text-[#c5a059] border border-[#c5a059]/40 flex items-center justify-center cursor-pointer">+</button>
@@ -862,7 +862,7 @@ export default function PdfViewerModal({ file, onClose, activeTheme = 'neo-bruta
                       type="button"
                       onClick={() => setTrimMargins((v) => !v)}
                       title="Auto-Trim White Margins"
-                      className={`px-2 py-0.5 rounded border text-[11px] font-bold cursor-pointer shrink-0 transition-colors ${
+                      className={`hidden sm:inline-flex px-2 py-0.5 rounded border text-[11px] font-bold cursor-pointer shrink-0 transition-colors ${
                         trimMargins
                           ? 'bg-[#33ff33] text-[#030d06] border-[#33ff33]'
                           : 'bg-[#030d06] hover:bg-[#092b13] text-[#33ff33] border-[#33ff33]/70'
@@ -898,7 +898,7 @@ export default function PdfViewerModal({ file, onClose, activeTheme = 'neo-bruta
                 <div className="bg-[#030d06] px-3 py-1.5 flex items-center justify-between gap-1.5 flex-nowrap overflow-x-auto text-[11px] font-bold">
                   <div className="flex items-center gap-1.5 flex-nowrap">
                     <button type="button" onClick={() => setIsCompleteScreen(true)} className="px-2.5 py-1 rounded bg-[#33ff33] text-[#030d06] cursor-pointer shrink-0">⛶ Complete Screen [F]</button>
-                    <button type="button" onClick={() => window.dispatchEvent(new CustomEvent('aktu_open_noise'))} className="px-2 py-1 rounded bg-[#05170a] border border-[#33ff33]/60 hover:bg-[#092b13] cursor-pointer shrink-0">🎧 NOISE</button>
+                    <button type="button" onClick={() => window.dispatchEvent(new CustomEvent('aktu_open_noise'))} className="hidden sm:inline-flex px-2 py-1 rounded bg-[#05170a] border border-[#33ff33]/60 hover:bg-[#092b13] items-center cursor-pointer shrink-0">🎧 NOISE</button>
                     <button type="button" onClick={cycleReadMode} className="px-2 py-1 rounded bg-[#05170a] border border-[#33ff33]/60 hover:bg-[#092b13] cursor-pointer shrink-0">{readMode === 'light' ? '☀️ Light' : readMode === 'sepia' ? '📜 Sepia' : '🌙 Dark'}</button>
                     <button
                       type="button"
@@ -919,10 +919,10 @@ export default function PdfViewerModal({ file, onClose, activeTheme = 'neo-bruta
                         <span className="tracking-tighter drop-shadow-[0_0_4px_rgba(51,255,51,0.9)]">[&gt;_↓]</span>
                       )}
                     </button>
-                    <button type="button" onClick={handleRotate} title="Rotate 90°" className="px-2 py-1 rounded bg-[#05170a] border border-[#33ff33]/60 hover:bg-[#092b13] cursor-pointer shrink-0">↻ {rotationOffset}°</button>
-                    <button type="button" onClick={() => setDualPageView((v) => !v)} title="2-Page Book View" className={`px-2 py-1 rounded border cursor-pointer shrink-0 ${dualPageView ? 'bg-[#33ff33] text-[#030d06] border-[#33ff33]' : 'bg-[#05170a] border-[#33ff33]/60'}`}>📖 2-Pg</button>
+                    <button type="button" onClick={handleRotate} title="Rotate 90°" className="hidden sm:inline-flex px-2 py-1 rounded bg-[#05170a] border border-[#33ff33]/60 hover:bg-[#092b13] items-center cursor-pointer shrink-0">↻ {rotationOffset}°</button>
+                    <button type="button" onClick={() => setDualPageView((v) => !v)} title="2-Page Book View" className={`hidden sm:inline-flex px-2 py-1 rounded border cursor-pointer shrink-0 ${dualPageView ? 'bg-[#33ff33] text-[#030d06] border-[#33ff33]' : 'bg-[#05170a] border-[#33ff33]/60'}`}>📖 2-Pg</button>
                   </div>
-                  <div className="flex items-center gap-1.5 ml-auto shrink-0">
+                  <div className="hidden sm:flex items-center gap-1.5 ml-auto shrink-0">
                     <button type="button" onClick={handleZoomOut} className="w-6 h-6 rounded bg-[#05170a] border border-[#33ff33]/60 flex items-center justify-center cursor-pointer">-</button>
                     <button type="button" onClick={() => setScale(1.0)} className="px-2 py-0.5 rounded bg-[#05170a] border border-[#33ff33]/60 cursor-pointer">{Math.round(scale * 100)}%</button>
                     <button type="button" onClick={handleZoomIn} className="w-6 h-6 rounded bg-[#05170a] border border-[#33ff33]/60 flex items-center justify-center cursor-pointer">+</button>
@@ -939,7 +939,7 @@ export default function PdfViewerModal({ file, onClose, activeTheme = 'neo-bruta
                       type="button"
                       onClick={() => setTrimMargins((v) => !v)}
                       title="Auto-Trim White Margins"
-                      className={`px-2.5 py-1 rounded-full border text-[11px] font-bold cursor-pointer shrink-0 transition-colors ${
+                      className={`hidden sm:inline-flex px-2.5 py-1 rounded-full border text-[11px] font-bold cursor-pointer shrink-0 transition-colors ${
                         trimMargins
                           ? 'bg-purple-500 text-white border-purple-500'
                           : 'bg-purple-50 hover:bg-purple-100 text-purple-700 border-purple-200'
@@ -975,7 +975,7 @@ export default function PdfViewerModal({ file, onClose, activeTheme = 'neo-bruta
                 <div className="bg-[#fdfaff] px-3 py-1.5 flex items-center justify-between gap-1.5 flex-nowrap overflow-x-auto text-[11px] font-bold">
                   <div className="flex items-center gap-1.5 flex-nowrap">
                     <button type="button" onClick={() => setIsCompleteScreen(true)} className="px-2.5 py-1 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white cursor-pointer shrink-0">⛶ Complete Screen [F]</button>
-                    <button type="button" onClick={() => window.dispatchEvent(new CustomEvent('aktu_open_noise'))} className="px-2 py-1 rounded-full bg-purple-50 hover:bg-purple-100 text-purple-700 border border-purple-200 cursor-pointer shrink-0">🎧 NOISE</button>
+                    <button type="button" onClick={() => window.dispatchEvent(new CustomEvent('aktu_open_noise'))} className="hidden sm:inline-flex px-2 py-1 rounded-full bg-purple-50 hover:bg-purple-100 text-purple-700 border border-purple-200 items-center cursor-pointer shrink-0">🎧 NOISE</button>
                     <button type="button" onClick={cycleReadMode} className="px-2 py-1 rounded-full bg-purple-50 hover:bg-purple-100 text-purple-700 border border-purple-200 cursor-pointer shrink-0">{readMode === 'light' ? '☀️ Light' : readMode === 'sepia' ? '📜 Sepia' : '🌙 Dark'}</button>
                     <button
                       type="button"
@@ -1003,10 +1003,10 @@ export default function PdfViewerModal({ file, onClose, activeTheme = 'neo-bruta
                         </svg>
                       )}
                     </button>
-                    <button type="button" onClick={handleRotate} title="Rotate 90°" className="px-2 py-1 rounded-full bg-purple-50 hover:bg-purple-100 text-purple-700 border border-purple-200 cursor-pointer shrink-0">↻ {rotationOffset}°</button>
-                    <button type="button" onClick={() => setDualPageView((v) => !v)} title="2-Page Book View" className={`px-2 py-1 rounded-full border cursor-pointer shrink-0 ${dualPageView ? 'bg-pink-500 text-white border-pink-500' : 'bg-purple-50 text-purple-700 border-purple-200'}`}>📖 2-Pg</button>
+                    <button type="button" onClick={handleRotate} title="Rotate 90°" className="hidden sm:inline-flex px-2 py-1 rounded-full bg-purple-50 hover:bg-purple-100 text-purple-700 border border-purple-200 items-center cursor-pointer shrink-0">↻ {rotationOffset}°</button>
+                    <button type="button" onClick={() => setDualPageView((v) => !v)} title="2-Page Book View" className={`hidden sm:inline-flex px-2 py-1 rounded-full border cursor-pointer shrink-0 ${dualPageView ? 'bg-pink-500 text-white border-pink-500' : 'bg-purple-50 text-purple-700 border-purple-200'}`}>📖 2-Pg</button>
                   </div>
-                  <div className="flex items-center gap-1.5 ml-auto shrink-0">
+                  <div className="hidden sm:flex items-center gap-1.5 ml-auto shrink-0">
                     <button type="button" onClick={handleZoomOut} className="w-6 h-6 rounded-full bg-purple-50 border border-purple-200 text-purple-700 flex items-center justify-center cursor-pointer">-</button>
                     <button type="button" onClick={() => setScale(1.0)} className="px-2 py-0.5 rounded-full bg-white border border-purple-200 text-purple-800 cursor-pointer">{Math.round(scale * 100)}%</button>
                     <button type="button" onClick={handleZoomIn} className="w-6 h-6 rounded-full bg-purple-50 border border-purple-200 text-purple-700 flex items-center justify-center cursor-pointer">+</button>
@@ -1023,7 +1023,7 @@ export default function PdfViewerModal({ file, onClose, activeTheme = 'neo-bruta
                       type="button"
                       onClick={() => setTrimMargins((v) => !v)}
                       title="Auto-Trim White Margins"
-                      className={`px-2 py-0.5 text-[11px] font-bold border font-mono cursor-pointer shrink-0 ${
+                      className={`hidden sm:inline-flex px-2 py-0.5 text-[11px] font-bold border font-mono cursor-pointer shrink-0 ${
                         trimMargins
                           ? 'bg-[#ffff00] text-[#000080] border-t-black border-l-black border-b-white border-r-white'
                           : 'bg-[#c0c0c0] hover:bg-white text-black border-t-white border-l-white border-b-black border-r-black'
@@ -1070,7 +1070,7 @@ export default function PdfViewerModal({ file, onClose, activeTheme = 'neo-bruta
                     <button
                       type="button"
                       onClick={() => window.dispatchEvent(new CustomEvent('aktu_open_noise'))}
-                      className="px-2 py-0.5 bg-[#c0c0c0] text-black border-2 border-t-white border-l-white border-b-black border-r-black active:border-t-black active:border-l-black active:border-b-white active:border-r-white text-[11px] font-bold flex items-center gap-1 cursor-pointer hover:bg-[#d4d4d4] shrink-0"
+                      className="hidden sm:inline-flex px-2 py-0.5 bg-[#c0c0c0] text-black border-2 border-t-white border-l-white border-b-black border-r-black active:border-t-black active:border-l-black active:border-b-white active:border-r-white text-[11px] font-bold items-center gap-1 cursor-pointer hover:bg-[#d4d4d4] shrink-0"
                     >
                       <span>🎧 NOISE</span>
                     </button>
@@ -1126,7 +1126,7 @@ export default function PdfViewerModal({ file, onClose, activeTheme = 'neo-bruta
                       type="button"
                       onClick={handleRotate}
                       title="Rotate 90°"
-                      className="px-2 py-0.5 bg-[#c0c0c0] hover:bg-[#d4d4d4] text-black border-2 border-t-white border-l-white border-b-black border-r-black active:border-t-black active:border-l-black active:border-b-white active:border-r-white text-[11px] font-bold cursor-pointer shrink-0"
+                      className="hidden sm:inline-flex px-2 py-0.5 bg-[#c0c0c0] hover:bg-[#d4d4d4] text-black border-2 border-t-white border-l-white border-b-black border-r-black active:border-t-black active:border-l-black active:border-b-white active:border-r-white text-[11px] font-bold items-center cursor-pointer shrink-0"
                     >
                       ↻ {rotationOffset}°
                     </button>
@@ -1135,7 +1135,7 @@ export default function PdfViewerModal({ file, onClose, activeTheme = 'neo-bruta
                       type="button"
                       onClick={() => setDualPageView((v) => !v)}
                       title="2-Page Book View"
-                      className={`px-2 py-0.5 border-2 text-[11px] font-bold cursor-pointer shrink-0 ${
+                      className={`hidden sm:inline-flex px-2 py-0.5 border-2 text-[11px] font-bold cursor-pointer shrink-0 ${
                         dualPageView
                           ? 'bg-[#000080] text-[#ffff00] border-t-black border-l-black border-b-white border-r-white'
                           : 'bg-[#c0c0c0] hover:bg-[#d4d4d4] text-black border-t-white border-l-white border-b-black border-r-black'
@@ -1145,7 +1145,7 @@ export default function PdfViewerModal({ file, onClose, activeTheme = 'neo-bruta
                     </button>
                   </div>
 
-                  <div className="flex items-center gap-1.5 ml-auto text-[11px] font-bold">
+                  <div className="hidden sm:flex items-center gap-1.5 ml-auto text-[11px] font-bold">
                     <button
                       type="button"
                       onClick={handleZoomOut}
@@ -1184,9 +1184,9 @@ export default function PdfViewerModal({ file, onClose, activeTheme = 'neo-bruta
               <span>{readMode === 'light' ? '☀️' : readMode === 'sepia' ? '📜' : '🌙'}</span>
               <span>{readMode === 'light' ? 'Light' : readMode === 'sepia' ? 'Sepia' : 'Dark'}</span>
             </button>
-            <button type="button" onClick={handleRotate} title="Rotate 90°" className="px-2.5 py-1 rounded-xl bg-[#111b2e] hover:bg-[#16243d] text-slate-200 border border-white/10 text-[11px] font-bold flex items-center gap-1 cursor-pointer shrink-0 transition-colors">↻ {rotationOffset}°</button>
-            <button type="button" onClick={() => setTrimMargins((v) => !v)} title="Auto-Trim White Margins" className={`px-2.5 py-1 rounded-xl border text-[11px] font-bold flex items-center gap-1 cursor-pointer shrink-0 transition-colors ${trimMargins ? 'bg-[#0ea5e9] text-[#06101d] border-[#38bdf8]' : 'bg-[#111b2e] hover:bg-[#16243d] text-slate-200 border-white/10'}`}>✂️ Trim</button>
-            <button type="button" onClick={() => setDualPageView((v) => !v)} title="2-Page Book View" className={`px-2.5 py-1 rounded-xl border text-[11px] font-bold flex items-center gap-1 cursor-pointer shrink-0 transition-colors ${dualPageView ? 'bg-[#0ea5e9] text-[#06101d] border-[#38bdf8]' : 'bg-[#111b2e] hover:bg-[#16243d] text-slate-200 border-white/10'}`}>📖 2-Pg</button>
+            <button type="button" onClick={handleRotate} title="Rotate 90°" className="hidden sm:inline-flex px-2.5 py-1 rounded-xl bg-[#111b2e] hover:bg-[#16243d] text-slate-200 border border-white/10 text-[11px] font-bold items-center gap-1 cursor-pointer shrink-0 transition-colors">↻ {rotationOffset}°</button>
+            <button type="button" onClick={() => setTrimMargins((v) => !v)} title="Auto-Trim White Margins" className={`hidden sm:inline-flex px-2.5 py-1 rounded-xl border text-[11px] font-bold items-center gap-1 cursor-pointer shrink-0 transition-colors ${trimMargins ? 'bg-[#0ea5e9] text-[#06101d] border-[#38bdf8]' : 'bg-[#111b2e] hover:bg-[#16243d] text-slate-200 border-white/10'}`}>✂️ Trim</button>
+            <button type="button" onClick={() => setDualPageView((v) => !v)} title="2-Page Book View" className={`hidden sm:inline-flex px-2.5 py-1 rounded-xl border text-[11px] font-bold items-center gap-1 cursor-pointer shrink-0 transition-colors ${dualPageView ? 'bg-[#0ea5e9] text-[#06101d] border-[#38bdf8]' : 'bg-[#111b2e] hover:bg-[#16243d] text-slate-200 border-white/10'}`}>📖 2-Pg</button>
             <button
               type="button"
               onClick={(e) => {
@@ -1236,22 +1236,22 @@ export default function PdfViewerModal({ file, onClose, activeTheme = 'neo-bruta
             <button
               type="button"
               onClick={handleZoomOut}
-              className="w-5 h-5 flex items-center justify-center hover:bg-zinc-800 rounded text-xs cursor-pointer shrink-0 font-bold"
+              className="hidden sm:flex w-5 h-5 items-center justify-center hover:bg-zinc-800 rounded text-xs cursor-pointer shrink-0 font-bold"
             >
               -
             </button>
-            <span className="text-[11px] font-bold text-zinc-300 shrink-0 font-mono">
+            <span className="hidden sm:inline-block text-[11px] font-bold text-zinc-300 shrink-0 font-mono">
               {Math.round(scale * 100)}%
             </span>
             <button
               type="button"
               onClick={handleZoomIn}
-              className="w-5 h-5 flex items-center justify-center hover:bg-zinc-800 rounded text-xs cursor-pointer shrink-0 font-bold"
+              className="hidden sm:flex w-5 h-5 items-center justify-center hover:bg-zinc-800 rounded text-xs cursor-pointer shrink-0 font-bold"
             >
               +
             </button>
 
-            <span className="text-zinc-600">|</span>
+            <span className="hidden sm:inline text-zinc-600">|</span>
 
             <div className="flex items-center gap-1 text-[11px] shrink-0 font-mono">
               <span>Pg</span>
@@ -1508,7 +1508,7 @@ export default function PdfViewerModal({ file, onClose, activeTheme = 'neo-bruta
                     <span>PDF_STREAM.EXE</span>
                     <span>{loadProgress}%</span>
                   </div>
-                  <div className="w-full h-5 bg-white border-2 border-t-black border-l-black border-b-white border-r-white p-0.5">
+                  <div className="w-full h-5 bg-white border-2 border-t-black border-l-black border-b-white border-r-black p-0.5">
                     <div
                       className="pdf-loader-fill bg-[#000080] transition-all duration-150"
                       style={{
