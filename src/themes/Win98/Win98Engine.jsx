@@ -327,9 +327,10 @@ export default function Win98Engine({
   const currentDeptObj = useMemo(() => {
     if (!navPath.dept || !data) return null;
     if (Array.isArray(data.departments)) {
-      return data.departments.find(
+      const found = data.departments.find(
         (d) => (d.code || '').toLowerCase() === navPath.dept.toLowerCase() || (d.deptKey || '').toLowerCase() === navPath.dept.toLowerCase()
       );
+      if (found) return found;
     }
     return data[navPath.dept] || data[navPath.dept.toLowerCase()] || data[navPath.dept.toUpperCase()] || null;
   }, [data, navPath.dept]);
@@ -342,7 +343,7 @@ export default function Win98Engine({
 
       if (Array.isArray(rawYears)) {
         yrObj = rawYears.find(
-          (y) => (y.year || y.key || '').toUpperCase() === slot.key || (y.id || '').toUpperCase() === slot.key || String(y.year || y.id || '') === yearNum
+          (y) => (y.year || y.key || y.id || '').toUpperCase() === slot.key || String(y.year || y.id || '').replace(/\D/g, '') === yearNum
         ) || rawYears[i];
       } else if (rawYears && typeof rawYears === 'object') {
         const actualKey = Object.keys(rawYears).find(
@@ -351,12 +352,9 @@ export default function Win98Engine({
         yrObj = rawYears[actualKey];
       }
 
-      const fileCount = typeof yrObj?.totalFiles === 'number'
-        ? yrObj.totalFiles
-        : Object.values(yrObj?.subjects || yrObj || {}).reduce(
-            (acc, s) => acc + getSubjectFiles(s).length,
-            0
-          );
+      const fileCount = yrObj
+        ? (typeof yrObj.totalFiles === 'number' ? yrObj.totalFiles : Object.values(yrObj.subjects || yrObj || {}).reduce((acc, s) => acc + getSubjectFiles(s).length, 0))
+        : 0;
 
       return {
         id: slot.key,
@@ -371,36 +369,17 @@ export default function Win98Engine({
   const currentYearObj = useMemo(() => {
     if (!navPath.year || !currentDeptObj?.years) return null;
     const rawYears = currentDeptObj.years;
-    
-    // 1. Direct match check
-    if (Array.isArray(rawYears)) {
-      const found = rawYears.find(
-        (y) => (y.year || y.key || '').toUpperCase() === navPath.year.toUpperCase() || (y.id || '').toUpperCase() === navPath.year.toUpperCase()
-      );
-      if (found) return found;
-    } else if (rawYears[navPath.year]) {
-      return rawYears[navPath.year];
-    }
-
-    // 2. Smart Fallback: Extract numeric digit (e.g., '2' from '2ND_YEAR')
     const yearNum = String(navPath.year).replace(/\D/g, '');
+
     if (Array.isArray(rawYears)) {
-      const foundNum = rawYears.find(
-        (y) => String(y.year || y.key || y.id || '') === yearNum || String(y.year || '').replace(/\D/g, '') === yearNum
-      );
-      if (foundNum) return foundNum;
-      
-      const idx = Number(yearNum) - 1;
-      if (rawYears[idx]) return rawYears[idx];
-    } else if (rawYears) {
+      return rawYears.find(
+        (y) => (y.year || y.key || y.id || '').toUpperCase() === navPath.year.toUpperCase() || String(y.year || y.id || '').replace(/\D/g, '') === yearNum
+      ) || rawYears[Number(yearNum) - 1] || null;
+    } else if (rawYears && typeof rawYears === 'object') {
       const matchingKey = Object.keys(rawYears).find(
-        (k) => k === yearNum || String(k).replace(/\D/g, '') === yearNum
-      );
-      if (matchingKey) return rawYears[matchingKey];
-      
-      const values = Object.values(rawYears);
-      const idx = Number(yearNum) - 1;
-      if (values[idx]) return values[idx];
+        (k) => k.toUpperCase() === String(navPath.year).toUpperCase() || String(k).replace(/\D/g, '') === yearNum
+      ) || Object.keys(rawYears)[Number(yearNum) - 1];
+      return rawYears[matchingKey] || null;
     }
 
     return null;
