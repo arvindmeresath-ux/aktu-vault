@@ -11,6 +11,7 @@ import GlobalVaultDock from './components/GlobalVaultDock';
 import OfflineVaultDrawer from './components/OfflineVaultDrawer';
 import { soundEngine } from './features/soundEngine';
 import { THEMES_REGISTRY } from './themes/themeRegistry';
+import WelcomeModal from './components/WelcomeModal';
 
 function normalizeVaultData(raw) {
   if (!raw || typeof raw !== 'object') return null;
@@ -165,6 +166,9 @@ export default function App() {
 
         <GlobalVaultDock vaultData={vaultData} onOpenPdf={handleOpenPdf} />
         <OfflineVaultDrawer vaultData={vaultData} onOpenPdf={handleOpenPdf} />
+        
+        {/* Welcome Modal Mounted */}
+        <WelcomeModal activeTheme={activeTheme} />
       </div>
     </SecurityGuard>
   );
