@@ -362,6 +362,7 @@ export default function Win98Engine({
       name: b.name,
       count: b.count,
       onClick: () => {
+        try { soundEngine.playOpen(); } catch {}
         setNavPath({ dept: b.deptKey, year: null, subject: null });
         setSelectedIndex(0);
       }
@@ -373,6 +374,7 @@ export default function Win98Engine({
       subtitle: y.subtitle,
       badge: y.badge,
       onClick: () => {
+        try { soundEngine.playOpen(); } catch {}
         setNavPath({ ...navPath, year: y.id });
         setSelectedIndex(0);
         setSearchQuery('');
@@ -384,8 +386,9 @@ export default function Win98Engine({
       name: s.name,
       badge: `[${s.files.length} files]`,
       onClick: () => {
+        try { soundEngine.playOpen(); } catch {}
         setNavPath({ ...navPath, subject: s.name });
-        try { soundEngine.playTick(); } catch(e) {} setActiveTab('notes');
+        setActiveTab('notes');
         setSelectedIndex(0);
       }
     }));
@@ -402,7 +405,6 @@ export default function Win98Engine({
 
   const handleGoBack = () => {
     try { soundEngine.playFlip(); } catch(e) {}
-    try { soundEngine.playTick(); } catch(e) {}
     if (navPath.subject) {
       setNavPath({ ...navPath, subject: null });
       setSelectedIndex(0);
@@ -451,7 +453,6 @@ export default function Win98Engine({
       } else if (e.key === 'Enter') {
         const item = items[selectedIndex];
         if (item) {
-          try { soundEngine.playTick(); } catch(err) {}
           item.onClick();
         }
       }
@@ -1301,7 +1302,7 @@ export default function Win98Engine({
                   });
                 }
                 if (matches.length === 0) {
-                  return <div className="py-8 text-center text-xs text-slate-400">No matching subjects or PDFs found.</div>;
+                  return <div className="py-8 text-center text-slate-400">No matching subjects or PDFs found.</div>;
                 }
                 return matches.slice(0, 25).map((m, idx) => (
                   <button
