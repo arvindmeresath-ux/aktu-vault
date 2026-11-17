@@ -97,14 +97,14 @@ export default function Win98Engine({
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   useEffect(() => {
-    if (vaultData) {
-      setData(vaultData);
-      return;
-    }
     fetch('/vault_data.json?v=' + Date.now())
       .then((res) => res.json())
       .then((d) => setData(d))
-      .catch((err) => console.error('Error loading vault_data.json:', err));
+      .catch((err) => console.error('Error loading vault data:', err));
+  }, []);
+
+  useEffect(() => {
+    if (vaultData) setData(vaultData);
   }, [vaultData]);
 
   useEffect(() => {
@@ -254,110 +254,54 @@ export default function Win98Engine({
   if (navPath.year) currentAddress += `\\${navPath.year}`;
   if (navPath.subject) currentAddress += `\\${navPath.subject.toUpperCase().replace(/\s+/g, '_')}`;
 
-  // Robust Branches computation supporting normalized departments array & raw objects
-  const branches = useMemo(() => {
-    const defaultOrder = ['cse', 'ece', 'ee', 'me', 'ce', 'it'];
-    if (!data || typeof data !== 'object') {
-      return defaultOrder.map((k, idx) => ({
-        deptKey: k,
-        code: k.toUpperCase(),
-        name: `[${idx + 1}] ${k.toUpperCase()}`,
-        subtitle: BRANCH_FULL_NAMES[k.toUpperCase()] || k.toUpperCase(),
-        count: 'empty',
-      }));
-    }
-
-    if (Array.isArray(data.departments)) {
-      return data.departments.map((dept, idx) => {
-        const upper = (dept.code || dept.deptKey || '').toUpperCase();
-        let count = 0;
-        const yrs = Array.isArray(dept.years) ? dept.years : Object.values(dept.years || {});
-        yrs.forEach((yrObj) => {
-          if (typeof yrObj?.totalFiles === 'number') {
-            count += yrObj.totalFiles;
-          } else {
-            const subs = Array.isArray(yrObj?.subjects) ? yrObj.subjects : Object.values(yrObj?.subjects || yrObj || {});
-            subs.forEach((subObj) => {
-              count += getSubjectFiles(subObj).length;
-            });
-          }
+  const deptOrder = ['cse', 'ece', 'ee', 'me', 'ce', 'it'];
+  
+  const getDeptDocCount = (deptKey) => {
+    const d = data?.[deptKey];
+    if (!d || !d.years) return 0;
+    let count = 0;
+    Object.values(d.years).forEach((yr) => {
+      if (yr?.subjects) {
+        Object.values(yr.subjects).forEach((sub) => {
+          count += getSubjectFiles(sub).length;
         });
-        return {
-          deptKey: dept.code ? dept.code.toLowerCase() : upper.toLowerCase(),
-          code: upper,
-          name: `[${idx + 1}] ${upper}`,
-          subtitle: BRANCH_FULL_NAMES[upper] || dept.name || upper,
-          count: `${count} Files`,
-        };
-      });
-    }
+      }
+    });
+    return count;
+  };
 
-    const keys = Object.keys(data).filter((k) => k.toLowerCase() !== "departments");
-    const orderedKeys = [
-      ...defaultOrder.filter((k) => keys.includes(k)),
-      ...keys.filter((k) => !defaultOrder.includes(k)),
-    ];
-
-    return orderedKeys.map((deptKey, idx) => {
-      const deptObj = data[deptKey] || {};
-      const upper = (deptObj.code || deptKey).toUpperCase();
-      let count = 0;
-      const yrs = Array.isArray(deptObj.years) ? deptObj.years : Object.values(deptObj.years || {});
-      yrs.forEach((yrObj) => {
-        if (typeof yrObj?.totalFiles === 'number') {
-          count += yrObj.totalFiles;
-        } else {
-          const subs = Array.isArray(yrObj?.subjects) ? yrObj.subjects : Object.values(yrObj?.subjects || yrObj || {});
-          subs.forEach((subObj) => {
-            count += getSubjectFiles(subObj).length;
-          });
-        }
-      });
-
+  const branches = useMemo(() => {
+    return deptOrder.map((k, idx) => {
+      const upper = k.toUpperCase();
+      const count = getDeptDocCount(k);
       return {
-        deptKey,
+        deptKey: k,
         code: upper,
         name: `[${idx + 1}] ${upper}`,
-        subtitle: BRANCH_FULL_NAMES[upper] || deptObj.name || upper,
+        subtitle: BRANCH_FULL_NAMES[upper] || upper,
         count: `${count} Files`,
+        rawCount: count
       };
     });
   }, [data]);
 
   const currentDeptObj = useMemo(() => {
     if (!navPath.dept || !data) return null;
-    if (Array.isArray(data.departments)) {
-      const found = data.departments.find(
-        (d) => (d.code || '').toLowerCase() === navPath.dept.toLowerCase() || (d.deptKey || '').toLowerCase() === navPath.dept.toLowerCase()
-      );
-      if (found) return found;
-    }
     return data[navPath.dept] || data[navPath.dept.toLowerCase()] || data[navPath.dept.toUpperCase()] || null;
   }, [data, navPath.dept]);
 
   const yearCards = useMemo(() => {
-    const rawYears = currentDeptObj?.years;
-    return YEAR_SLOTS.map((slot, i) => {
-      let yrObj = null;
-      const yearNum = String(i + 1);
-
-      if (Array.isArray(rawYears)) {
-        yrObj = rawYears.find(
-          (y) => (y.year || y.key || y.id || '').toUpperCase() === slot.key || String(y.year || y.id || '').replace(/\D/g, '') === yearNum
-        ) || rawYears[i];
-      } else if (rawYears && typeof rawYears === 'object') {
-        const actualKey = Object.keys(rawYears).find(
-          (k) => k.toUpperCase() === slot.key || String(k).replace(/\D/g, '') === yearNum
-        ) || Object.keys(rawYears)[i] || slot.key;
-        yrObj = rawYears[actualKey];
-      }
-
-      const fileCount = yrObj
-        ? (typeof yrObj.totalFiles === 'number' ? yrObj.totalFiles : Object.values(yrObj.subjects || yrObj || {}).reduce((acc, s) => acc + getSubjectFiles(s).length, 0))
-        : 0;
-
+    const rawYears = currentDeptObj?.years || {};
+    return [
+      { num: '01', id: '1ST_YEAR', label: '1st Year', subtitle: 'Common to all (Sem 1 & 2)' },
+      { num: '02', id: '2ND_YEAR', label: '2nd Year', subtitle: 'Core Departmental (Sem 3 & 4)' },
+      { num: '03', id: '3RD_YEAR', label: '3rd Year', subtitle: 'Core & Electives (Sem 5 & 6)' },
+      { num: '04', id: '4TH_YEAR', label: '4th Year', subtitle: 'Final Year & Electives (Sem 7 & 8)' },
+    ].map((slot, i) => {
+      const yrObj = rawYears[slot.id] || rawYears[String(i + 1)];
+      const fileCount = yrObj?.totalFiles || Object.values(yrObj?.subjects || yrObj || {}).reduce((acc, s) => acc + getSubjectFiles(s).length, 0);
       return {
-        id: slot.key,
+        id: slot.id,
         name: `[${i + 1}] ${slot.label}`,
         subtitle: yrObj?.subtitle || slot.subtitle,
         badge: `${fileCount} FILES`,
@@ -367,61 +311,38 @@ export default function Win98Engine({
   }, [currentDeptObj]);
 
   const currentYearObj = useMemo(() => {
-    if (!navPath.year || !currentDeptObj?.years) return null;
+    if (!currentDeptObj || !currentDeptObj.years || !navPath.year) return null;
     const rawYears = currentDeptObj.years;
+    if (rawYears[navPath.year]) return rawYears[navPath.year];
     const yearNum = String(navPath.year).replace(/\D/g, '');
-
-    if (Array.isArray(rawYears)) {
-      return rawYears.find(
-        (y) => (y.year || y.key || y.id || '').toUpperCase() === navPath.year.toUpperCase() || String(y.year || y.id || '').replace(/\D/g, '') === yearNum
-      ) || rawYears[Number(yearNum) - 1] || null;
-    } else if (rawYears && typeof rawYears === 'object') {
-      const matchingKey = Object.keys(rawYears).find(
-        (k) => k.toUpperCase() === String(navPath.year).toUpperCase() || String(k).replace(/\D/g, '') === yearNum
-      ) || Object.keys(rawYears)[Number(yearNum) - 1];
-      return rawYears[matchingKey] || null;
-    }
-
-    return null;
+    return rawYears[yearNum] || rawYears[Object.keys(rawYears)[Number(yearNum) - 1]] || null;
   }, [currentDeptObj, navPath.year]);
 
-  const filteredSubjects = useMemo(() => {
-    if (!currentYearObj) return [];
-    const q = searchQuery.trim().toLowerCase();
-    const rawSubs = currentYearObj.subjects || currentYearObj;
-    
-    let subsArray = [];
-    if (Array.isArray(rawSubs)) {
-      subsArray = rawSubs;
-    } else if (rawSubs && typeof rawSubs === 'object') {
-      subsArray = Object.entries(rawSubs).map(([subKey, subObj]) => ({
-        subKey,
-        name: subObj?.name || subKey,
-        files: getSubjectFiles(subObj),
-        ...subObj,
-      }));
-    }
+  const allSubjects = useMemo(() => {
+    if (!currentYearObj || !currentYearObj.subjects) return [];
+    const rawSubs = currentYearObj.subjects;
+    if (Array.isArray(rawSubs)) return rawSubs;
+    return Object.keys(rawSubs).map((subKey) => {
+      const subVal = rawSubs[subKey];
+      const filesArr = getSubjectFiles(subVal);
+      return {
+        subKey: subVal?.name || subKey,
+        name: subVal?.name || subKey,
+        files: filesArr,
+        count: filesArr.length,
+        ...subVal
+      };
+    });
+  }, [currentYearObj]);
 
-    return subsArray
-      .map((s) => ({
-        subKey: s.subKey || s.name || s.id,
-        name: s.name || s.subKey || s.id,
-        files: getSubjectFiles(s),
-        ...s,
-      }))
-      .filter((s) => !q || (s.name && s.name.toLowerCase().includes(q)) || (s.subKey && s.subKey.toLowerCase().includes(q)));
-  }, [currentYearObj, searchQuery]);
+  const filteredSubjects = allSubjects.filter((s) =>
+    (s.name || '').toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   const currentSubjectObj = useMemo(() => {
-    if (!navPath.subject || !currentYearObj) return null;
-    const rawSubs = currentYearObj.subjects || currentYearObj;
-    if (Array.isArray(rawSubs)) {
-      return rawSubs.find(
-        (s) => (s.subKey || s.name || s.id) === navPath.subject
-      );
-    }
-    return rawSubs[navPath.subject] || null;
-  }, [currentYearObj, navPath.subject]);
+    if (!navPath.subject) return null;
+    return allSubjects.find((s) => s.name === navPath.subject || s.subKey === navPath.subject) || currentYearObj?.subjects?.[navPath.subject];
+  }, [navPath.subject, allSubjects, currentYearObj]);
 
   const rawFiles = useMemo(() => getSubjectFiles(currentSubjectObj), [currentSubjectObj]);
 
@@ -462,7 +383,7 @@ export default function Win98Engine({
       name: s.name,
       badge: `[${s.files.length} files]`,
       onClick: () => {
-        setNavPath({ ...navPath, subject: s.subKey });
+        setNavPath({ ...navPath, subject: s.name });
         try { soundEngine.playTick(); } catch(e) {} setActiveTab('notes');
         setSelectedIndex(0);
       }
@@ -542,7 +463,6 @@ export default function Win98Engine({
 
   return (
     <div className="min-h-screen w-full bg-black flex items-center justify-center p-2 sm:p-4 select-none font-mono">
-      
       <style>{`
         .win98-scroll::-webkit-scrollbar { width: 16px; }
         .win98-scroll::-webkit-scrollbar-track {
@@ -559,7 +479,6 @@ export default function Win98Engine({
       `}</style>
 
       <div className="w-full max-w-[580px] bg-black border-[2px] border-[#00ff00] flex flex-col shadow-[0_0_20px_rgba(0,255,0,0.15)]">
-        
         {/* 1. TITLE BAR */}
         <div className="h-[28px] bg-[#000080] border-b-[2px] border-[#00ff00] px-2 flex items-center justify-between text-white text-xs">
           <div className="flex items-center gap-2 font-bold tracking-wide text-white truncate pr-2">
@@ -769,7 +688,6 @@ export default function Win98Engine({
         <div className="bg-[#b4b4b4] px-1.5 pt-1.5 pb-6 flex flex-col">
           <div className="bg-black border border-white p-3.5 min-h-[410px] flex flex-col justify-between">
             <div>
-
               {/* VIEW 1: BRANCHES */}
               {isRoot && (
                 <div>
@@ -1031,7 +949,6 @@ export default function Win98Engine({
                   </div>
                 </div>
               )}
-
             </div>
             <div className="h-4" />
           </div>
@@ -1055,7 +972,6 @@ export default function Win98Engine({
             <span className="tracking-wider">AKTU_VAULT</span>
           </div>
         </div>
-
       </div>
 
       {/* WIN98 OFFLINE VAULT MODAL */}
