@@ -38,9 +38,19 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     <script>
+      // Forcefully unregister old broken service workers and clear stale caches
       if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then((registrations) => {
+          for (let registration of registrations) {
+            registration.unregister().then(() => {
+              console.log('Old service worker unregistered successfully.');
+            });
+          }
+        });
+        
+        // Register fresh service worker with cache bust timestamp
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js').catch(err => {
+          navigator.serviceWorker.register('/sw.js?v=' + Date.now()).catch(err => {
             console.debug('ServiceWorker init:', err);
           });
         });
@@ -48,3 +58,13 @@
     </script>
   </body>
 </html>
+```[cite: 36]
+
+---
+
+### Ab Terminal mein yeh commands run karke GitHub par push kar do:
+
+```powershell
+git add .
+git commit -m "fix: force service worker unregister and cache busting in index.html"
+git push origin main
