@@ -766,7 +766,10 @@ export default function NeoBrutalEngine({
             <div ref={listContainerRef} className="flex flex-col gap-3.5">
               {/* [1] CSE FEATURED HERO CARD (Index 0) */}
               <div
-                onClick={() => setSelectedDept('cse')}
+                onClick={() => {
+                  try { soundEngine.playOpen(); } catch {}
+                  setSelectedDept('cse');
+                }}
                 onMouseEnter={() => setFocusedIndex(0)}
                 data-focused={focusedIndex === 0 ? 'true' : undefined}
                 className={`bg-[#bbf7d0] hover:bg-[#a7f3d0] active:translate-x-[2px] active:translate-y-[2px] border-[3.5px] border-black rounded-2xl p-3.5 cursor-pointer shadow-[5px_5px_0px_#000] flex items-center justify-between select-none transition-all ${
@@ -799,7 +802,10 @@ export default function NeoBrutalEngine({
                 {otherDepts.map((d) => (
                   <div
                     key={d.code}
-                    onClick={() => setSelectedDept(d.code)}
+                    onClick={() => {
+                      try { soundEngine.playOpen(); } catch {}
+                      setSelectedDept(d.code);
+                    }}
                     onMouseEnter={() => setFocusedIndex(d.idx)}
                     data-focused={focusedIndex === d.idx ? 'true' : undefined}
                     className={`${d.bg} active:translate-x-[2px] active:translate-y-[2px] border-[3px] border-black rounded-2xl p-3.5 cursor-pointer shadow-[4px_4px_0px_#000] min-h-[105px] select-none flex flex-col justify-between transition-all ${
@@ -828,7 +834,10 @@ export default function NeoBrutalEngine({
               {yearCards.map((y, idx) => (
                 <div
                   key={y.id}
-                  onClick={() => setSelectedYear(y.id)}
+                  onClick={() => {
+                    try { soundEngine.playOpen(); } catch {}
+                    setSelectedYear(y.id);
+                  }}
                   onMouseEnter={() => setFocusedIndex(idx)}
                   data-focused={focusedIndex === idx ? 'true' : undefined}
                   className={`bg-[#ffd29d] hover:bg-[#ffc680] active:translate-x-[2px] active:translate-y-[2px] border-[3px] border-black rounded-2xl p-3.5 cursor-pointer shadow-[4px_4px_0px_#000] flex flex-col items-center text-center justify-center min-h-[140px] select-none transition-all ${
@@ -866,7 +875,10 @@ export default function NeoBrutalEngine({
                   filteredSubjects.map((s, idx) => (
                     <div
                       key={s.name}
-                      onClick={() => setSelectedSubject(s.name)}
+                      onClick={() => {
+                        try { soundEngine.playOpen(); } catch {}
+                        setSelectedSubject(s.name);
+                      }}
                       onMouseEnter={() => setFocusedIndex(idx)}
                       data-focused={focusedIndex === idx ? 'true' : undefined}
                       className={`bg-[#bbf2f6] hover:bg-[#a6ecf1] active:translate-x-[1px] active:translate-y-[1px] border-[2.5px] border-black rounded-2xl p-2.5 sm:p-3 flex items-center justify-between cursor-pointer shadow-[3px_3px_0px_#000] select-none transition-all ${
