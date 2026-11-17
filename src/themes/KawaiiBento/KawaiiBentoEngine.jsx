@@ -65,13 +65,13 @@ const getSubjectFiles = (sub) => {
 const isPyq = (f) => {
   const c = (f?.category || f?.type || '').toLowerCase();
   const t = (f?.title || f?.name || '').toLowerCase();
-  return c.includes('pyq') || t.includes('pyq') || t.includes('previous') || t.includes('paper');
+  return c.includes('pyq') || t.includes('pyq') || t.includes('previous year');
 };
 
 const isQuantum = (f) => {
   const c = (f?.category || f?.type || '').toLowerCase();
   const t = (f?.title || f?.name || '').toLowerCase();
-  return c.includes('quantum') || c.includes('important') || c.includes('imp') || c.includes('syllabus') || t.includes('quantum') || t.includes('imp');
+  return c.includes('quantum') || c.includes('important') || c.includes('imp') || t.includes('quantum') || t.includes('imp');
 };
 
 export default function KawaiiBentoEngine({
@@ -168,14 +168,14 @@ export default function KawaiiBentoEngine({
   const isPoppingHistoryRef = useRef(false);
 
   useEffect(() => {
-    if (vaultData) {
-      setData(vaultData);
-      return;
-    }
     fetch('/vault_data.json?v=' + Date.now())
       .then((res) => res.json())
       .then((d) => setData(d))
       .catch((err) => console.error('Error loading vault data:', err));
+  }, []);
+
+  useEffect(() => {
+    if (vaultData) setData(vaultData);
   }, [vaultData]);
 
   // Smooth auto-scroll focused item into view
@@ -292,23 +292,19 @@ export default function KawaiiBentoEngine({
     });
   }, [data]);
 
-  const currentDeptObj = selectedDept ? data?.[selectedDept] : null;
+  const currentDeptObj = useMemo(() => {
+    if (!selectedDept || !data) return null;
+    return data[selectedDept] || data[selectedDept.toLowerCase()] || data[selectedDept.toUpperCase()] || null;
+  }, [data, selectedDept]);
 
   const yearCards = useMemo(() => {
     if (!currentDeptObj?.years) return YEAR_SLOTS;
-    return YEAR_SLOTS.map((slot) => {
-      const actualKey = Object.keys(currentDeptObj.years).filter((k) => k.toLowerCase() !== "departments").find(
-        (k) => k.toUpperCase() === slot.key
-      ) || slot.key;
-      const yrObj = currentDeptObj.years[actualKey];
-      const fileCount = typeof yrObj?.totalFiles === 'number'
-        ? yrObj.totalFiles
-        : Object.values(yrObj?.subjects || {}).reduce(
-            (acc, s) => acc + getSubjectFiles(s).length,
-            0
-          );
+    return YEAR_SLOTS.map((slot, i) => {
+      const rawYears = currentDeptObj.years;
+      const yrObj = rawYears[slot.key] || rawYears[String(i + 1)];
+      const fileCount = yrObj?.totalFiles || Object.values(yrObj?.subjects || yrObj || {}).reduce((acc, s) => acc + getSubjectFiles(s).length, 0);
       return {
-        key: actualKey,
+        key: slot.key,
         label: slot.label,
         subtitle: yrObj?.subtitle || slot.subtitle,
         emoji: slot.emoji,
@@ -317,10 +313,16 @@ export default function KawaiiBentoEngine({
     });
   }, [currentDeptObj]);
 
-  const currentYearObj = selectedYear ? currentDeptObj?.years?.[selectedYear] : null;
+  const currentYearObj = useMemo(() => {
+    if (!currentDeptObj || !currentDeptObj.years || !selectedYear) return null;
+    const rawYears = currentDeptObj.years;
+    if (rawYears[selectedYear]) return rawYears[selectedYear];
+    const yearNum = String(selectedYear).replace(/\D/g, '');
+    return rawYears[yearNum] || rawYears[Object.keys(rawYears)[Number(yearNum) - 1]] || null;
+  }, [currentDeptObj, selectedYear]);
 
   const filteredSubjects = useMemo(() => {
-    if (!currentYearObj?.subjects) return [];
+    if (!currentYearObj || !currentYearObj.subjects) return [];
     const q = searchQuery.trim().toLowerCase();
     const rawSubs = currentYearObj.subjects;
     const subsArray = Array.isArray(rawSubs)
@@ -334,18 +336,20 @@ export default function KawaiiBentoEngine({
 
     return subsArray
       .map((s) => ({
-        subKey: s.subKey || s.name,
-        name: s.name || s.subKey,
+        subKey: s.subKey || s.name || s.id,
+        name: s.name || s.subKey || s.id,
         files: getSubjectFiles(s),
+        ...s,
       }))
       .filter((s) => !q || s.name.toLowerCase().includes(q) || s.subKey.toLowerCase().includes(q));
   }, [currentYearObj, searchQuery]);
 
-  const currentSubjectObj = selectedSubject
-    ? filteredSubjects.find((s) => s.subKey === selectedSubject || s.name === selectedSubject) ||
-      currentYearObj?.subjects?.[selectedSubject]
-    : null;
-  const rawFiles = getSubjectFiles(currentSubjectObj);
+  const currentSubjectObj = useMemo(() => {
+    if (!selectedSubject || !currentYearObj) return null;
+    return filteredSubjects.find((s) => s.name === selectedSubject || s.subKey === selectedSubject) || currentYearObj?.subjects?.[selectedSubject];
+  }, [selectedSubject, filteredSubjects, currentYearObj]);
+
+  const rawFiles = useMemo(() => getSubjectFiles(currentSubjectObj), [currentSubjectObj]);
 
   const notesFiles = useMemo(() => rawFiles.filter((f) => !isPyq(f) && !isQuantum(f)), [rawFiles]);
   const pyqFiles = useMemo(() => rawFiles.filter((f) => isPyq(f)), [rawFiles]);
@@ -458,7 +462,7 @@ export default function KawaiiBentoEngine({
           setFocusIdx(0);
         } else if (isSubjectScreen && filteredSubjects[focusIdx]) {
           try { soundEngine.playOpen(); } catch {}
-          setSelectedSubject(filteredSubjects[focusIdx].subKey);
+          setSelectedSubject(filteredSubjects[focusIdx].name);
           setActiveTab('Notes');
           setFocusIdx(0);
         } else if (isFileScreen && currentTabFiles[focusIdx]) {
@@ -840,7 +844,7 @@ export default function KawaiiBentoEngine({
                         key={sub.subKey}
                         onClick={() => {
                           try { soundEngine.playOpen(); } catch {}
-                          setSelectedSubject(sub.subKey);
+                          setSelectedSubject(sub.name);
                           setActiveTab('Notes');
                           setFocusIdx(0);
                         }}

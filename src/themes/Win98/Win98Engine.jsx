@@ -53,16 +53,17 @@ const getSubjectFiles = (sub) => {
   ];
 };
 
+// Exact Neo-Brutalism matching logic for filtering
 const isPyq = (f) => {
   const c = (f?.category || f?.type || '').toLowerCase();
   const t = (f?.title || f?.name || '').toLowerCase();
-  return c.includes('pyq') || t.includes('pyq') || t.includes('previous') || t.includes('paper');
+  return c.includes('pyq') || t.includes('pyq') || t.includes('previous year');
 };
 
 const isQuantum = (f) => {
   const c = (f?.category || f?.type || '').toLowerCase();
   const t = (f?.title || f?.name || '').toLowerCase();
-  return c.includes('quantum') || c.includes('important') || c.includes('imp') || c.includes('syllabus') || t.includes('quantum') || t.includes('imp');
+  return c.includes('quantum') || c.includes('important') || c.includes('imp') || t.includes('quantum') || t.includes('imp');
 };
 
 const DEFAULT_THEMES = [
